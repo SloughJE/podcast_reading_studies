@@ -1,0 +1,638 @@
+---
+title: "How to Read Health & Nutrition Studies"
+subtitle: |
+  *A Practical Framework for Understanding Studies*
+
+author: |
+  **John Slough**  
+  *for* **The John & Calvin Podcast**
+
+output:
+  xaringan::moon_reader:
+    self_contained: true
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+includes:
+  before_body: jquery_header.html
+
+
+---
+
+```{r notes, echo=FALSE, warning=FALSE}
+# rmarkdown::render("reading_studies.Rmd")
+
+# pagedown::chrome_print("reading_studies.html")
+
+```
+
+```{css, echo=FALSE}
+
+
+.footnote {
+  font-size: 0.5em;
+  color: #666;
+}
+
+```
+
+
+### Overview
+
+1. **The Research Question**  
+   *What is the study trying to answer?*
+
+2. **Study Design**  
+   *How was the evidence gathered?*
+
+3. **Study Population**  
+   *Who or what was studied?*
+
+4. **Structure of a Scientific Paper**  
+   *Where to find key information*
+
+5. **How Results Are Reported**  
+   *Common Metrics in Studies*
+
+6. **How to Interpret Results**  
+   *P-values, confidence intervals, and statistical significance*
+
+7. **What It Means to "Control for" Something**  
+   *Confounding and adjustment: some math*
+
+8. **Studies Can Mislead and So Do the Headlines**  
+   *Things to remember*
+
+---
+
+## 1. The Research Question
+
+**What Is the Main Goal of the Study?**  
+- Every paper starts with a research question or hypothesis.  
+- This goal drives the design, statistics, and sample size.
+
+**Example from a published RCT**  
+> ["we tested the hypothesis that long-term supplementation with n–3 fatty acids would reduce the rate of cardiovascular events in this population of patients."](https://www.nejm.org/doi/10.1056/NEJMoa1203859)  
+
+**Primary vs. secondary outcomes**  
+- **Primary** = outcome the study is *powered* to detect.  
+- **Secondary** = extra measurements, often exploratory.
+
+The purpose of the study can be exploratory. 
+
+---
+
+## 1. The Research Question
+
+### How this helps you evaluate the study
+
+- **Stay on target:** If authors highlight only secondary outcomes, ask why the primary result is downplayed.  
+
+- **Spot outcome-switching:** A mismatch between the stated goal and reported focus can signal data dredging.  
+
+- **Judge relevance:** A clear goal lets you decide whether the study answers *your* question.
+
+---
+
+## 2. Study Design – How the Evidence Is Gathered
+
+A study's design determines what it can conclude: **observational** studies explore associations, **interventional** studies test causality, and **syntheses** combine evidence across studies.
+
+```{r hide_table_border, results='asis', echo=FALSE}
+cat("
+<style>
+  /* Remove the outer border from both Observational and Interventional tables */
+  #tbl_obs,
+  #tbl_int,
+  #tbl_synth {
+    border: none !important;
+    border-top: 1px solid #ddd !important;  /* put back the top line */
+    border-bottom: 1px solid #ddd !important;  /* put back the top line */
+
+  }
+</style>
+")
+```
+
+```{r show_top_table_border, results='asis', echo=FALSE}
+cat("
+<style>
+  /* Remove the outer border from both Observational and Interventional tables */
+  #tbl_obs {
+    border-top: 1.5px solid #333 !important;  /* put back the top line */
+  }
+</style>
+")
+```
+
+```{r show_last_table_border, results='asis', echo=FALSE}
+cat("
+<style>
+  /* Remove the outer border from both Observational and Interventional tables */
+  #tbl_synth {
+    border-bottom: 1.5px solid #333 !important;  /* put back the bottom line */
+  }
+</style>
+")
+```
+
+```{r show_header_border, results='asis', echo=FALSE}
+cat("
+<style>
+  #tbl_obs thead tr {
+    border-bottom: 1px solid #666 !important;
+  }
+</style>
+")
+
+```
+
+```{r study_design_obs, echo=FALSE, warning=FALSE}
+library(knitr)
+library(kableExtra)
+
+# your data
+obs <- data.frame(
+  Design        = c("Cross-sectional", "Prospective cohort", "Quasi-experimental"),
+  Description   = c("Snapshot of exposure & outcome",
+                    "Follow exposure over time",
+                    "Natural assignment, no randomization"),
+  `What it Shows` = c("Prevalence, correlations",
+                      "How exposures relate to future outcomes",
+                      "Policy impacts / structural differences")
+)
+colnames(obs) <- c("Design","Description","What it Shows")
+
+# build the table
+kbl(
+  obs,
+  caption    = "<strong style='font-size:1.05em;'>Observational Studies</strong>",
+  escape     = FALSE,
+  table.attr = "id='tbl_obs'"
+) %>%
+  kable_styling(
+    full_width        = TRUE,
+    font_size         = 16,
+    bootstrap_options = c("striped","hover","condensed")
+  ) %>%
+  row_spec(1:nrow(obs), background = "#f3f8fd",extra_css  = "padding-top:4px; padding-bottom:4px;"
+  ) %>%
+  column_spec(1, width = "30%", bold = TRUE) %>%
+  column_spec(2, width = "40%") %>%
+  column_spec(3, width = "30%")
+
+
+```
+
+```{r spacer1, results='asis', echo=FALSE}
+cat("<div style='margin-top: 12px;'></div>")
+```
+
+```{r study_design_int, echo=FALSE, warning=FALSE}
+
+int <- data.frame(
+  Design = c("Single-arm (pre-post)", "Randomized Controlled Trial"),
+  Description = c("Everyone gets treatment; pre vs post",
+                  "Random assignment to groups"),
+  `What it Shows` = c("Tests before/after change, may suggest causality, lacks control group", "Causality, treatment effect")
+)
+
+kbl(int, caption = "<strong style='font-size:1.05em;'>Interventional Studies</strong>", col.names = NULL, escape = FALSE,
+      table.attr = "id='tbl_int'") %>%
+  kable_styling(full_width = TRUE, font_size = 16, bootstrap_options = c("striped", "hover", "condensed")) %>%
+  row_spec(1:nrow(int), background = "#f4fdf3") %>%
+  column_spec(1, width = "30%", bold = TRUE) %>%
+  column_spec(2, width = "40%") %>%
+  column_spec(3, width = "30%") %>%
+  row_spec(nrow(int), extra_css = "border-bottom: none;")
+```
+
+```{r spacer2, results='asis', echo=FALSE}
+cat("<div style='margin-top: 12px;'></div>")
+```
+
+```{r study_design_synth, echo=FALSE, warning=FALSE}
+
+synth <- data.frame(
+  Design = "Meta-analysis",
+  Description = "Combines data from multiple studies",
+  `What it Shows` = "Combined estimate of effect (stronger evidence)"
+)
+
+kbl(synth, caption = "<strong style='font-size:1.05em;'>Evidence Synthesis</strong>", col.names = NULL, escape = FALSE,
+      table.attr = "id='tbl_synth'") %>%
+  kable_styling(full_width = TRUE, font_size = 16, bootstrap_options = c("striped", "hover", "condensed")) %>%
+  row_spec(1:nrow(synth), background = "#f7f3fd") %>%
+  column_spec(1, width = "30%", bold = TRUE) %>%
+  column_spec(2, width = "40%") %>%
+  column_spec(3, width = "30%")
+
+```
+
+---
+
+## 2. Study Design – How the Evidence Is Gathered
+
+Other designs you may see:
+
+<small>
+• *Case-control* – compares people with vs without outcome (handy for rare diseases)  
+
+• *Systematic review* – a structured narrative summary without statistical pooling  
+
+• *Retrospective cohort* – looks back at existing data to follow exposure → outcome  
+
+• *N-of-1 trial* – a single patient receives alternating treatments to compare effects  
+
+• *Ecological study* – analyzes group-level data, not individuals 
+
+• *Longitudinal study* – follows the same subjects over time (can be observational or interventional)</small>
+
+---
+
+## 2. Study Design – How the Evidence Is Gathered
+
+### How this helps you evaluate the study
+
+- **Robustness:** Higher-tier designs (RCTs, meta-analyses) better support cause-and-effect.  
+
+- **Applicability:** Observational data can suggest risk and generate more hypothesis but cannot prove* causality.  
+
+- **Expectation setting:** Don’t treat a petri-dish result like human clinical evidence.
+
+---
+
+## 3. Who or What Is Being Studied?
+
+**The subjects of the study affect how applicable the results are.**  
+Not all studies are done on humans — and not all humans are like you.
+
+**Three common types of subjects:**
+
+1. **Cells (in vitro)**  
+   - Lab studies on isolated cells  
+   - Good for understanding biological mechanisms  
+
+2. **Animals (in vivo)**  
+   - Whole-body systems (usually mice or rats)  
+   - Useful for early testing
+
+3. **Humans**  
+   - Best for relevance, but consider:  
+     - Age, sex, health status  
+     - Geographic or cultural context  
+     - Baseline diet and habits
+
+---
+
+## 3. Who or What Is Being Studied?
+
+### How this helps you evaluate the study
+
+- **Don’t fall for headlines:** Claims like “Ingredient X causes cancer” often come from in vitro studies at unrealistic doses.  
+
+- **Avoid overgeneralizing:** A chemical that affects mouse liver cells may do nothing in people (or the other way round). 
+
+- **Judge real-world relevance:** Even human trials may not reflect your demographic.  
+
+- **Focus on applicability:** The study population sets the limits of what conclusions you can reasonably draw.
+
+---
+
+
+## 4. Structure of a Scientific Paper
+
+1. **Abstract** – Summary of Paper
+
+2. **Introduction** – Background info, Research Question, Why the study matters.  
+
+3. **Methods** – How the study is set up
+
+4. **Results** – Tables/figures with raw findings.  
+
+5. **Discussion** – Authors' interpretation of results and why they are important.  
+
+6. **Conclusion** 
+
+7. **Supplementary** – Extra data, protocols, code.
+
+---
+
+## 4. Structure of a Scientific Paper
+
+### How this helps you evaluate the study
+
+- **Locations**: where to find what you want
+
+- **Don't just read the abstract:** Key caveats live in Methods & Results.  
+
+- **Reproduce logic:** Good Methods let you see exactly how data were collected and analyzed.  
+
+- **Spot over-interpretation:** Compare Discussion claims to raw Results.
+
+---
+
+
+## 5. How Results Are Reported
+
+### Common Effect Metrics (1 of 2)
+
+**Comparing group averages**  
+- **Mean difference** – e.g., −5 mm Hg BP
+- **Standardized mean difference (SMD, Cohen’s d)** – used to compare across different units or studies (e.g., d = 0.4)
+
+**Comparing risk**  
+- **Absolute risk difference (ARD)** – direct % point change (e.g., 2% → 1%)  
+- **Relative risk (RR)** – proportional change in risk (e.g., RR = 1.5 = 50% higher risk)  
+- **Number Needed to Treat (NNT)** – how many need the treatment for one person to benefit (e.g., NNT = 100)
+
+---
+
+## 5. How Results Are Reported
+
+### Common Effect Metrics (2 of 2)
+
+**Over time**  
+- **Incidence rate** – number of new cases per person-time (e.g., 5 per 1,000 person-years)  
+- **Hazard ratio (HR)** – compares event rates over time (e.g., HR = 0.75 = 25% slower event rate)  
+- **Survival analysis (e.g., Kaplan–Meier curves)** – visualize time until events (like death or disease) across groups
+
+**Meta-analyses**  
+- **Forest plots** – summarize multiple studies visually  
+  - If the confidence interval, usually seen as a diamond, crosses 1 (for ratios) or 0 (for differences), the result is *not* statistically significant
+
+---
+
+## 5. How Results Are Reported
+
+### How this helps you evaluate the study
+
+- **Know what’s being measured:** Is it a difference in means, a change in risk, or a time-to-event outcome?
+
+- **Understand the scale:** A 50% relative risk sounds big — but it might just be a change from 2% to 3% absolute risk.
+
+- **Look for clarity, not complexity:** Odds ratios, hazard ratios, and risk reductions all sound technical — but they just express *how much* and *how likely*.
+
+- **In meta-analyses:** Look for forest plots. The visual helps you quickly see effect sizes and uncertainty across studies.
+
+
+> These metrics tell you what changed, how much, and whether it might matter in the real world.
+
+---
+
+## 6. How to Interpret Results
+
+Studies usually perform comparisons, and need to answer two key questions:
+
+1. **Is the result real, or just random chance?**  
+   - This is assessed using a p-value, which tests for **statistical significance**.
+
+2. **How precise is the estimate?**  
+   - This is shown with a **confidence interval (CI)**, the range where the true effect probably lies.
+
+*Why do we need these statistical measures?*  
+
+> Because studies usually measure a **sample**, not the entire population.  
+> Random variation in the sample can create apparent differences, even if there’s no real effect.  
+
+> If we had data from the full population, we wouldn’t need p-values or confidence intervals.
+
+
+---
+
+## 6. How to Interpret Results
+
+### Statistical Significance and P-values
+
+- **Statistically significant**: result is *unlikely to be due to random chance*.
+- **P-value**: puts a number on that *unlikelihood*.<sup class="footnote">1</sup>
+- Ranges from 0 to 1, the smaller the p-value, the stronger the indication that the difference is real (not random)
+- Convention: *p* = 0.05 is the standard threshold
+- P-values are always paired with an effect estimate (e.g. mean difference)
+- A p-value is **not** the probability that the result is real or repeatable
+
+> The supplement reduced blood pressure by 5.0 mm Hg, with a p-value of 0.03.
+
+> 0.03 is less than 0.05 so the result is "statistically significant"
+
+
+<p class="footnote">
+  <sup>1</sup>We say “unlikely” because frequentist hypothesis testing starts by assuming
+  <strong>no real effect</strong>. A p-value asks:
+  <em>"If nothing is happening, how often would data this extreme arise by
+  chance?"</em> It quantifies that unlikelihood under a no-effect assumption.
+  It does <strong>not</strong> tell us the probability the effect is true
+  (that would require a Bayesian<sup>†</sup> approach).<br><br>
+  <sup>†</sup>Bayesian methods...no not going there now.
+</p>
+
+---
+
+## 6. How to Interpret Results
+
+### Statistical Significance and P-values
+
+
+- **Statistically significant** is a **yes/no** label we apply after comparing the p&#8209;value to a **threshold**.
+
+- **Threshold:** *p* < 0.05 is a common convention, but there is no mathematical or magical reason for it.
+
+- [On the Origins of the .05 Level of
+Statistical Significance](https://www2.psych.ubc.ca/~schaller/528Readings/CowlesDavis1982.pdf)
+
+- [Misuse of p-values](https://en.wikipedia.org/wiki/Misuse_of_p-values)
+
+Note:
+> You’ll often see p < 0.01 or p < 0.001 instead of exact values.
+
+> Once a result is highly statistically significant, the exact number (e.g. p = 0.0002134) doesn’t change the interpretation.
+
+> Researchers just round it for simplicity.
+
+---
+
+## 6. How to Interpret Results
+
+### Confidence Intervals
+
+- **Confidence Interval (CI)**: the range where the *true effect* likely falls.   
+- A **95% CI** means: the statistical method used would capture the true effect in about 95 out of 100 similar studies.
+  
+- A **narrow CI** = more precise estimate  
+- A **wide CI** = more uncertainty / variability 
+
+- If the CI crosses the "no-effect" line (0 or 1), the result is *not* statistically significant.  
+  <small>Not all CIs are for statistical testing, some just show precision. 
+  When comparing groups using a 95% CI, crossing 0 (or 1 for ratios) means *p* > 0.05, not statistically significant.</small>
+
+> Example: −5.0 mm Hg (95% CI −8.2 to −1.8) -> likely a real but variable effect  
+> Example: −2.0 mm Hg (95% CI −4.5 to 0.5) -> likely no real effect
+
+---
+
+## 6. How to Interpret Results
+
+### Statistical vs. Practical Significance
+
+- Statistical significance does **not** imply practical significance
+
+- *Example:* "12 weeks on a supplement led to a 0.2 kg weight loss (p = 0.001)" 
+
+- This result is strongly statistically significant, but does 0.2 kg matter?
+
+
+---
+
+## 6. How to Interpret Results
+
+### How this helps you evaluate the study
+
+- **Don’t stop at "statistically significant":** It is a yes/no, coarse indicator. 
+
+- **Check the p-value:** how far from the 0.05 threshold is it? If it's close, why? 
+
+- **Look at the CI:** A narrow interval means more confidence in the estimate; a wide one = more uncertainty.
+
+- **P-value alone isn’t enough:** It tells you about chance, not size, importance, or repeatability.
+
+- **Check the effect estimate:** Is it in raw units, percentages, or ratios? Is it easy to misinterpret?
+
+- **Statistical ≠ practical:** A tiny change can still be "significant" in math, but meaningless in real life.
+
+
+---
+
+## 7. What Does It Mean to "Control for" Something?
+
+We often hear a study "controls for" something, e.g. education or smoking.
+
+To **control for** (or **adjust for**) something means trying to isolate the effect of one variable, while accounting for other influences.
+
+> Example: A study on coffee and heart disease "controls for smoking", because smokers might drink more coffee *and* have higher heart disease risk.
+
+How do they do this?
+
+- Statistically, this is done using **models that include the confounding variables**.
+
+- The model estimates the effect of each factor **while holding the others constant**.  
+
+---
+
+## 7. What Does It Mean to "Control for" Something?
+
+Controlling for smoking:
+> `Heart Disease = Coffee + Smoking + Age + noise`  
+
+*How much does heart disease risk change with coffee intake, assuming smoking and age stay the same?*
+
+But it works the other way too. The same model lets us ask:  
+
+- What’s the effect of **smoking**, keeping coffee and age constant?
+
+If we don't control for smoking:
+
+> `Heart Disease = Coffee + Age + noise`  
+
+**Problem:** If smoking influences both coffee intake *and* heart disease,  
+then leaving it out means the model might wrongly blame **coffee** for effects actually due to **smoking**.
+
+This is called **confounding** — it makes it unclear what’s really causing what.
+
+---
+
+## 7. What Does It Mean to "Control for" Something?
+
+### **MATH**
+
+$$
+Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \beta_3 X_3 + \varepsilon
+$$
+
+- $Y$ = the outcome (e.g., heart disease)  
+- $X_1$ = coffee intake  
+- $X_2$ = smoking  
+- $X_3$ = age  
+- Each $\beta$ estimates the effect of that variable, **controlling for** the others  
+- $\varepsilon$ = leftover unexplained variation (the “noise”)
+
+<small>
+Controlling is a way to **statistically adjust for confounders**, not eliminate their influence entirely.  
+It only works for variables that are **measured and included**. Unmeasured confounding can still bias results.  
+
+>**Randomized trials** help by balancing both known and unknown confounders across groups.
+</small>
+
+---
+
+## 7. What Does It Mean to "Control for" Something?
+
+### How this helps you evaluate the study
+
+- **Look for adjusted models:** Did the study control for relevant factors like age, BMI, or smoking?
+
+- **Beware of omitted variables:** If key confounders are missing, the reported effects may be misleading.
+
+- **Adjustment ≠ perfection:** Controlling only works if the variables are measured and modeled properly.
+
+- **RCTs reduce confounding:** Randomized trials are more reliable when done well — they balance both known and unknown confounders by design.
+
+- **Observational studies need it more:** Without randomization, statistical control is the main way to limit bias.
+
+
+---
+
+## 8. Studies Can Mislead and So Do the Headlines
+
+Peer-reviewed nutrition and health studies can be flawed, overstated, or misinterpreted. Even in the most *prestigious* journals.
+
+Human nutrition research is especially messy. It's hard to isolate variables, use true placebos, or run long, well-powered trials.
+
+**Bias & Confounding**  
+- Were other influences (e.g. smoking, BMI, income) adjusted for?
+
+**Placebo Problems**  
+- Nutrition "controls" (like oils, shakes) often aren’t truly neutral.
+
+**Overcomplicated Data Anlaysis and Models**  
+- Convoluted stats with multiple sub-groups (especially identified post-hoc) can mask weak or noisy findings.
+
+**Pet Theories or Religion**  
+- Authors may shape conclusions to support their preferred view.
+
+**Funding & Conflicts**  
+- Industry ties don’t invalidate a study, but they’re worth noting.
+
+---
+
+## 8. Studies Can Mislead and So Do the Headlines
+
+**Publication Bias**  
+- Studies with negative results often never get published. If they were, perhaps you'd take fewer supplements.
+
+**Null-Hypothesis Logic**  
+- P-values test "no effect," not "proof that it works."
+
+**One Study Isn’t the Whole Story**  
+- Science advances through replication and accumulation, not isolated claims. One study is just a start.
+
+**Exaggerated Claims from Cell-based Studies**
+- Good for the grift, bad for integrity. 
+
+**Clickbait Abstracts**  
+- Even scientific studies fall prey to the clickbait sickness. Look at the Methods and Results. Sometimes they're quite different.
+
+
+---
+
+## If You Only Remember 3 Things
+
+### 1. **Only RCTs (and meta-analyses of RCTs) can establish causality.**  
+Observational studies can suggest links but can't prove what causes what.
+
+### 2. **Cell and animal studies rarely translate to humans.**  
+Interesting mechanisms ≠ real-world effects. Be cautious with early-stage findings.
+
+### 3. **Learn some Statistics**  
+P-values, confidence intervals, and effect sizes are what tell the real story.
+
