@@ -597,8 +597,8 @@ Human nutrition research is especially messy. It's hard to isolate variables, us
 **Overcomplicated Data Anlaysis and Models**  
 - Convoluted stats with multiple sub-groups (especially identified post-hoc) can mask weak or noisy findings.
 
-**Pet Theories or Religion**  
-- Authors may shape conclusions to support their preferred view.
+**Pet Theories**  
+- Authors may shape conclusions to support their theories.
 
 **Funding & Conflicts**  
 - Industry ties don’t invalidate a study, but they’re worth noting.
@@ -607,11 +607,14 @@ Human nutrition research is especially messy. It's hard to isolate variables, us
 
 ## 8. Studies Can Mislead and So Do the Headlines
 
+**Clickbait Abstracts**  
+- Even scientific studies fall prey to the clickbait sickness. Look at the Methods and Results. Sometimes they're quite different.
+
 **Publication Bias**  
 - Studies with negative results often never get published. If they were, perhaps you'd take fewer supplements.
 
 **Null-Hypothesis Logic**  
-- P-values test "no effect," not "proof that it works."
+- Small P-values reject the idea that there’s no effect, not prove that there is one.
 
 **One Study Isn’t the Whole Story**  
 - Science advances through replication and accumulation, not isolated claims. One study is just a start.
@@ -619,9 +622,8 @@ Human nutrition research is especially messy. It's hard to isolate variables, us
 **Exaggerated Claims from Cell-based Studies**
 - Good for the grift, bad for integrity. 
 
-**Clickbait Abstracts**  
-- Even scientific studies fall prey to the clickbait sickness. Look at the Methods and Results. Sometimes they're quite different.
-
+**Diet as Religion / Morality**
+- This should be separate from its health impact.
 
 ---
 
