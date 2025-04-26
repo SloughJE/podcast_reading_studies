@@ -42,6 +42,8 @@ class: inverse, center, large
 
 # Health and nutrition research is messy.
 
+--
+
 # Health and nutrition headlines and influencers make it worse.
 
 <hr style="margin-top: 2em; margin-bottom: 2em;">
@@ -93,6 +95,8 @@ class: inverse, center, large
 **Example from a published RCT**  
 > ["we tested the hypothesis that long-term supplementation with n–3 fatty acids would reduce the rate of cardiovascular events in this population of patients."](https://www.nejm.org/doi/10.1056/NEJMoa1203859)  
 
+--
+
 **Primary vs. secondary outcomes**  
 - **Primary** = outcome the study is *powered* to detect.  
 - **Secondary** = extra measurements, often exploratory.
@@ -118,6 +122,9 @@ The main purpose of the study can be exploratory. But don't confuse that with a 
 ## 2. Study Design – How the Evidence Is Gathered
 
 A study's design determines what it can conclude: **observational** studies explore associations, **interventional** studies test causality, and **syntheses** combine evidence across studies.
+
+--
+
 
 ```{r hide_table_border, results='asis', echo=FALSE}
 cat("
@@ -290,22 +297,30 @@ Other designs you may see:
 **The subjects of the study affect how applicable the results are.**  
 Not all studies are done on humans — and not all humans are like you.
 
-**Three common types of subjects:**
+--
 
-1. **Cells (in vitro)**  
-   - Lab studies on isolated cells  
-   - Good for understanding biological mechanisms  
+**Cells (in vitro)**  
+- Lab studies on isolated cells  
+- Good for understanding biological mechanisms  
+   
+--
 
-2. **Animals (in vivo)**  
-   - Whole-body systems (usually mice or rats)  
-   - Useful for early testing
 
-3. **Humans**  
-   - Best for relevance, but consider:  
-     - Age, sex, health status  
-     - Baseline diet and habits
-    - the study population may be very different from you
-      - e.g.  A study tested a high-protein diet on elderly Japanese women with Osteoporosis undergoing survival training.
+**Animals (in vivo)**  
+- Whole-body systems (usually mice or rats)  
+- Useful for early testing
+
+--
+
+
+**Humans (in vivo)**  
+- Most relevant, but consider:  
+ - Age, sex, health status  
+ - Baseline diet and habits
+
+--
+- the study population may be very different from you
+- e.g.  A study tested a high-protein diet on elderly Japanese women with Osteoporosis undergoing survival training.
 
 ---
 
@@ -328,7 +343,7 @@ Not all studies are done on humans — and not all humans are like you.
 
 2. **Introduction** – Background info, Research Question, Why the study matters.  
 
-3. **Methods** – How the study is set up
+3. **Methods** – How the study was set up, what data were collected, and how they were analyzed.
 
 4. **Results** – Tables/figures with raw findings.  
 
@@ -361,10 +376,12 @@ Not all studies are done on humans — and not all humans are like you.
 
 **Comparing group averages**  
 - **Mean difference** – e.g., −5 mm Hg BP
-- **Standardized mean difference (SMD, Cohen’s d)** – used to compare across different units or studies (e.g., d = 0.4)
+- **Percent Change** – relative change from baseline (e.g., 10% decrease)
+
+--
 
 **Comparing risk**  
-- **Absolute risk difference (ARD)** – direct % point change (e.g., 2% → 1%)  
+- **Absolute risk (difference) (AR)** – direct % point change (e.g., 2% → 1%)  
 - **Relative risk (RR)** – proportional change in risk (e.g., RR = 1.5 = 50% higher risk)  
 - **Number Needed to Treat (NNT)** – how many need the treatment for one person to benefit (e.g., NNT = 100)
 
@@ -379,9 +396,11 @@ Not all studies are done on humans — and not all humans are like you.
 - **Hazard ratio (HR)** – compares event rates over time (e.g., HR = 0.75 = 25% slower event rate)  
 - **Survival analysis (e.g., Kaplan–Meier curves)** – visualize time until events (like death or disease) across groups
 
-**Meta-analyses**  
-- **Forest plots** – summarize multiple studies visually  
-  - If the confidence interval, usually seen as a diamond, crosses 1 (for ratios) or 0 (for differences), the result is *not* statistically significant
+--
+
+**Metrics in Meta-analyses**  
+- **Forest plots** – show individual study effects and the overall pooled result.
+  - pooled result is shown as a diamond: center marks the average effect, and its width shows the confidence interval
 
 ---
 
@@ -402,18 +421,24 @@ Not all studies are done on humans — and not all humans are like you.
 
 ## 6. How to Interpret Results
 
-Studies usually perform comparisons, and need to answer two key questions:
+Reported metrics are usually accompanied by p-values and confidence intervals to assess reliability.
 
-1. **Is the result real, or just random chance?**  
-   - This is assessed using a p-value, which tests for **statistical significance**.
+Interpreting results depends on two concepts:
 
-2. **How precise is the estimate?**  
-   - This is shown with a **confidence interval (CI)**, the range where the true effect probably lies.
+--
+
+- **Statistical significance** - Is the result real, or just random chance?
+   - assessed using a *p-value*
+
+- **Precision** - How wide or narrow is the range of values where the true effect likely falls.
+   - shown with a *confidence interval (CI)*
+
+--
 
 *Why do we need these statistical measures?*  
 
-> Because studies usually measure a **sample**, not the entire population.  
-> Random variation in the sample can create apparent differences, even if there’s no real effect.  
+> Studies usually measure a **sample**, not the entire population.  
+> Random variation in the sample can create differences, even if there’s no real effect.  
 
 > If we had data from the full population, we wouldn’t need p-values or confidence intervals.
 
@@ -425,26 +450,51 @@ Studies usually perform comparisons, and need to answer two key questions:
 ### Statistical Significance and P-values
 
 - **Statistically significant**: result is *unlikely to be due to random chance*.
-- **P-value**: puts a number on that *unlikelihood*.<sup class="footnote">1</sup>
-- Ranges from 0 to 1, the smaller the p-value, the stronger the indication that the difference is real (not random)
-- Convention: *p* = 0.05 is the standard threshold
-- P-values are always paired with an effect estimate (e.g. mean difference)
-- A p-value is **not** the probability that the result is real or repeatable
+--
+
+- **P-value**: puts a number on that *unlikelihood* [1].
+--
+
+- **Ranges from 0 to 1**, the smaller the p-value, the stronger the indication that the difference is real (not random)
+
+
+--
+
+- **p = 0.05** is the standard threshold, so **p < 0.05** is statistically significant
+--
+
+- A p-value is paired with an effect estimate (e.g. mean difference)
+--
+
+- A p-value is **not** the probability that the result is real.
+  - p = 0.02 does not mean a 98% chance the effect is true.
+
+--
 
 > The supplement reduced blood pressure by 5.0 mm Hg, with a p-value of 0.03.
 
 > 0.03 is less than 0.05 so the result is "statistically significant"
 
+<span class="footnote">1. We say "unlikely" because frequentist hypothesis testing starts by assuming **no real effect**. A p-value asks: *"If nothing is happening, how often would data this extreme arise by chance?"* It quantifies that unlikelihood under a no-effect assumption. It does **not** tell us the probability the effect is true (that would require a Bayesian† approach).<br>†Bayesian methods... not going there now.</span>
 
-<p class="footnote">
-  <sup>1</sup>We say “unlikely” because frequentist hypothesis testing starts by assuming
-  <strong>no real effect</strong>. A p-value asks:
-  <em>"If nothing is happening, how often would data this extreme arise by
-  chance?"</em> It quantifies that unlikelihood under a no-effect assumption.
-  It does <strong>not</strong> tell us the probability the effect is true
-  (that would require a Bayesian<sup>†</sup> approach).<br><br>
-  <sup>†</sup>Bayesian methods...no not going there now.
-</p>
+---
+
+## 6. How to Interpret Results
+
+### Statistical Significance and P-values
+
+
+#### **Definition**  
+> 
+> "**Informally**, a p-value is the probability, under a specified statistical model, that a statistical summary of the data (e.g., the sample mean difference between two compared groups) would be equal to or more extreme than its observed value."
+> 
+> — [American Statistical Association](https://www.tandfonline.com/doi/pdf/10.1080/00031305.2016.1154108)
+
+--
+
+Even more informally:
+
+> Assuming no real difference between groups (the model), how likely is it to see a result at least as extreme as the one we got?
 
 ---
 
@@ -457,10 +507,14 @@ Studies usually perform comparisons, and need to answer two key questions:
 
 - **Threshold:** *p* < 0.05 is a common convention, but there is no mathematical or magical reason for it.
 
+--
+
 - [On the Origins of the .05 Level of
 Statistical Significance](https://www2.psych.ubc.ca/~schaller/528Readings/CowlesDavis1982.pdf)
 
 - [Misuse of p-values](https://en.wikipedia.org/wiki/Misuse_of_p-values)
+
+--
 
 Note:
 > You’ll often see p < 0.01 or p < 0.001 instead of exact values.
@@ -475,18 +529,28 @@ Note:
 
 ### Confidence Intervals
 
-- **Confidence Interval (CI)**: the range where the *true effect* likely falls.   
+- **Confidence Interval (CI)**: the range where the *true effect* likely falls.
+
+
 - A **95% CI** means: the statistical method used would capture the true effect in about 95 out of 100 similar studies.
-  
+
+
 - A **narrow CI** = more precise estimate  
+
+
 - A **wide CI** = more uncertainty / variability 
 
+
 - If the CI crosses the "no-effect" line (0 or 1), the result is *not* statistically significant.  
-  <small>Not all CIs are for statistical testing, some just show precision. 
-  When comparing groups using a 95% CI, crossing 0 (or 1 for ratios) means *p* > 0.05, not statistically significant.</small>
+
+--
 
 > Example: −5.0 mm Hg (95% CI −8.2 to −1.8) -> likely a real but variable effect  
 > Example: −2.0 mm Hg (95% CI −4.5 to 0.5) -> likely no real effect
+
+
+<small>Not all CIs are for statistical testing, some just show precision. 
+When comparing groups using a 95% CI, crossing 0 (or 1 for ratios) means *p* > 0.05, not statistically significant.</small>
 
 ---
 
@@ -509,11 +573,9 @@ Note:
 
 - Is the result statistically significant, and how close is the p-value to the 0.05 threshold?
 
-- **Check the p-value:** how far from the 0.05 threshold is it? If it's close, why? 
-
 - What does the confidence interval tell me about the size and precision of the effect?
 
-- Even if statistically significant, is the result practically important?
+- If the result is statistically significant, is the result practically important?
 
 - If the result is barely significant, could it be due to chance, small sample size, selective reporting, or fishing through lots of outcomes?
 
@@ -523,43 +585,73 @@ Note:
 
 We often hear a study "controls for" something, e.g. education or smoking.
 
+--
+
 To **control for** (or **adjust for**) something means trying to isolate the effect of one variable, while accounting for other influences.
 
 > Example: A study on coffee and heart disease "controls for smoking", because smokers might drink more coffee *and* have higher heart disease risk.
 
+--
+
 How do they do this?
 
-- Statistically, this is done using **models that include the confounding variables**.
+- Statistically, this is done using mathematical **models that include the confounding variables**.
 
-- The model estimates the effect of each factor **while holding the others constant**.  
+- The model estimates the effect of each variables **while holding the others constant**.  
+
 
 ---
 
+
 ## 7. What Does It Mean to "Control for" Something?
 
-Controlling for smoking:
+Research Question: **Does coffee increase heart disease?**
+
+We already know smoking and age increases heart disease.
+
+--
+
+In our prospective cohort study, we collect data for coffee intake, smoking, age, and heart disease.
+
+--
+
+Model:
 > `Heart Disease = Coffee + Smoking + Age + noise`  
 
-*How much does heart disease risk change with coffee intake, assuming smoking and age stay the same?*
 
-But it works the other way too. The same model lets us ask:  
+We want to know: Does coffee increase heart disease, **without the influence of smoking and age**?
 
-- What’s the effect of **smoking**, keeping coffee and age constant?
 
-If we don't control for smoking:
 
-> `Heart Disease = Coffee + Age + noise`  
+Including smoking and age in the model allows us to answer this question.
 
-**Problem:** If smoking influences both coffee intake *and* heart disease,  
-then leaving it out means the model might wrongly blame **coffee** for effects actually due to **smoking**.
-
-This is called **confounding** — it makes it unclear what’s really causing what.
 
 ---
 
 ## 7. What Does It Mean to "Control for" Something?
 
-### **MATH**
+
+**If we don't control for smoking**:
+
+
+Model:
+> `Heart Disease = Coffee + Age + noise`  
+
+
+Smoking influences both coffee intake *and* heart disease.
+
+
+Leaving it out means the model might wrongly blame **coffee** for effects actually due to **smoking**.
+
+--
+
+This is called **confounding**: a third variable confuses the apparent relationship between two variables.
+
+---
+
+## 7. What Does It Mean to "Control for" Something?
+
+## **MATH**
 
 $$
 Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \beta_3 X_3 + \varepsilon
@@ -572,8 +664,10 @@ $$
 - Each $\beta$ estimates the effect of that variable, **controlling for** the others  
 - $\varepsilon$ = leftover unexplained variation (the “noise”)
 
+--
+
 <small>
-Controlling is a way to **statistically adjust for confounders**, not eliminate their influence entirely.  
+Controlling is a way to **statistically adjust for confounders**.  
 It only works for variables that are **measured and included**. Unmeasured confounding can still bias results.  
 
 >**Randomized trials** help by balancing both known and unknown confounders across groups.
