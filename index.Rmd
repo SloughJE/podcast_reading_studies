@@ -14,11 +14,10 @@ output:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
-includes:
-  before_body: jquery_header.html
 
 
 ---
+
 
 ```{r notes, echo=FALSE, warning=FALSE}
 # rmarkdown::render("reading_studies.Rmd")
@@ -26,6 +25,8 @@ includes:
 # pagedown::chrome_print("reading_studies.html")
 
 ```
+
+class: inverse, center, large
 
 ```{css, echo=FALSE}
 
@@ -37,6 +38,23 @@ includes:
 
 ```
 
+
+
+# Health and nutrition research is messy.
+
+# Health and nutrition headlines and influencers make it worse.
+
+<hr style="margin-top: 2em; margin-bottom: 2em;">
+
+--
+# Understand how studies are designed.
+
+--
+
+# Understand basic statistics and common metrics.
+
+
+---
 
 ### Overview
 
@@ -62,7 +80,7 @@ includes:
    *Confounding and adjustment: some math*
 
 8. **Studies Can Mislead and So Do the Headlines**  
-   *Things to remember*
+   *Common issues in studies*
 
 ---
 
@@ -79,19 +97,21 @@ includes:
 - **Primary** = outcome the study is *powered* to detect.  
 - **Secondary** = extra measurements, often exploratory.
 
-The purpose of the study can be exploratory. 
+The main purpose of the study can be exploratory. But don't confuse that with a study testing causality.
 
 ---
 
 ## 1. The Research Question
 
-### How this helps you evaluate the study
+### Questions to Ask
 
-- **Stay on target:** If authors highlight only secondary outcomes, ask why the primary result is downplayed.  
+- What specific question is the study trying to answer?
 
-- **Spot outcome-switching:** A mismatch between the stated goal and reported focus can signal data dredging.  
+- Is the primary outcome clearly stated and appropriate?
 
-- **Judge relevance:** A clear goal lets you decide whether the study answers *your* question.
+- Are the secondary outcomes treated as exploratory, or being oversold?
+
+- Does the goal match what you care about?
 
 ---
 
@@ -253,13 +273,15 @@ Other designs you may see:
 
 ## 2. Study Design – How the Evidence Is Gathered
 
-### How this helps you evaluate the study
+### Questions to Ask
 
-- **Robustness:** Higher-tier designs (RCTs, meta-analyses) better support cause-and-effect.  
+- What type of study is this — observational, interventional, or a synthesis?
 
-- **Applicability:** Observational data can suggest risk and generate more hypothesis but cannot prove* causality.  
+- Can this design prove causality, or only suggest associations?
 
-- **Expectation setting:** Don’t treat a petri-dish result like human clinical evidence.
+- Is the comparison group (if any) appropriate and meaningful?
+
+- For meta-analyses: Were the included studies similar enough to combine?
 
 ---
 
@@ -281,22 +303,21 @@ Not all studies are done on humans — and not all humans are like you.
 3. **Humans**  
    - Best for relevance, but consider:  
      - Age, sex, health status  
-     - Geographic or cultural context  
      - Baseline diet and habits
+    - the study population may be very different from you
+      - e.g.  A study tested a high-protein diet on elderly Japanese women with Osteoporosis undergoing survival training.
 
 ---
 
 ## 3. Who or What Is Being Studied?
 
-### How this helps you evaluate the study
+### Questions to Ask
 
-- **Don’t fall for headlines:** Claims like “Ingredient X causes cancer” often come from in vitro studies at unrealistic doses.  
+- What type of subjects were studied?  
 
-- **Avoid overgeneralizing:** A chemical that affects mouse liver cells may do nothing in people (or the other way round). 
+- Why were they chosen?
 
-- **Judge real-world relevance:** Even human trials may not reflect your demographic.  
-
-- **Focus on applicability:** The study population sets the limits of what conclusions you can reasonably draw.
+- How relevant are they to you?
 
 ---
 
@@ -321,15 +342,15 @@ Not all studies are done on humans — and not all humans are like you.
 
 ## 4. Structure of a Scientific Paper
 
-### How this helps you evaluate the study
+### Questions to Ask
 
-- **Locations**: where to find what you want
+- Does the Abstract summarize what is actually in the study?
 
-- **Don't just read the abstract:** Key caveats live in Methods & Results.  
+- Does the Methods section clearly explain how the study was done?
 
-- **Reproduce logic:** Good Methods let you see exactly how data were collected and analyzed.  
+- Is the data and statistics in the Results presented clearly?
 
-- **Spot over-interpretation:** Compare Discussion claims to raw Results.
+- Does the Discussion align with the actual findings?
 
 ---
 
@@ -366,18 +387,16 @@ Not all studies are done on humans — and not all humans are like you.
 
 ## 5. How Results Are Reported
 
-### How this helps you evaluate the study
+### Questions to Ask
 
-- **Know what’s being measured:** Is it a difference in means, a change in risk, or a time-to-event outcome?
+- What type of metric is reported (mean difference, risk, rate, etc.)?
 
-- **Understand the scale:** A 50% relative risk sounds big — but it might just be a change from 2% to 3% absolute risk.
+- Does this metric directly answer the study’s main question?
 
-- **Look for clarity, not complexity:** Odds ratios, hazard ratios, and risk reductions all sound technical — but they just express *how much* and *how likely*.
+- Could the way the result is presented exaggerate or downplay the real impact?
 
-- **In meta-analyses:** Look for forest plots. The visual helps you quickly see effect sizes and uncertainty across studies.
+- What does the chosen metric reveal, and what might it obscure?
 
-
-> These metrics tell you what changed, how much, and whether it might matter in the real world.
 
 ---
 
@@ -486,20 +505,17 @@ Note:
 
 ## 6. How to Interpret Results
 
-### How this helps you evaluate the study
+### Questions to Ask
 
-- **Don’t stop at "statistically significant":** It is a yes/no, coarse indicator. 
+- Is the result statistically significant, and how close is the p-value to the 0.05 threshold?
 
 - **Check the p-value:** how far from the 0.05 threshold is it? If it's close, why? 
 
-- **Look at the CI:** A narrow interval means more confidence in the estimate; a wide one = more uncertainty.
+- What does the confidence interval tell me about the size and precision of the effect?
 
-- **P-value alone isn’t enough:** It tells you about chance, not size, importance, or repeatability.
+- Even if statistically significant, is the result practically important?
 
-- **Check the effect estimate:** Is it in raw units, percentages, or ratios? Is it easy to misinterpret?
-
-- **Statistical ≠ practical:** A tiny change can still be "significant" in math, but meaningless in real life.
-
+- If the result is barely significant, could it be due to chance, small sample size, selective reporting, or fishing through lots of outcomes?
 
 ---
 
@@ -567,61 +583,49 @@ It only works for variables that are **measured and included**. Unmeasured confo
 
 ## 7. What Does It Mean to "Control for" Something?
 
-### How this helps you evaluate the study
+### Questions to Ask
 
-- **Look for adjusted models:** Did the study control for relevant factors like age, BMI, or smoking?
+- Did the study adjust for major known confounders (like smoking, age, BMI)?
 
-- **Beware of omitted variables:** If key confounders are missing, the reported effects may be misleading.
+- Are there important factors they might have missed or not measured?
 
-- **Adjustment ≠ perfection:** Controlling only works if the variables are measured and modeled properly.
+- Is the adjustment described clearly, or does it seem vague or incomplete?
 
-- **RCTs reduce confounding:** Randomized trials are more reliable when done well — they balance both known and unknown confounders by design.
-
-- **Observational studies need it more:** Without randomization, statistical control is the main way to limit bias.
-
+- Was the study randomized? (If yes, that helps handle unknown confounders too.)
 
 ---
 
-## 8. Studies Can Mislead and So Do the Headlines
+## 8. Studies Can Mislead and So Do the Influencers
 
-Peer-reviewed nutrition and health studies can be flawed, overstated, or misinterpreted. Even in the most *prestigious* journals.
+Even well-done studies, and the headlines about them, can be misleading.
+Here are common issues to watch for when evaluating claims.
 
-Human nutrition research is especially messy. It's hard to isolate variables, use true placebos, or run long, well-powered trials.
 
-**Bias & Confounding**  
-- Were other influences (e.g. smoking, BMI, income) adjusted for?
+**Small Sample Size Exaggeration**
+- Small studies often report bigger effects purely by random chance. Replication often shrinks or remove these effects.
 
 **Placebo Problems**  
 - Nutrition "controls" (like oils, shakes) often aren’t truly neutral.
 
 **Overcomplicated Data Anlaysis and Models**  
-- Convoluted stats with multiple sub-groups (especially identified post-hoc) can mask weak or noisy findings.
+- Convoluted stats with multiple sub-groups can mask weak findings.
+
+**Pet Theories & Funding Conflicts**  
+- Authors or funders may subtly tilt conclusions to support their interests. It doesn't invalidate a study, but it's worth noting.
+
 
 ---
 
-## 8. Studies Can Mislead and So Do the Headlines
+## 8. Studies Can Mislead and So Do the Influencers
 
-**Pet Theories**  
-- Authors may shape conclusions to support their theories.
-
-**Funding & Conflicts**  
-- Industry ties don’t invalidate a study, but they’re worth noting.
+**One Study Isn’t the Whole Story**  
+- One study is just a start. It should be replicated.
 
 **Clickbait Abstracts**  
 - Even scientific studies fall prey to the clickbait sickness. Look at the Methods and Results. Sometimes they're quite different.
 
 **Publication Bias**  
 - Studies with negative results often never get published. If they were, perhaps you'd take fewer supplements.
-
----
-
-## 8. Studies Can Mislead and So Do the Headlines
-
-**Null-Hypothesis Logic**  
-- Small P-values reject the idea that there’s no effect, not prove that there is one.
-
-**One Study Isn’t the Whole Story**  
-- Science advances through replication and accumulation, not isolated claims. One study is just a start.
 
 **Exaggerated Claims from Cell-based Studies**
 - Good for the grift, bad for integrity. 
@@ -631,14 +635,48 @@ Human nutrition research is especially messy. It's hard to isolate variables, us
 
 ---
 
-## If You Only Remember 3 Things
+class: inverse, larger
 
-### 1. **Only RCTs (and meta-analyses of RCTs) can establish causality.**  
-Observational studies can suggest links but can't prove what causes what.
 
-### 2. **Cell and animal studies rarely translate to humans.**  
-Interesting mechanisms ≠ real-world effects. Be cautious with early-stage findings.
 
-### 3. **Learn some Statistics**  
-P-values, confidence intervals, and effect sizes are what tell the real story.
+## <div style="text-align: center; font-size: 1.6em;">Core Questions to Ask</div>
+
+
+- Is the study’s main question clear, and does it match what you care about?
+<br>
+
+- What type of study is it, and can it test cause and effect?
+<br>
+
+- Who or what was studied, and are the results relevant to you?
+<br>
+
+- What does the chosen metric reveal, and what might it obscure?
+<br>
+
+- How strong, precise, and practically meaningful are the results?
+<br>
+
+- Are there signs of statistical shenanigans?
+
+---
+
+class: inverse
+
+
+
+# <div style="text-align: center; font-size: 1.2em;">If You Only Remember 3 Things</div>
+
+<br>
+
+### **1**. Only RCTs (and meta-analyses of RCTs) can establish causality.
+
+<br>
+
+### **2**. Cell and animal studies often do not translate to humans.
+
+<br>
+
+### **3**. Understanding basic statistics and reported metrics is necessary.
+
 
