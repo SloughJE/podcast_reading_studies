@@ -372,9 +372,9 @@ Not all studies are done on humans — and not all humans are like you.
 
 ## 5. How Results Are Reported
 
-### Common Effect Metrics (1 of 2)
+### Common Effect Metrics
 
-**Comparing group averages**  
+**Comparing Groups**  
 - **Mean difference** – e.g., −5 mm Hg BP
 - **Percent Change** – relative change from baseline (e.g., 10% decrease)
 
@@ -389,12 +389,13 @@ Not all studies are done on humans — and not all humans are like you.
 
 ## 5. How Results Are Reported
 
-### Common Effect Metrics (2 of 2)
+### Common Effect Metrics
 
-**Over time**  
+**Time-to-Event Metrics**  
 - **Incidence rate** – number of new cases per person-time (e.g., 5 per 1,000 person-years)  
-- **Hazard ratio (HR)** – compares event rates over time (e.g., HR = 0.75 = 25% slower event rate)  
-- **Survival analysis (e.g., Kaplan–Meier curves)** – visualize time until events (like death or disease) across groups
+- **Hazard ratio (HR)** – compares the rate at which events happen between groups over time (e.g., HR = 0.75 = 25% lower event rate)  
+- **Odds ratio (OR)** – compares the odds of an event between groups (e.g., OR = 2 = twice the odds)  
+- **Survival analysis (e.g., Kaplan–Meier curves)** – shows the probability of surviving (or avoiding an event) over time across groups
 
 --
 
@@ -505,7 +506,7 @@ Even more informally:
 
 - **Statistically significant** is a **yes/no** label we apply after comparing the p&#8209;value to a **threshold**.
 
-- **Threshold:** *p* < 0.05 is a common convention, but there is no mathematical or magical reason for it.
+- **p < 0.05** is a common convention, but there is no mathematical or magical reason for it.
 
 --
 
@@ -589,7 +590,7 @@ We often hear a study "controls for" something, e.g. education or smoking.
 
 To **control for** (or **adjust for**) something means trying to isolate the effect of one variable, while accounting for other influences.
 
-> Example: A study on coffee and heart disease "controls for smoking", because smokers might drink more coffee *and* have higher heart disease risk.
+> Example: Example: A study on coffee and heart disease "controls for smoking," because smoking is associated with both higher coffee consumption and higher heart disease risk, making it hard to know if coffee itself is the real cause.
 
 --
 
@@ -611,7 +612,7 @@ We already know smoking and age increases heart disease.
 
 --
 
-In our prospective cohort study, we collect data for coffee intake, smoking, age, and heart disease.
+In our **prospective cohort study**, we collect data for coffee intake, smoking, age, and heart disease.
 
 --
 
