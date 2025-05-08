@@ -4,7 +4,7 @@ subtitle: |
   *A Practical Framework for Understanding Studies*
 
 author: |
-  **John Slough**  
+  **John**  
   *for* **The John & Calvin Podcast**
 
 output:
