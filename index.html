@@ -1029,58 +1029,92 @@ John Slough
 <h3 id="understand-common-problems-with-studies-and-headlines.">Understand common problems with studies and headlines.</h3>
 </div>
 </section>
-<section id="overview" class="slide level2 smaller">
+<section id="overview" class="slide level2">
 <h2>Overview</h2>
-<div class="columns">
-<div class="column fragment" style="width:50%;">
 <ol type="1">
-<li><p><strong>The Research Question</strong><br>
-<em>What is the study trying to answer?</em></p></li>
-<li><p><strong>Study Design</strong><br>
-<em>How was the evidence gathered and analyzed?</em></p></li>
-<li><p><strong>Study Population</strong><br>
-<em>Who or what was studied?</em></p></li>
-<li><p><strong>Structure of a Scientific Paper</strong><br>
-<em>Where to find key information</em></p></li>
-<li><p><strong>How Results Are Reported</strong><br>
-<em>Common Metrics in Studies</em></p></li>
+<li><strong>The Research Question</strong><br>
+</li>
+<li><strong>Study Design</strong><br>
+</li>
+<li><strong>Study Population</strong><br>
+</li>
+<li><strong>Paper Structure</strong><br>
+</li>
+<li><strong>Reporting Metrics</strong></li>
+<li><strong>Interpreting Results</strong><br>
+</li>
+<li><strong>Controlling Confounders</strong><br>
+</li>
+<li><strong>Misleading Studies &amp; Headlines</strong></li>
 </ol>
-</div><div class="column fragment" style="width:50%;">
-<ol start="6" type="1">
-<li><p><strong>How to Interpret Results</strong><br>
-<em>P-values, confidence intervals, and statistical significance</em></p></li>
-<li><p><strong>What It Means to “Control for” Something</strong><br>
-<em>Confounding and adjustment: some math</em></p></li>
-<li><p><strong>Studies Can Mislead and So Do the Headlines</strong><br>
-<em>Common issues in studies</em></p></li>
-</ol>
-</div></div>
+<aside class="notes">
+<ul>
+<li><strong>1 The Research Question</strong> – What is the study trying to answer?<br>
+</li>
+<li><strong>2 Study Design</strong> – How was the evidence gathered and analysed?<br>
+</li>
+<li><strong>3 Study Population</strong> – Who or what was studied?<br>
+</li>
+<li><strong>4 Paper Structure</strong> – Where to find key information.<br>
+</li>
+<li><strong>5 Reporting Metrics</strong> – Common measures in studies.<br>
+</li>
+<li><strong>6 Interpreting Results</strong> – P-values, confidence intervals, statistical significance.<br>
+</li>
+<li><strong>7 Controlling Confounders</strong> – Adjustment, confounding and a little math.<br>
+</li>
+<li><strong>8 Misleading Studies &amp; Headlines</strong> – Typical pitfalls you’ll spot in the wild.</li>
+</ul>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
 </section>
-<section id="the-research-question" class="slide level2 smaller">
+<section id="the-research-question" class="slide level2">
 <h2>The Research Question</h2>
-<p><strong>What Is the Main Goal of the Study?</strong></p>
+<div class="smaller2">
+<p><strong>Main goal of the study?</strong></p>
 <ul>
-<li>Every paper starts with a research question or hypothesis.<br>
+<li>Drives design, statistics, sample size<br>
 </li>
-<li>This goal drives the design, statistics, and sample size.</li>
+<li>Clarify <em>primary</em> vs. <em>secondary</em> outcomes</li>
 </ul>
-<p><strong>Example from a published RCT</strong></p>
-<blockquote>
-<p><a href="https://www.nejm.org/doi/10.1056/NEJMoa1203859">“we tested the hypothesis that long-term supplementation with n–3 fatty acids would reduce the rate of cardiovascular events in this population of patients.”</a></p>
-</blockquote>
-<div class="fragment">
-<p><strong>Primary vs. secondary outcomes</strong></p>
-<ul>
-<li><strong>Primary</strong> = outcome the study is <em>powered</em> to detect.<br>
-</li>
-<li><strong>Secondary</strong> = extra measurements, often exploratory.</li>
-</ul>
-<p>The main purpose of the study can be exploratory. But don’t confuse that with a study testing causality.</p>
+<p><br></p>
+<p><strong>Example (published RCT)</strong><br>
+“We tested the hypothesis that long-term supplementation with n-3 fatty acids would reduce cardiovascular events in this population.”<br>
+— NEJM, 2012 <a href="https://www.nejm.org/doi/10.1056/NEJMoa1203859">link</a></p>
 </div>
+<aside class="notes">
+<p><strong>What is the study trying to answer?</strong><br>
+Every paper begins with a research question or hypothesis.<br>
+That single goal shapes the design, determines which statistics are run, and dictates how many participants are needed.</p>
+<p><strong>Primary vs. secondary outcomes</strong><br>
+<em>Primary</em> = the outcome the trial is powered to detect.<br>
+<em>Secondary</em> = extra measurements, often exploratory.<br>
+Important: An exploratory study can be valuable, but don’t confuse it with a trial designed to prove causality.</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
 </section>
-<section id="the-research-question-1" class="slide level2 smaller">
+<section id="the-research-question-1" class="slide level2">
 <h2>The Research Question</h2>
-<h3 id="questions-to-ask">Questions to Ask</h3>
+<section id="questions-to-ask" class="smaller2">
+<h3>Questions to Ask</h3>
 <ul>
 <li><p>What specific question is the study trying to answer?</p></li>
 <li><p>Is the primary outcome clearly stated and appropriate?</p></li>
@@ -1088,98 +1122,96 @@ John Slough
 <li><p>Does the goal match what you care about?</p></li>
 </ul>
 </section>
-<section id="study-design" class="slide level2 smaller2">
+</section>
+<section id="study-design" class="slide level2">
 <h2>Study Design</h2>
-<p>A study’s design determines what it can conclude: <strong>observational</strong> studies explore associations, <strong>interventional</strong> studies test causality, and <strong>syntheses</strong> combine evidence across studies.</p>
+<div class="smaller2">
+<p>A study’s design decides what it can really claim.</p>
 <p><br></p>
 <div class="columns">
-<div class="column fragment" style="width:33%; font-size:85%; background-color:#1e1e1e; border:1px solid #444; border-radius:12px; padding:0.3em; margin-right:0.25em; line-height:1.2;">
+<div class="column fragment" style="width:33%; font-size:85%;              background:#1e1e1e; border:1px solid #444;              border-radius:12px; padding:0.4em;              margin-right:0.5em; line-height:1.2;">
 <h3 id="observational"><strong>Observational</strong></h3>
-<ul>
-<li>Cross-sectional<br>
-Snapshot in time<br>
-<br></li>
-<li>Cohort (prospective)<br>
-Follow exposure over time<br>
-<br></li>
-<li>Quasi-experimental<br>
-Natural assignment, no randomization<br>
-<br></li>
-</ul>
-<p>Prevalence, trends, correlations</p>
-</div><div class="column fragment" style="width:30%; font-size:85%; background-color:#1e1e1e; border:1px solid #444; border-radius:12px; padding:0.3em; margin-right:0.25em; line-height:1.2;">
+<p>• Cross-sectional<br>
+• Cohort<br>
+• Quasi-experimental</p>
+</div><div class="column fragment" style="width:30%; font-size:85%;              background:#1e1e1e; border:1px solid #444;              border-radius:12px; padding:0.4em;              margin-right:0.5em; line-height:1.2;">
 <h3 id="interventional"><strong>Interventional</strong></h3>
-<ul>
-<li>Single-arm (pre-post)<br>
-Treatment before vs after<br>
-<br></li>
-<li>Randomized Controlled Trial<br>
-Random assignment to groups<br>
-<br></li>
-</ul>
-<p>Causality, treatment effects</p>
-</div><div class="column fragment" style="width:28%; font-size:85%; background-color:#1e1e1e; border:1px solid #444; border-radius:12px; padding:0.3em; line-height:1.2;">
+<p>• Pre–post<br>
+• Randomised Trial</p>
+</div><div class="column fragment" style="width:28%; font-size:85%;              background:#1e1e1e; border:1px solid #444;              border-radius:12px; padding:0.4em;              line-height:1.2;">
 <h3 id="evidence-synthesis"><strong>Evidence Synthesis</strong></h3>
-<ul>
-<li>Meta-analysis<br>
-Combines multiple studies<br>
-<br></li>
-</ul>
-<p>Stronger pooled estimates, increased statistical power</p>
+<p>• Meta-analysis</p>
 </div></div>
+</div>
+<aside class="notes">
+<p><strong>Key message:</strong><br>
+- <em>Observational</em> → explores associations.<br>
+- <em>Interventional</em> → can test causality.<br>
+- <em>Synthesis</em> → pools evidence for stronger estimates.</p>
+<p><strong>Observational</strong><br>
+- <strong>Cross-sectional</strong> – snapshot at one point in time.<br>
+- <strong>Cohort (prospective)</strong> – follow exposure over time to see who develops the outcome.<br>
+- <strong>Quasi-experimental</strong> – natural assignment, no randomisation (e.g., policy change).</p>
+<p>→ Useful for prevalence, trends, hypothesis generation; cannot on their own prove cause.</p>
+<p><strong>Interventional</strong><br>
+- <strong>Pre–post / single-arm</strong> – measure before-vs-after in same group.<br>
+- <strong>Randomised Controlled Trial</strong> – participants randomly assigned; balances confounders.</p>
+<p>→ Designed to answer causal questions and estimate treatment effect sizes.</p>
+<p><strong>Evidence Synthesis</strong><br>
+- <strong>Meta-analysis</strong> – combines comparable studies; increases power, tests consistency.</p>
+<p>→ Highest in the evidence hierarchy when based on well-done RCTs; still limited by the quality and heterogeneity of included studies.</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
 </section>
-<section id="study-design-other-types" class="slide level2 smaller2">
-<h2>Study Design – Other Types</h2>
-<p><br></p>
+<section id="other-study-designs-reference" class="slide level2 smaller2">
+<h2>Other Study Designs (reference)</h2>
 <div class="columns">
-<div class="column fragment" style="font-size:85%; line-height:1.4;">
+<div class="column" style="font-size:80%; line-height:1.35;">
 <p><strong>Observational</strong></p>
-<ul>
-<li><em>Case-control</em><br>
-Compare with vs. without outcome<br>
-</li>
-<li><em>Case study / case series</em><br>
-In-depth look at one or few patients<br>
-</li>
-<li><em>Ecological</em><br>
-Uses group-level (not individual) data<br>
-</li>
-<li><em>Retrospective cohort</em><br>
-Past data to follow exposure → outcome</li>
-</ul>
-<p><strong>Interventional or Observational</strong></p>
-<ul>
-<li><em>Longitudinal</em><br>
-Follows same subjects over time<br>
-</li>
-<li><em>Natural experiment</em><br>
-External factors define exposure</li>
-</ul>
-</div><div class="column fragment" style="font-size:85%; line-height:1.4;">
+<p>• Case-control – with vs without outcome<br>
+• Case report / series – detailed look at few patients<br>
+• Ecological – group-level data only<br>
+• Retrospective cohort – past records follow exposure → outcome</p>
+<p><strong>Mixed / Natural</strong></p>
+<p>• Longitudinal – same subjects over time<br>
+• Natural experiment – exposure assigned by external factors</p>
+</div><div class="column" style="font-size:80%; line-height:1.35;">
 <p><strong>Interventional</strong></p>
-<ul>
-<li><em>N-of-1 trial</em><br>
-One subject, alternating treatments<br>
-</li>
-<li><em>Cross-over trial</em><br>
-Subjects receive all treatments in sequence<br>
-</li>
-<li><em>Before–after study</em><br>
-Compare pre vs. post intervention</li>
-</ul>
+<p>• N-of-1 trial – single participant, alternating treatments<br>
+• Cross-over trial – each subject receives all treatments<br>
+• Before–after study – compare pre- vs post-intervention</p>
 <p><strong>Synthesis</strong></p>
-<ul>
-<li><em>Systematic review</em><br>
-Structured summary without pooling<br>
-</li>
-<li><em>Umbrella review</em><br>
-Review of systematic reviews</li>
-</ul>
+<p>• Systematic review – structured summary, no pooling<br>
+• Umbrella review – review of systematic reviews</p>
 </div></div>
+<aside class="notes">
+<p>This is a quick reference list.<br>
+I’ll mention that these designs exist but won’t unpack them here; listeners can pause the replay or check the show notes if they’d like more detail.</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
 </section>
-<section id="study-design-1" class="slide level2 smaller2">
+<section id="study-design-1" class="slide level2">
 <h2>Study Design</h2>
-<h3 id="questions-to-ask-1">Questions to Ask</h3>
+<section id="questions-to-ask-1" class="smaller2">
+<h3>Questions to Ask</h3>
 <ul>
 <li><p>What type of study is this — observational, interventional, or a synthesis?</p></li>
 <li><p>Can this design prove causality, or only suggest associations?</p></li>
@@ -1187,34 +1219,49 @@ Review of systematic reviews</li>
 <li><p>For meta-analyses: Were the included studies similar enough to combine?</p></li>
 </ul>
 </section>
-<section id="who-or-what-is-being-studied" class="slide level2 smaller2">
-<h2>Who or What Is Being Studied?</h2>
-<p><strong>The subjects of the study affect how applicable the results are.</strong><br>
-Not all studies are done on humans, and not all humans are like you.</p>
-<div class="fragment">
-<p><strong>Cells (in vitro)</strong><br>
-- Lab studies on isolated cells<br>
-- Good for understanding biological mechanisms</p>
-</div>
-<div class="fragment">
-<p><strong>Animals (in vivo)</strong><br>
-- Whole-body systems (usually mice or rats)<br>
-- Useful for early testing</p>
-</div>
-<div class="fragment">
-<p><strong>Humans (in vivo)</strong><br>
-- Most relevant, but consider:<br>
-- Age, sex, health status<br>
-- Baseline diet and habits</p>
-</div>
-<div class="fragment">
-<ul>
-<li>the study population may be very different from you</li>
-<li>e.g. A study tested a high-protein diet on elderly Japanese women with Osteoporosis undergoing survival training.</li>
-</ul>
-</div>
 </section>
-<section id="who-or-what-is-being-studied-1" class="slide level2 smaller2">
+<section id="who-or-what-is-being-studied" class="slide level2">
+<h2>Who or What Is Being Studied?</h2>
+<p><strong>Population matters for relevance</strong> Not all studies are done on humans, and not all humans are like you.</p>
+<ul>
+<li><p><strong>Cells (in vitro)</strong></p></li>
+<li><p><strong>Animals (in vivo)</strong></p></li>
+<li><p><strong>Humans (in vivo)</strong></p></li>
+</ul>
+<aside class="notes">
+<p><strong>Key idea</strong></p>
+<p><strong>The subjects of the study affect how applicable the results are.</strong></p>
+<p>The subjects tell you how far the findings can travel—cells → animals → humans is a “mechanistic → translational → applied” ladder.</p>
+<p><strong>Cells (in vitro)</strong><br>
+• Isolated cells in dishes or test tubes.<br>
+• Great for uncovering biological mechanisms, drug targets, or toxicity pathways.<br>
+• Cannot predict whole-body effects on their own.</p>
+<p><strong>Animals (in vivo)</strong><br>
+• Usually mice or rats; sometimes larger mammals.<br>
+• Provide whole-organism context and dosing clues.<br>
+• Differences in metabolism and lifespan still limit direct translation to people.</p>
+<p><strong>Humans (in vivo)</strong><br>
+• Ultimately most relevant, but generalisability varies by:<br>
+– Age, sex, health status<br>
+– Baseline diet, lifestyle, genetics<br>
+• Always ask: “How close is this cohort to me or my patients?”</p>
+<p><strong>Illustrative mismatch</strong><br>
+A high-protein diet trial on <em>elderly Japanese women with osteoporosis undergoing survival training</em> probably says little about a 35-year-old office worker in Madrid.</p>
+<p><strong>Take-home line</strong><br>
+Before judging a result, check <em>who</em> or <em>what</em> was studied and whether that population resembles the one you care about.</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
+</section>
+<section id="who-or-what-is-being-studied-1" class="slide level2">
 <h2>Who or What Is Being Studied?</h2>
 <h3 id="questions-to-ask-2">Questions to Ask</h3>
 <ul>
@@ -1223,21 +1270,45 @@ Not all studies are done on humans, and not all humans are like you.</p>
 <li><p>How relevant are they to you?</p></li>
 </ul>
 </section>
-<section id="structure-of-a-scientific-paper" class="slide level2 smaller2">
+<section id="structure-of-a-scientific-paper" class="slide level2">
 <h2>Structure of a Scientific Paper</h2>
-<div style="font-size: 105%; line-height: 1.5;">
 <ol type="1">
-<li><p><strong>Abstract</strong> – Summary of Paper</p></li>
-<li><p><strong>Introduction</strong> – Background info, Research Question, Why the study matters.</p></li>
-<li><p><strong>Methods</strong> – How the study was set up, what data were collected, and how they were analyzed.</p></li>
-<li><p><strong>Results</strong> – Tables/figures with raw findings.</p></li>
-<li><p><strong>Discussion</strong> – Authors’ interpretation of results and why they are important.</p></li>
-<li><p><strong>Conclusion</strong></p></li>
-<li><p><strong>Supplementary</strong> – Extra data, protocols, code.</p></li>
+<li><strong>Abstract</strong><br>
+</li>
+<li><strong>Introduction</strong><br>
+</li>
+<li><strong>Methods</strong><br>
+</li>
+<li><strong>Results</strong><br>
+</li>
+<li><strong>Discussion</strong><br>
+</li>
+<li><strong>Conclusion</strong><br>
+</li>
+<li><strong>Supplementary</strong></li>
 </ol>
-</div>
+<aside class="notes">
+<p><strong>Abstract</strong> – One-paragraph snapshot: question, design, key findings, and take-home.<br>
+<strong>Introduction</strong> – Background, gap in knowledge, explicit research question, and why it matters.<br>
+<strong>Methods</strong> – Who/what was studied, how data were gathered, study design, statistics used; lets you judge rigour and reproducibility.<br>
+<strong>Results</strong> – Objective numbers: tables, figures, raw effect sizes. No interpretation here.<br>
+<strong>Discussion</strong> – Authors’ interpretation, context with past work, strengths, limitations, and speculation.<br>
+<strong>Conclusion</strong> – Concise answer to the research question; sometimes folded into Discussion.<br>
+<strong>Supplementary</strong> – Extra data, detailed protocols, code, or extended figures that wouldn’t fit in the main text.</p>
+<p><em>Talking cue:</em> Emphasise that Methods and Results are where the “meat” lives; if those sections are thin, proceed with caution.</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
 </section>
-<section id="structure-of-a-scientific-paper-1" class="slide level2 smaller2">
+<section id="structure-of-a-scientific-paper-1" class="slide level2">
 <h2>Structure of a Scientific Paper</h2>
 <h3 id="questions-to-ask-3">Questions to Ask</h3>
 <ul>
@@ -1247,88 +1318,116 @@ Not all studies are done on humans, and not all humans are like you.</p>
 <li><p>Does the Discussion align with the actual findings?</p></li>
 </ul>
 </section>
-<section id="how-results-are-reported" class="slide level2 smaller2">
+<section id="how-results-are-reported" class="slide level2">
 <h2>How Results Are Reported</h2>
-<h3 id="population-metrics">Population Metrics</h3>
+<h4 id="population-metrics">Population Metrics</h4>
 <ul>
-<li><strong>Counts</strong> – number of people with the condition (e.g., 500 cases of heart disease)<br>
+<li><strong>Counts</strong> – raw tally<br>
 </li>
-<li><strong>Proportions / Percentages</strong> – % of people affected (e.g., 5% prevalence)<br>
+<li><strong>Percent / Proportion</strong><br>
 </li>
-<li><strong>Rates</strong> – cases per unit of population-time (e.g., 10 per 1,000 person-years)<br>
+<li><strong>Rates</strong> – per population unit / time<br>
 </li>
-<li><strong>Standardized Rates</strong> – rates adjusted for age or other population differences<br>
+<li><strong>Standardised rates</strong><br>
 </li>
-<li><strong>Incidence vs. Prevalence</strong> – new cases over time (incidence) vs. total existing cases (prevalence)</li>
+<li><strong>Incidence vs prevalence</strong></li>
 </ul>
+<aside class="notes">
+<p><strong>Counts</strong> – e.g. 500 heart-disease cases.<br>
+<strong>Percent / Proportion</strong> – share of the population, e.g. 5 % prevalence.<br>
+<strong>Rates</strong> – events per person-time, e.g. 10 per 1 000 person-years.<br>
+<strong>Standardised rates</strong> – adjusted for age or other demographics to compare populations fairly.<br>
+<strong>Incidence vs. prevalence</strong> – new cases in a period vs. total existing cases.</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
 </section>
-<section id="how-results-are-reported-1" class="slide level2 smaller2">
+<section id="how-results-are-reported-1" class="slide level2">
 <h2>How Results Are Reported</h2>
-<h3 id="effect-metrics">Effect Metrics</h3>
-<strong>Comparing Groups</strong><br>
-
-<ul style="margin-top: 0; margin-bottom: 0; line-height: 1.4; font-size: 90%;">
-<li>
-<b>Percent Change</b> – relative change from baseline (e.g., 10% decrease)
+<p><strong>Group difference</strong></p>
+<ul>
+<li>Percent change<br>
 </li>
-<li>
-<b>Mean difference</b> – e.g., −5 mm Hg BP
-</li>
+<li>Mean difference</li>
 </ul>
 <div class="fragment">
-<br> <strong>Comparing Risk</strong><br>
-
-<ul style="margin-top: 0; margin-bottom: 0; line-height: 1.4; font-size: 90%;">
-<li>
-<b>Absolute Risk (AR)</b> – Direct % point change (e.g., 2% → 1%)
+<p><strong>Risk comparison</strong></p>
+<ul>
+<li>Absolute risk (AR)<br>
 </li>
-<li>
-<b>Relative Risk (RR)</b> – Proportional change in risk (e.g., RR = 1.5 = 50% higher)
+<li>Relative risk (RR)<br>
 </li>
-<li>
-<b>Odds Ratio (OR)</b> – Odds of outcome in one group vs. another (e.g., OR = 2 = twice the odds)
+<li>Odds ratio (OR)<br>
 </li>
-<li>
-<b>Number Needed to Treat (NNT)</b> – People needed to treat for one to benefit (e.g., NNT = 100)
-</li>
+<li>Number Needed to Treat (NNT)</li>
 </ul>
 </div>
+<aside class="notes">
+<p><em>Percent change</em> – relative shift from baseline (10% drop).<br>
+<em>Mean difference</em> – raw unit gap (−5 mm Hg).</p>
+<p><em>Absolute risk</em> – direct percentage-point change (2% → 1%).<br>
+<em>Relative risk</em> – ratio of probabilities (RR 1.5 = 50% higher).<br>
+<em>Odds ratio</em> – ratio of odds; close to RR when outcome is rare.<br>
+<em>NNT</em> – number of people who must receive the treatment for one to benefit (100 means large trials needed).</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
 </section>
-<section id="how-results-are-reported-2" class="slide level2 smaller2">
+<section id="how-results-are-reported-2" class="slide level2">
 <h2>How Results Are Reported</h2>
 <h3 id="time-to-event-metrics">Time-to-Event Metrics</h3>
-<ul style="margin-top: 0; margin-bottom: 0; line-height: 1.4; font-size: 90%;">
-<li>
-<b>Incidence rate</b> – New cases per person-time (e.g., 5 per 1,000 person-years)
+<ul>
+<li><strong>Incidence rate</strong><br>
 </li>
-<li>
-<b>Hazard ratio (HR)</b> – Event rate ratio over time (e.g., HR = 0.75 = 25% lower rate)
+<li><strong>Hazard ratio (HR)</strong><br>
 </li>
-<li>
-<b>Survival analysis</b> (e.g., Kaplan–Meier curves) – Probability of surviving or avoiding an event over time
-</li>
+<li><strong>Survival curves</strong></li>
 </ul>
-<p><br></p>
 <div class="fragment">
 <h3 id="metrics-in-meta-analyses">Metrics in Meta-analyses</h3>
-<ul style="margin-top: 0; margin-bottom: 0; line-height: 1.4; font-size: 90%;">
-<li>
-<b>Forest plots</b> – Show individual study effects and the pooled result
-<ul style="margin-top: 0.2em; margin-bottom: 0; line-height: 1.3; font-size: 90%;">
-<li>
-Diamond = pooled result; width = confidence interval
-</li>
-</ul>
-</li>
-<li>
-<b>Standardized Mean Difference (SMD)</b> – Scaled difference when studies use different units
-</li>
+<ul>
+<li>forest plot</li>
+<li>Standardized Mean Difference</li>
 </ul>
 </div>
+<aside class="notes">
+<p><em>Incidence rate</em> – new cases per person-time (5 per 1 000 py).<br>
+<em>Hazard ratio</em> – relative event rate over time (HR 0.75 = 25 % lower).<br>
+<em>Survival curves</em> – Kaplan–Meier plot of event-free probability.</p>
+<p><em>Meta-analysis</em> – combines studies; forest plot shows each effect and pooled “diamond.”<br>
+<em>SMD</em> – standardised mean difference; useful when studies use different units.</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
 </section>
-<section id="how-results-are-reported-3" class="slide level2 smaller2">
+<section id="how-results-are-reported-3" class="slide level2">
 <h2>How Results Are Reported</h2>
-<h3 id="questions-to-ask-4">Questions to Ask</h3>
+<section id="questions-to-ask-4" class="smaller2">
+<h3>Questions to Ask</h3>
 <ul>
 <li><p>What type of metric is reported (count, effect difference, risk, rate, etc.)?</p></li>
 <li><p>Is that the right choice for this type of data, or could it be misleading because of population growth, time, or other factors?</p></li>
@@ -1337,166 +1436,159 @@ Diamond = pooled result; width = confidence interval
 <li><p>What does the chosen metric reveal, and what might it obscure?</p></li>
 </ul>
 </section>
-<section id="how-to-interpret-results" class="slide level2 smaller2">
-<h2>How to Interpret Results</h2>
-<p>Reported metrics typically come with p-values and confidence intervals.</p>
-<p>P-values and CIs represent two key concepts when interpreting results:</p>
-<div class="fragment">
-<ul>
-<li><strong>Statistical significance</strong> - Is the observed result likely due to a real effect, or could it be explained by random chance?
-<ul>
-<li>assessed using a <em>p-value</em></li>
-</ul></li>
-<li><strong>Precision</strong> - How narrow or wide is the range of values that is likely to contain the true effect.
-<ul>
-<li>shown with a <em>confidence interval (CI)</em></li>
-</ul></li>
-</ul>
-</div>
-<div class="fragment">
-<p><em>Why do we need these statistical measures?</em></p>
-<div style="font-size:85%; line-height:1.4;">
-<blockquote>
-<p>Studies usually measure a <strong>sample</strong>, not the entire population.<br>
-Random variation in the sample can produce differences, even if there’s no real effect.</p>
-</blockquote>
-<blockquote>
-<p>If we had data from the full population, we wouldn’t need p-values or confidence intervals.</p>
-</blockquote>
-</div>
-</div>
 </section>
-<section id="how-to-interpret-results-1" class="slide level2 smaller2">
-<h2>How to Interpret Results</h2>
-<h3 id="statistical-significance-and-p-values">Statistical Significance and P-values</h3>
-<p><strong>Statistically significant</strong>: a result unlikely to be due to random chance.</p>
-<div class="fragment">
-<p><strong>P-value</strong>: quantifies that unlikelihood[1]</p>
+<section id="p-values-confidence-intervals" class="slide level2">
+<h2>P-values &amp; Confidence Intervals</h2>
+<div class="smaller2">
+<p><br></p>
+<p><strong>Is this effect real? How exact is it?</strong></p>
+<p><br></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 27%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Concept</th>
+<th>What it tells us</th>
+<th>Quick example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Statistical significance</strong> <em>(p-value)</em></td>
+<td>Chance vs. real effect?</td>
+<td>Supplement ↓ BP <strong>5 mm Hg</strong>, <em>p = 0.03</em></td>
+</tr>
+<tr class="even">
+<td><strong>Precision</strong> <em>(95 % CI)</em></td>
+<td>How exact is the estimate?</td>
+<td>5 mm Hg (<strong>CI −8 to −2</strong>)</td>
+</tr>
+</tbody>
+</table>
 </div>
-<div class="fragment">
-<p><strong>Ranges from 0 to 1</strong> — smaller p-values indicate stronger evidence against chance.</p>
-</div>
-<div class="fragment">
-<p><strong>p = 0.05</strong> is a common threshold; <strong>p &lt; 0.05</strong> is considered significant.</p>
-</div>
-<div class="fragment">
-<p>A p-value is always paired with an effect estimate (e.g., mean difference).</p>
-</div>
-<div class="fragment">
-<ul>
-<li>A p-value is <strong>not</strong> the probability the result is real.
-<ul>
-<li><em>p = 0.02</em> ≠ 98% chance the effect is true.</li>
-</ul></li>
-</ul>
-</div>
-<div class="fragment">
+<aside class="notes">
+<h3 id="why-we-need-these-measures">Why we need these measures</h3>
+<p>Studies usually measure a sample, not the entire population. Random variation in the sample can produce differences, even if there’s no real effect. If we had data from the full population, we wouldn’t need p-values or confidence intervals.</p>
+<p><em>P-values</em> test whether those differences are likely due to chance; <em>confidence intervals</em> show how precisely we’ve pinned down the effect size.</p>
+<h3 id="key-definitions">Key definitions</h3>
+<p><em>P-value</em> – probability of obtaining data this extreme <strong>assuming</strong> the null-effect model is true.<br>
+<em>95 % CI</em> – range that would capture the true effect in ~95 out of 100 identical studies.</p>
 <blockquote>
-<p>The supplement reduced blood pressure by 5.0 mm Hg, with a p-value of 0.03.<br>
-Since 0.03 &lt; 0.05, the result is “statistically significant.”</p>
+<p><strong>ASA informal definition</strong><br>
+“A p-value is the probability, under a specified statistical model, that a statistical summary of the data (e.g., the sample mean difference between two compared groups) would be equal to or more extreme than its observed value.” — American Statistical Association, 2016</p>
 </blockquote>
-</div>
-<div class="fragment">
-<div class="footnote">
-<ol type="1">
-<li>We say “unlikely” because frequentist hypothesis testing starts by assuming <strong>no real effect</strong> (the null hypothesis). A p-value asks: <em>“If nothing is happening, how likely is it to observe data this extreme by chance?”</em> It quantifies that unlikelihood under a no-effect assumption. It does <strong>not</strong> tell us the probability that the effect is true, that would require a Bayesian† approach.<br>†Bayesian methods… not going there now.</li>
-</ol>
-</div>
-</div>
+<p><strong>Notes to hit verbally:</strong><br>
+* Threshold test: conventionally <em>p &lt; 0.05</em> marks ‘statistically significant,’ but the cutoff is arbitrary.<br>
+* p-value ≠ probability the effect is real.<br>
+* Narrow CI ⇒ precise estimate; wide CI ⇒ more uncertainty.<br>
+* A huge sample can make trivial effects “significant”; always couple p with effect size &amp; CI.<br>
+* Once p is well below the cutoff (e.g., 0.0003), extra decimal places add no meaning.</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
 </section>
-<section id="how-to-interpret-results-2" class="slide level2 smaller2">
-<h2>How to Interpret Results</h2>
-<h3 id="statistical-significance-and-p-values-1">Statistical Significance and P-values</h3>
-<p><strong>ASA Definition</strong></p>
-<div style="font-size:85%; line-height:1.4;">
-<blockquote>
-<p>“Informally, a p-value is the probability, under a specified statistical model, that a statistical summary of the data (e.g., the sample mean difference between two compared groups) would be equal to or more extreme than its observed value.”</p>
-<p>— <a href="https://www.tandfonline.com/doi/pdf/10.1080/00031305.2016.1154108">American Statistical Association</a></p>
-</blockquote>
-<div class="fragment">
-<p><strong>Common textbook definition:</strong></p>
-<blockquote>
-<p>A p-value is the probability of observing a result as extreme or more extreme, assuming the null is true.</p>
-</blockquote>
-</div>
-<div class="fragment">
-<p><strong>Good enough:</strong></p>
-<blockquote>
-<p>The smaller the p-value, the less likely your result is just due to random chance.</p>
-</blockquote>
-</div>
-</div>
-</section>
-<section id="how-to-interpret-results-3" class="slide level2 smaller2">
-<h2>How to Interpret Results</h2>
-<h3 id="statistical-significance-and-p-values-2">Statistical Significance and P-values</h3>
+<section id="interpreting-the-p-value" class="slide level2">
+<h2>Interpreting the p-value</h2>
 <ul>
-<li><p><strong>Statistically significant</strong> is a <strong>yes/no</strong> label we apply after comparing the p‑value to a <strong>threshold</strong>.</p></li>
-<li><p><strong>p &lt; 0.05</strong> is a common convention, but there is no mathematical or magical reason for it.</p></li>
-</ul>
-<div class="fragment">
-<ul>
-<li><p><a href="https://www2.psych.ubc.ca/~schaller/528Readings/CowlesDavis1982.pdf">On the Origins of the .05 Level of Statistical Significance</a></p></li>
-<li><p><a href="https://en.wikipedia.org/wiki/Misuse_of_p-values">Misuse of p-values</a></p></li>
-</ul>
-</div>
-<div class="fragment">
-<p>Note:</p>
-<blockquote>
-<p>You’ll often see p &lt; 0.01 or p &lt; 0.001 instead of exact values. Once a result is highly statistically significant, the exact number (e.g. p = 0.0002134) doesn’t change the interpretation. Researchers just round it for simplicity.</p>
-</blockquote>
-</div>
-</section>
-<section id="how-to-interpret-results-4" class="slide level2 smaller2">
-<h2>How to Interpret Results</h2>
-<h3 id="confidence-intervals">Confidence Intervals</h3>
-<p><strong>CI</strong>: a range of values that likely contains the true effect.</p>
-<p>A <strong>95% CI</strong> means: if the study were repeated many times, the method would capture the true effect in about 95 out of 100 studies.</p>
-<p>It’s the range we can be reasonably sure contains the true effect.</p>
-<div class="fragment">
-<ul>
-<li><p>A <strong>narrow CI</strong> = more precise estimate</p></li>
-<li><p>A <strong>wide CI</strong> = more uncertainty / variability</p></li>
-</ul>
-</div>
-<div class="fragment">
-<p><strong>Example (blood pressure difference between two groups):</strong></p>
-<blockquote>
-<p>Example: −5.0 mm Hg (95% CI −5.4 to −4.6) → precise estimate<br>
-Example: −5.0 mm Hg (95% CI −10.2 to 0.2) → imprecise estimate; true effect may be small or null</p>
-</blockquote>
-</div>
-<div class="fragment">
-<p><small>Sometimes CIs are also used for statistical testing:<br>
-if a 95% CI crosses 0 (or 1 for ratios), the result is <em>not</em> statistically significant (<em>p</em> &gt; 0.05).</small></p>
-</div>
-</section>
-<section id="how-to-interpret-results-5" class="slide level2 smaller2">
-<h2>How to Interpret Results</h2>
-<h3 id="statistical-vs.-practical-significance">Statistical vs. Practical Significance</h3>
-<ul>
-<li><strong>Statistical significance</strong> does <strong>not</strong> imply practical or clinical importance
-<ul>
-<li><em>Example:</em> “12 weeks on a supplement led to a 0.15 kg weight loss (<em>p</em> = 0.001)”<br>
+<li><strong>Threshold test</strong> → typically <strong>p &lt; 0.05</strong><br>
 </li>
-<li>Strong statistical signal — but does 0.15 kg matter in real life?</li>
-</ul></li>
-</ul>
-<div class="fragment">
-<ul>
-<li>A <strong>non-significant</strong> result doesn’t mean there’s no effect or that it’s unimportant
-<ul>
-<li>It may reflect limited sample size, high variability, or both<br>
+<li>Smaller p → stronger evidence <strong>against</strong> chance<br>
 </li>
-<li><em>Example:</em> “−4.5 mm Hg blood pressure reduction (<em>p</em> = 0.09)”<br>
-→ Could be a real effect, but the study wasn’t powered to confirm it with high certainty</li>
-</ul></li>
+<li>Always paired with an effect size<br>
+</li>
+<li><strong>p ≠ probability the result is true</strong></li>
 </ul>
-</div>
+<blockquote>
+<p>“5 mm Hg drop, p = 0.03 → significant”</p>
+</blockquote>
+<aside class="notes">
+<p>• Threshold is conventional, not magical; 0.01 or 0.10 have been used historically.<br>
+• Highly significant (p &lt; 0.001) values are often rounded because extra zeros don’t change interpretation.<br>
+• Origin of 0.05 and common misuses go here.<br>
+• Mention that p alone can’t judge importance—need effect size &amp; CI.</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
 </section>
-<section id="how-to-interpret-results-6" class="slide level2 smaller2">
+<section id="statistical-vs.-practical-significance" class="slide level2">
+<h2>Statistical vs. Practical Significance</h2>
+<div class="smaller2">
+<p><br></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 34%">
+<col style="width: 12%">
+<col style="width: 53%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Finding (effect)</th>
+<th style="text-align: center;">p-value</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>−0.15 kg (12 wk)</td>
+<td style="text-align: center;">0.001</td>
+<td><strong>Statistically significant</strong>; clinically trivial</td>
+</tr>
+<tr class="even">
+<td>−4.5 mm Hg systolic BP</td>
+<td style="text-align: center;">0.09</td>
+<td><strong>Not statistically significant</strong>; could matter if real</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</div>
+<p><small>Rule of thumb: if the 95 % CI crosses 0 (or 1 for ratios) the result is typically <em>not</em> statistically significant.</small></p>
+<aside class="notes">
+<ul>
+<li>A small, precise change can be meaningless in practice (−0.15 kg won’t alter anyone’s health plan).<br>
+</li>
+<li>A larger, borderline-non-significant effect may still matter—study could be under-powered, so look at CI width.<br>
+</li>
+<li>Always pair the p-value with effect size <strong>and</strong> CI before making clinical or lifestyle recommendations.<br>
+</li>
+<li><em>“Would I change a guideline or my own behaviour over this number?”</em></li>
+</ul>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
+</section>
+<section id="how-to-interpret-results" class="slide level2">
 <h2>How to Interpret Results</h2>
-<h3 id="questions-to-ask-5">Questions to Ask</h3>
+<section id="questions-to-ask-5" class="smaller2">
+<h3>Questions to Ask</h3>
 <ul>
 <li><p>Is the result statistically significant, and how close is the p-value to the 0.05 threshold?</p></li>
 <li><p>What does the confidence interval tell me about the size and precision of the effect?</p></li>
@@ -1504,88 +1596,141 @@ if a 95% CI crosses 0 (or 1 for ratios), the result is <em>not</em> statisticall
 <li><p>If the result is close to significant, could it be due to chance, small sample size, selective reporting, or fishing through lots of outcomes?</p></li>
 </ul>
 </section>
-<section id="what-does-controlling-for-mean" class="slide level2 smaller2">
-<h2>What Does “Controlling for” Mean?</h2>
-<p>We often hear a study “controls for” something, e.g. education or smoking.</p>
-<div class="fragment">
-<p>To <strong>control for</strong> (or <strong>adjust for</strong>) something means trying to isolate the effect of one variable, while accounting for other influences.</p>
+</section>
+<section id="controlling-for" class="slide level2">
+<h2>“Controlling for”?</h2>
+<p><strong>Goal:</strong> isolate the effect of one variable while accounting for others.</p>
 <blockquote>
-<p>Example: A study on coffee and heart disease “controls for smoking,” because smoking is associated with both higher coffee consumption and higher heart disease risk, making it hard to know if coffee itself is the real cause.</p>
+<p>Coffee &amp; Heart Disease<br>
+Control for <strong>smoking</strong> so coffee isn’t blamed for smokers’ risk.</p>
 </blockquote>
-</div>
-<div class="fragment">
-<p>How do they do this?</p>
+<p>How?</p>
+<p><strong>Include the other influences in the statistical model.</strong></p>
+<aside class="notes">
+<p>“When you read ‘we controlled for education, BMI, and smoking,’ it means those factors <strong>were included as variables in the model</strong> so we can ask:<br>
+<em>If two people were identical on those factors, does coffee still matter?</em>”</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
+</section>
+<section id="controlling-for-1" class="slide level2">
+<h2>“Controlling for”?</h2>
+<section id="example-cohort-study" class="smaller2">
+<h4>Example Cohort Study</h4>
+<p><strong>Question:</strong> Does coffee raise heart-disease risk?</p>
+<p>We record coffee cups/day, smoking, age, and heart-disease outcome.</p>
+<p><br></p>
+<p><strong>Model with controls</strong><br>
+<code>Heart disease = Coffee + Smoking + Age + error</code><br>
+→ Estimates the coffee effect <em>independent of</em> smoking &amp; age</p>
+<p> </p>
+<p><strong>Model without smoking</strong><br>
+<code>Heart disease = Coffee + Age + error</code><br>
+→ Smoking still influences both coffee &amp; disease → <strong>confounding</strong></p>
+</section>
+<aside class="notes">
+<p>Leaving a major confounder out biases the coffee coefficient toward the smoking effect.</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
+</section>
+<section id="controlling-for-2" class="slide level2">
+<h2>“Controlling for”?</h2>
+<section id="under-the-hood" class="smaller2">
+<h3>Under the Hood</h3>
+<p><br></p>
+<p><span class="math display">\[
+Y = \alpha \;+\; \beta_1 X_{coffee} \;+\; \beta_2 X_{smoke} \;+\; \beta_3 X_{age} \;+\; \varepsilon
+\]</span></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 75%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Symbol</th>
+<th>Plain English</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(Y\)</span></td>
+<td>Outcome (heart disease)</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\alpha\)</span></td>
+<td>Baseline when all X = 0</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\beta_{1,2,3}\)</span></td>
+<td>Effect of each variable <strong>holding the others constant</strong></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\varepsilon\)</span></td>
+<td>Random noise / unexplained variation</td>
+</tr>
+</tbody>
+</table>
+<aside class="notes">
+<p>“The Greek letters just stand in for ‘effect of each predictor.’”</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
+</section>
+</section>
+<section id="controlling-for-3" class="slide level2">
+<h2>“Controlling for”?</h2>
 <ul>
-<li><p>Statistically, this is done using models that include other variables that might <strong>influence</strong> the outcome.</p></li>
-<li><p>The model estimates the association between each variable and the outcome <strong>while holding the others constant</strong>.</p></li>
+<li>Works <strong>only</strong> for variables we measured and included.<br>
+</li>
+<li>Unmeasured confounding can still bias results.<br>
+</li>
+<li><strong>Randomized trials</strong> help by balancing both known and unknown confounders.</li>
 </ul>
-</div>
+<p><small>More math? See the linked <a href="https://online.stat.psu.edu/stat462/node/131/">PSU resource</a></small></p>
+<aside class="notes">
+<p>“Adjustment is powerful but never perfect. Always ask what might be missing.”</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
 </section>
-<section id="what-does-controlling-for-mean-1" class="slide level2 smaller2">
-<h2>What Does “Controlling for” Mean?</h2>
-<p>Research Question: <strong>Does coffee increase heart disease?</strong></p>
-<p>We already know smoking and age increases heart disease.</p>
-<div class="fragment">
-<p>In our <strong>prospective cohort study</strong>, we collect data for coffee intake, smoking, age, and heart disease.</p>
-</div>
-<div class="fragment">
-<p>Model:</p>
-<blockquote>
-<p><code>Heart Disease = Coffee + Smoking + Age + noise</code></p>
-</blockquote>
-<p>We want to know: Does coffee increase heart disease, <strong>without the influence of smoking and age</strong>?</p>
-</div>
-<div class="fragment">
-<p>Including smoking and age in the model allows us to answer this question.</p>
-</div>
-</section>
-<section id="what-does-controlling-for-mean-2" class="slide level2 smaller2">
-<h2>What Does “Controlling for” Mean?</h2>
-<p><strong>If we don’t control for smoking</strong>:</p>
-<p>Model:</p>
-<blockquote>
-<p><code>Heart Disease = Coffee + Age + noise</code></p>
-</blockquote>
-<p>Smoking influences both coffee intake <em>and</em> heart disease.</p>
-<p>Leaving it out means the model might wrongly blame <strong>coffee</strong> for effects actually due to <strong>smoking</strong>.</p>
-<div class="fragment">
-<p>This is called <strong>confounding</strong>: a third variable confuses the apparent relationship between two variables.</p>
-</div>
-</section>
-<section id="what-does-controlling-for-mean-3" class="slide level2 smaller2">
-<h2>What Does “Controlling for” Mean?</h2>
-<span class="math display">\[
-Y = \alpha + \beta_1 X_1 + \beta_2 X_2 + \beta_3 X_3 + \varepsilon
-\]</span>
-<div style="font-size:85%; line-height:1.2; margin-top:0.5em;">
-<ul>
-<li><span class="math inline">\(Y\)</span>: outcome (e.g., heart disease)<br>
-</li>
-<li><span class="math inline">\(\alpha\)</span>: intercept (expected <span class="math inline">\(Y\)</span> when all <span class="math inline">\(X\)</span> = 0)<br>
-</li>
-<li><span class="math inline">\(X_1\)</span>: coffee intake  <span class="math inline">\(X_2\)</span>: smoking  <span class="math inline">\(X_3\)</span>: age<br>
-</li>
-<li>Each <span class="math inline">\(\beta\)</span>: effect of its variable, <strong>controlling for others</strong><br>
-</li>
-<li><span class="math inline">\(\varepsilon\)</span>: leftover unexplained variation (“noise”)</li>
-</ul>
-</div>
-<div class="fragment">
-<p>More math? Here is a <a href="https://online.stat.psu.edu/stat462/node/131/">good resource</a>.</p>
-</div>
-<div class="fragment">
-<p>Controlling is a way to <strong>statistically adjust for confounders</strong>.<br>
-It only works for variables that are <strong>measured and included</strong>. Unmeasured confounding can still bias results.</p>
-</div>
-<div class="fragment">
-<blockquote>
-<p><strong>Randomized trials</strong> help by balancing both known and unknown confounders across groups.</p>
-</blockquote>
-</div>
-</section>
-<section id="what-does-controlling-for-mean-4" class="slide level2 smaller2">
-<h2>What Does “Controlling for” Mean?</h2>
-<h3 id="questions-to-ask-6">Questions to Ask</h3>
+<section id="controlling-for-4" class="slide level2">
+<h2>“Controlling for”?</h2>
+<section id="questions-to-ask-6" class="smaller2">
+<h3>Questions to Ask</h3>
 <ul>
 <li><p>Did the study adjust for major known confounders (like smoking, age, BMI)?</p></li>
 <li><p>Are there important factors they might have missed or not measured?</p></li>
@@ -1593,58 +1738,154 @@ It only works for variables that are <strong>measured and included</strong>. Unm
 <li><p>Was the study randomized? (If yes, that helps handle unknown confounders too.)</p></li>
 </ul>
 </section>
-<section id="studies-can-mislead-and-so-do-the-influencers" class="slide level2 smaller2">
-<h2>Studies Can Mislead and So Do the Influencers</h2>
-<p>Even well-designed studies can mislead.</p>
-<p><strong>Small Sample Exaggeration</strong><br>
-- Small studies tend to report bigger effects by chance. Replication usually shrinks them.</p>
-<p><strong>Placebo Problems</strong><br>
-- “Control” oils or shakes often have biological effects too.</p>
-<p><strong>Complex Models &amp; Subgroups</strong><br>
-- Overfitted or convoluted analyses can obscure weak findings.</p>
-<p><strong>Funding &amp; Pet Theories</strong><br>
-- Author or funder bias can influence framing or subtly tilt conclusions. Doesn’t invalidate, but deserves scrutiny.</p>
 </section>
-<section id="studies-can-mislead-and-so-do-the-influencers-1" class="slide level2 smaller2">
-<h2>Studies Can Mislead and So Do the Influencers</h2>
-<p>The way studies are interpreted or marketed can be misleading.</p>
-<p><strong>One Study ≠ Truth</strong><br>
-- Individual studies are rarely definitive. Replication matters.</p>
-<p><strong>Clickbait Abstracts</strong><br>
-- Even scientific studies fall prey to the clickbait sickness. The summary may overstate the actual results.</p>
-<p><strong>Publication Bias</strong><br>
-- Null results often go unpublished. If they were, perhaps you’d take fewer supplements.</p>
-<p><strong>Exaggerated Claims from Cell-based Studies</strong> - Many dramatic claims come from petri dishes, not people. Good for the grift, bad for integrity.</p>
-<p><strong>Diet ≠ Morality</strong><br>
-- Health claims often mask ideological or identity-based motivations.</p>
-<p><strong>Association ≠ Causation</strong><br>
-- Just because two things are linked doesn’t mean one causes the other. Sometimes it’s reasonable to be cautious, but it can also lead to unnecessary fear or behavior change without solid evidence.</p>
+<section id="studies-can-mislead" class="slide level2">
+<h2>Studies Can Mislead</h2>
+<ul>
+<li><strong>Small samples inflate effects</strong><br>
+</li>
+<li><strong>Placebo isn’t inert</strong><br>
+</li>
+<li><strong>Complex Models &amp; Subgroups Analyses</strong><br>
+</li>
+<li><strong>Funding or pet theories</strong></li>
+<li><strong>Multiple comparisons (p-hacking)</strong><br>
+</li>
+<li><strong>Self-reported or recall data</strong></li>
+</ul>
+<aside class="notes">
+<p><strong>Small samples inflate effects</strong> – Big swings occur by chance; replication shrinks them.<br>
+<strong>Placebo isn’t inert</strong> – “Control” oils, shakes, or pills often have biological activity.<br>
+<strong>Over-fitted/fragmented models</strong> – Too many variables or subgroup dives can turn noise into a ‘finding.’<br>
+<strong>Funding / pet theories</strong> – Sponsor or author bias can frame questions or spin conclusions; doesn’t invalidate, but requires scrutiny. <strong>Multiple comparisons / p-hacking</strong> – Testing dozens of outcomes raises the odds of a “significant” result by luck; preregistration helps curb this.<br>
+<strong>Self-reported or recall data</strong> – Diet, exercise, or symptoms often logged from memory; measurement error can blur real associations.</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
+</section>
+<section id="influencers-do-mislead" class="slide level2">
+<h2>Influencers Do Mislead</h2>
+<ul>
+<li><strong>One study ≠ truth</strong><br>
+</li>
+<li><strong>Click-bait abstracts</strong><br>
+</li>
+<li><strong>Publication bias</strong><br>
+</li>
+<li><strong>Petri-dish hype</strong><br>
+</li>
+<li><strong>Diet ≠ morality</strong><br>
+</li>
+<li><strong>Relative risk without absolute numbers</strong><br>
+</li>
+<li><strong>Association ≠ causation</strong></li>
+</ul>
+<aside class="notes">
+<p><strong>One study ≠ truth</strong> – Single papers are rarely definitive; replication matters.<br>
+<strong>Click-bait abstracts</strong> – Summaries often overstate findings versus the body text.<br>
+<strong>Publication bias</strong> – Null results stay in file drawers; positive ones get published. Perhaps you’d take fewer supplements if all the no-effect studies were published. <strong>Petri-dish hype</strong> – Cell/animal results touted as human breakthroughs.<br>
+<strong>Diet ≠ morality</strong> – Health claims sometimes smuggle in ideology or identity.<br>
+<strong>Relative risk without absolutes</strong> – “50 % higher risk!” might be 2 cases → 3 cases per 10 000; influencers omit the baseline. <strong>Association ≠ causation</strong> – Correlation alone can prompt fear or fads without causal proof. ie associations aren’t the same level of evidence as causations.</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
 </section>
 <section id="core-questions-to-ask" class="slide level2">
 <h2>Core Questions to Ask</h2>
-<div style="font-size: 90%; line-height: 1.4;">
-<ul>
-<li><p>Is the study’s main question clear, and is it the one you actually care about?</p></li>
-<li><p>What kind of study is it, and can it speak to cause and effect?</p></li>
-<li><p>Who or what was studied, and are the findings relevant to you?</p></li>
-<li><p>What does the chosen metric show, and what might it miss?</p></li>
-<li><p>How strong, precise, and practically meaningful are the results?</p></li>
-<li><p>Are there signs of statistical shenanigans or too-good-to-be-true claims?</p></li>
-</ul>
+<div class="smaller2">
+<div style="font-size: 125%; line-height: 1.4;">
+<ol type="1">
+<li><strong>Is the main question clear—and is it the one you care about?</strong><br>
+</li>
+<li><strong>Study type:</strong> can it speak to cause, or only association?<br>
+</li>
+<li><strong>Who / what was studied—and how close is that to you?</strong><br>
+</li>
+<li><strong>Metric chosen:</strong> what does it reveal and what does it hide?<br>
+</li>
+<li><strong>Result strength:</strong> big, precise, and practically useful?<br>
+</li>
+<li><strong>Red flags:</strong> stats tricks, sensational claims, or conflicts?</li>
+</ol>
 </div>
+</div>
+<aside class="notes">
+<ol type="1">
+<li>Question clarity drives everything; if the paper drifts, stop.<br>
+</li>
+<li>RCT or Mendelian randomization can test cause; cohort mainly spots links.<br>
+</li>
+<li>Species, age, sex, health status—don’t apply mouse data to humans or elite-athlete data to office workers.<br>
+</li>
+<li>Relative vs. absolute risks, mean vs. median—each tells a different story.<br>
+</li>
+<li>Look at effect size <em>and</em> CI; a “significant” 0.15 kg loss isn’t life-changing.<br>
+</li>
+<li>Tiny n, p-hacking, funding bias, or glitzy headlines demand extra caution.</li>
+</ol>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
 </section>
-<section id="things-to-remember" class="slide level2">
-<h2>3 Things to Remember</h2>
-<div style="font-size: 90%; line-height: 1.4;">
+<section id="three-things-to-remember" class="slide level2 smaller">
+<h2>Three Things to Remember</h2>
+<div style="font-size: 127%; line-height: 1;">
+<ol type="1">
+<li><strong>RCTs are the gold-standard for causality</strong><br>
+<em>Meta-analyses of well-run RCTs are even stronger.</em></li>
+</ol>
 <p><br></p>
-<h3 id="only-rcts-can-test-causality.-meta-analyses-of-rcts-are-even-stronger."><strong>1</strong>. Only RCTs can test causality. Meta-analyses of RCTs are even stronger.</h3>
-<h3 id="cell-and-animal-studies-rarely-apply-to-people."><strong>2</strong>. Cell and animal studies rarely apply to people.</h3>
-<h3 id="stats-and-metrics-matter.-you-need-to-understand-them-to-judge-a-study."><strong>3</strong>. Stats and metrics matter. You need to understand them to judge a study.</h3>
+<ol start="2" type="1">
+<li><strong>Cell &amp; animal work is a first step, not a human verdict</strong> <em>Petri-dish breakthroughs rarely translate 1:1 to people.</em></li>
+</ol>
 <p><br></p>
+<ol start="3" type="1">
+<li><strong>Peek under the statistical hood</strong><br>
+<em>A result is only as strong as the methods and statistics behind it.</em></li>
+</ol>
 </div>
-<div style="font-size: 85%; color: #aaa;">
-<p>It takes more than 30 seconds and a TikTok to know if a study holds up.</p>
+<div style="font-size:85%; color:#aaa; margin-top:0.8em;">
+<p>Good science takes longer than a 30-second TikTok.</p>
 </div>
+<aside class="notes">
+<p>Point 1 – “Gold-standard” avoids the absolute “only”; causal hints can come from natural experiments but need stronger assumptions.<br>
+Point 2 – Petri-dish breakthroughs rarely translate 1:1 to people.<br>
+Point 3 - headlines rarely mention the model, adjustments, or error checks, yet those determine whether a finding will hold up.</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
 
 </section>
     </div>

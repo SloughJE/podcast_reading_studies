@@ -1,0 +1,834 @@
+---
+title: "Understanding Health & Nutrition Studies"
+subtitle: "A Practical Framework for Understanding Scientific Studies"
+author: "John Slough"
+format:
+  revealjs:
+    self-contained: true
+    theme: [night]
+    slide-number: true
+    css: styles.css
+---
+
+
+## Health and nutrition research is messy.
+
+::: {.fragment}
+### Health and nutrition headlines and influencers make it worse.
+:::
+
+<br>
+
+::: {.fragment}
+### Understand how studies are designed.
+:::
+
+::: {.fragment}
+### Understand basic statistics and common metrics.
+:::
+
+::: {.fragment}
+### Understand common problems with studies and headlines.
+:::
+
+---
+
+## Overview {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%" .fragment}
+1. **The Research Question**  
+   *What is the study trying to answer?*
+
+2. **Study Design**  
+   *How was the evidence gathered and analyzed?*
+
+3. **Study Population**  
+   *Who or what was studied?*
+
+4. **Structure of a Scientific Paper**  
+   *Where to find key information*
+   
+5. **How Results Are Reported**  
+   *Common Metrics in Studies*
+:::
+
+::: {.column width="50%" .fragment}
+
+
+6. **How to Interpret Results**  
+   *P-values, confidence intervals, and statistical significance*
+
+7. **What It Means to "Control for" Something**  
+   *Confounding and adjustment: some math*
+
+8. **Studies Can Mislead and So Do the Headlines**  
+   *Common issues in studies*
+:::
+
+::::
+
+---
+
+## The Research Question {.smaller}
+
+**What Is the Main Goal of the Study?**  
+
+- Every paper starts with a research question or hypothesis.  
+- This goal drives the design, statistics, and sample size.
+
+**Example from a published RCT**  
+
+> ["we tested the hypothesis that long-term supplementation with n–3 fatty acids would reduce the rate of cardiovascular events in this population of patients."](https://www.nejm.org/doi/10.1056/NEJMoa1203859)  
+
+::: {.fragment}
+
+
+**Primary vs. secondary outcomes**  
+
+- **Primary** = outcome the study is *powered* to detect.  
+- **Secondary** = extra measurements, often exploratory.
+
+The main purpose of the study can be exploratory. But don't confuse that with a study testing causality.
+
+:::
+
+
+---
+
+## The Research Question {.smaller}
+
+### Questions to Ask
+
+- What specific question is the study trying to answer?
+
+- Is the primary outcome clearly stated and appropriate?
+
+- Are the secondary outcomes treated as exploratory, or being oversold?
+
+- Does the goal match what you care about?
+
+---
+
+## Study Design {.smaller2}
+
+A study's design determines what it can conclude: **observational** studies explore associations, **interventional** studies test causality, and **syntheses** combine evidence across studies.
+
+<br>
+
+:::: {.columns}
+
+::: {.column .fragment style="width:33%; font-size:85%; background-color:#1e1e1e; border:1px solid #444; border-radius:12px; padding:0.3em; margin-right:0.25em; line-height:1.2;"}
+
+### **Observational**
+- Cross-sectional  
+  Snapshot in time  
+  <br>
+- Cohort (prospective)  
+  Follow exposure over time  
+  <br>
+- Quasi-experimental  
+  Natural assignment, no randomization  
+  <br>
+
+Prevalence, trends, correlations
+
+:::
+
+::: {.column .fragment style="width:30%; font-size:85%; background-color:#1e1e1e; border:1px solid #444; border-radius:12px; padding:0.3em; margin-right:0.25em; line-height:1.2;"}
+
+### **Interventional**
+- Single-arm (pre-post)  
+  Treatment before vs after  
+  <br>
+- Randomized Controlled Trial  
+  Random assignment to groups  
+  <br>
+
+Causality, treatment effects
+
+:::
+
+::: {.column .fragment style="width:28%; font-size:85%; background-color:#1e1e1e; border:1px solid #444; border-radius:12px; padding:0.3em; line-height:1.2;"}
+
+### **Evidence Synthesis**
+- Meta-analysis  
+  Combines multiple studies  
+  <br>
+
+Stronger pooled estimates, increased statistical power
+
+:::
+
+::::
+
+---
+
+## Study Design – Other Types {.smaller2}
+
+<br>
+
+:::: {.columns}
+
+::: {.column .fragment width="48%" style="font-size:85%; line-height:1.4;"}
+
+**Observational**
+
+- *Case-control*  
+  Compare with vs. without outcome  
+- *Case study / case series*  
+  In-depth look at one or few patients  
+- *Ecological*  
+  Uses group-level (not individual) data  
+- *Retrospective cohort*  
+  Past data to follow exposure → outcome  
+
+**Interventional or Observational**
+
+- *Longitudinal*  
+  Follows same subjects over time  
+- *Natural experiment*  
+  External factors define exposure  
+
+:::
+
+::: {.column .fragment width="48%" style="font-size:85%; line-height:1.4;"}
+
+**Interventional**
+
+- *N-of-1 trial*  
+  One subject, alternating treatments  
+- *Cross-over trial*  
+  Subjects receive all treatments in sequence  
+- *Before–after study*  
+  Compare pre vs. post intervention  
+
+**Synthesis**
+
+- *Systematic review*  
+  Structured summary without pooling  
+- *Umbrella review*  
+  Review of systematic reviews  
+
+:::
+
+::::
+
+## Study Design {.smaller2}
+
+### Questions to Ask
+
+- What type of study is this — observational, interventional, or a synthesis?
+
+- Can this design prove causality, or only suggest associations?
+
+- Is the comparison group (if any) appropriate and meaningful?
+
+- For meta-analyses: Were the included studies similar enough to combine?
+
+---
+
+## Who or What Is Being Studied? {.smaller2}
+
+**The subjects of the study affect how applicable the results are.**  
+Not all studies are done on humans, and not all humans are like you.
+
+::: {.fragment}
+
+**Cells (in vitro)**  
+- Lab studies on isolated cells  
+- Good for understanding biological mechanisms  
+   
+:::
+
+
+::: {.fragment}
+
+**Animals (in vivo)**  
+- Whole-body systems (usually mice or rats)  
+- Useful for early testing
+
+:::
+
+::: {.fragment}
+
+**Humans (in vivo)**  
+- Most relevant, but consider:  
+ - Age, sex, health status  
+ - Baseline diet and habits
+
+:::
+
+::: {.fragment}
+
+- the study population may be very different from you
+- e.g.  A study tested a high-protein diet on elderly Japanese women with Osteoporosis undergoing survival training.
+
+:::
+
+---
+
+## Who or What Is Being Studied? {.smaller2}
+
+### Questions to Ask
+
+- What type of subjects were studied?  
+
+- Why were they chosen?
+
+- How relevant are they to you?
+
+---
+
+## Structure of a Scientific Paper {.smaller2}
+
+<div style="font-size: 105%; line-height: 1.5;">
+
+1. **Abstract** – Summary of Paper
+
+2. **Introduction** – Background info, Research Question, Why the study matters.  
+
+3. **Methods** – How the study was set up, what data were collected, and how they were analyzed.
+
+4. **Results** – Tables/figures with raw findings.  
+
+5. **Discussion** – Authors' interpretation of results and why they are important.  
+
+6. **Conclusion** 
+
+7. **Supplementary** – Extra data, protocols, code.
+
+</div>
+
+---
+
+## Structure of a Scientific Paper {.smaller2}
+
+### Questions to Ask
+
+- Does the Abstract summarize what is actually in the study?
+
+- Does the Methods section clearly explain how the study was done?
+
+- Is the data and statistics in the Results presented clearly?
+
+- Does the Discussion align with the actual findings?
+
+
+---
+
+## How Results Are Reported {.smaller2}
+
+### Population Metrics
+
+
+- **Counts** – number of people with the condition (e.g., 500 cases of heart disease)  
+- **Proportions / Percentages** – % of people affected (e.g., 5% prevalence)  
+- **Rates** – cases per unit of population-time (e.g., 10 per 1,000 person-years)  
+- **Standardized Rates** – rates adjusted for age or other population differences  
+- **Incidence vs. Prevalence** – new cases over time (incidence) vs. total existing cases (prevalence)
+
+---
+
+## How Results Are Reported {.smaller2}
+
+### Effect Metrics
+
+**Comparing Groups**  
+<ul style="margin-top: 0; margin-bottom: 0; line-height: 1.4; font-size: 90%;">
+  <li><b>Percent Change</b> – relative change from baseline (e.g., 10% decrease)</li>
+  <li><b>Mean difference</b> – e.g., −5 mm Hg BP</li>
+
+</ul>
+
+::: {.fragment}
+
+<br>
+**Comparing Risk**  
+<ul style="margin-top: 0; margin-bottom: 0; line-height: 1.4; font-size: 90%;">
+  <li><b>Absolute Risk (AR)</b> – Direct % point change (e.g., 2% → 1%)</li>
+  <li><b>Relative Risk (RR)</b> – Proportional change in risk (e.g., RR = 1.5 = 50% higher)</li>
+  <li><b>Odds Ratio (OR)</b> – Odds of outcome in one group vs. another (e.g., OR = 2 = twice the odds)</li>
+  <li><b>Number Needed to Treat (NNT)</b> – People needed to treat for one to benefit (e.g., NNT = 100)</li>
+</ul>
+
+:::
+
+---
+
+## How Results Are Reported {.smaller2}
+
+### Time-to-Event Metrics
+
+<ul style="margin-top: 0; margin-bottom: 0; line-height: 1.4; font-size: 90%;">
+  <li><b>Incidence rate</b> – New cases per person-time (e.g., 5 per 1,000 person-years)</li>
+  <li><b>Hazard ratio (HR)</b> – Event rate ratio over time (e.g., HR = 0.75 = 25% lower rate)</li>
+  <li><b>Survival analysis</b> (e.g., Kaplan–Meier curves) – Probability of surviving or avoiding an event over time</li>
+</ul>
+
+<br>
+
+::: {.fragment}
+
+
+### Metrics in Meta-analyses
+
+<ul style="margin-top: 0; margin-bottom: 0; line-height: 1.4; font-size: 90%;">
+  <li><b>Forest plots</b> – Show individual study effects and the pooled result
+    <ul style="margin-top: 0.2em; margin-bottom: 0; line-height: 1.3; font-size: 90%;">
+      <li>Diamond = pooled result; width = confidence interval</li>
+    </ul>
+  </li>
+  <li><b>Standardized Mean Difference (SMD)</b> – Scaled difference when studies use different units</li>
+</ul>
+
+
+:::
+
+---
+
+## How Results Are Reported {.smaller2}
+
+### Questions to Ask
+
+- What type of metric is reported (count, effect difference, risk, rate, etc.)?
+
+- Is that the right choice for this type of data, or could it be misleading because of population growth, time, or other factors?
+
+- Does this metric directly answer the study’s main question?
+
+- Could the way the result is presented exaggerate or downplay the real impact?
+
+- What does the chosen metric reveal, and what might it obscure?
+
+
+---
+
+## How to Interpret Results {.smaller2}
+
+Reported metrics typically come with p-values and confidence intervals.
+
+P-values and CIs represent two key concepts when interpreting results:
+
+::: {.fragment}
+
+
+- **Statistical significance** - Is the observed result likely due to a real effect, or could it be explained by random chance?
+   - assessed using a *p-value*
+
+- **Precision** - How narrow or wide is the range of values that is likely to contain the true effect.
+   - shown with a *confidence interval (CI)*
+
+:::
+::: {.fragment}
+
+
+*Why do we need these statistical measures?*  
+
+<div style="font-size:85%; line-height:1.4;">
+
+> Studies usually measure a **sample**, not the entire population.  
+> Random variation in the sample can produce differences, even if there’s no real effect.  
+
+> If we had data from the full population, we wouldn’t need p-values or confidence intervals.
+
+</div>
+
+:::
+
+---
+
+## How to Interpret Results {.smaller2}
+
+### Statistical Significance and P-values
+
+**Statistically significant**: a result unlikely to be due to random chance.
+
+::: {.fragment}
+
+**P-value**: quantifies that unlikelihood[1]
+
+:::
+::: {.fragment}
+
+**Ranges from 0 to 1** — smaller p-values indicate stronger evidence against chance.
+
+:::
+::: {.fragment}
+
+**p = 0.05** is a common threshold; **p < 0.05** is considered significant.
+
+:::
+::: {.fragment}
+
+A p-value is always paired with an effect estimate (e.g., mean difference).
+
+:::
+::: {.fragment}
+
+- A p-value is **not** the probability the result is real.  
+  - *p = 0.02* ≠ 98% chance the effect is true.
+
+:::
+::: {.fragment}
+
+> The supplement reduced blood pressure by 5.0 mm Hg, with a p-value of 0.03.  
+> Since 0.03 < 0.05, the result is "statistically significant."
+
+:::
+::: {.fragment}
+
+<div class="footnote">
+1. We say "unlikely" because frequentist hypothesis testing starts by assuming **no real effect** (the null hypothesis). A p-value asks: *"If nothing is happening, how likely is it to observe data this extreme by chance?"* It quantifies that unlikelihood under a no-effect assumption. It does **not** tell us the probability that the effect is true, that would require a Bayesian† approach.<br>†Bayesian methods... not going there now.
+</div>
+
+
+:::
+
+## How to Interpret Results {.smaller2}
+
+### Statistical Significance and P-values
+
+
+**ASA Definition**  
+
+<div style="font-size:85%; line-height:1.4;">
+
+> "Informally, a p-value is the probability, under a specified statistical model, that a statistical summary of the data (e.g., the sample mean difference between two compared groups) would be equal to or more extreme than its observed value."
+> 
+> — [American Statistical Association](https://www.tandfonline.com/doi/pdf/10.1080/00031305.2016.1154108)
+
+::: {.fragment}
+
+**Common textbook definition:**
+
+> A p-value is the probability of observing a result as extreme or more extreme, assuming the null is true.
+
+:::
+::: {.fragment}
+
+**Good enough:**
+
+> The smaller the p-value, the less likely your result is just due to random chance.
+
+:::
+
+</div>
+
+---
+
+## How to Interpret Results {.smaller2}
+
+### Statistical Significance and P-values
+
+
+- **Statistically significant** is a **yes/no** label we apply after comparing the p&#8209;value to a **threshold**.
+
+- **p < 0.05** is a common convention, but there is no mathematical or magical reason for it.
+
+::: {.fragment}
+
+
+- [On the Origins of the .05 Level of
+Statistical Significance](https://www2.psych.ubc.ca/~schaller/528Readings/CowlesDavis1982.pdf)
+
+- [Misuse of p-values](https://en.wikipedia.org/wiki/Misuse_of_p-values)
+
+:::
+::: {.fragment}
+
+
+Note:
+
+> You’ll often see p < 0.01 or p < 0.001 instead of exact values. Once a result is highly statistically significant, the exact number (e.g. p = 0.0002134) doesn’t change the interpretation.
+Researchers just round it for simplicity.
+
+:::
+
+---
+
+## How to Interpret Results {.smaller2}
+
+### Confidence Intervals
+
+**CI**: a range of values that likely contains the true effect.
+
+
+A **95% CI** means: if the study were repeated many times, the method would capture the true effect in about 95 out of 100 studies.
+
+It's the range we can be reasonably sure contains the true effect.
+
+::: {.fragment}
+
+- A **narrow CI** = more precise estimate  
+
+- A **wide CI** = more uncertainty / variability 
+
+:::
+::: {.fragment}
+
+**Example (blood pressure difference between two groups):**  
+
+> Example: −5.0 mm Hg (95% CI −5.4 to −4.6) → precise estimate  
+> Example: −5.0 mm Hg (95% CI −10.2 to 0.2) → imprecise estimate; true effect may be small or null
+
+:::
+::: {.fragment}
+
+<small>Sometimes CIs are also used for statistical testing:  
+if a 95% CI crosses 0 (or 1 for ratios), the result is *not* statistically significant (*p* > 0.05).</small>
+
+:::
+
+---
+
+## How to Interpret Results {.smaller2}
+
+### Statistical vs. Practical Significance
+
+- **Statistical significance** does **not** imply practical or clinical importance  
+  - *Example:* "12 weeks on a supplement led to a 0.15 kg weight loss (*p* = 0.001)"  
+  - Strong statistical signal — but does 0.15 kg matter in real life?
+
+::: {.fragment}
+
+- A **non-significant** result doesn’t mean there’s no effect or that it’s unimportant  
+  - It may reflect limited sample size, high variability, or both  
+  - *Example:* "−4.5 mm Hg blood pressure reduction (*p* = 0.09)"  
+    → Could be a real effect, but the study wasn’t powered to confirm it with high certainty
+
+:::
+
+---
+
+## How to Interpret Results {.smaller2}
+
+### Questions to Ask
+
+- Is the result statistically significant, and how close is the p-value to the 0.05 threshold?
+
+- What does the confidence interval tell me about the size and precision of the effect?
+
+- If the result is statistically significant, is the result practically important?
+
+- If the result is close to significant, could it be due to chance, small sample size, selective reporting, or fishing through lots of outcomes?
+
+---
+
+## What Does “Controlling for” Mean? {.smaller2}
+
+We often hear a study "controls for" something, e.g. education or smoking.
+
+::: {.fragment}
+
+
+To **control for** (or **adjust for**) something means trying to isolate the effect of one variable, while accounting for other influences.
+
+> Example: A study on coffee and heart disease "controls for smoking," because smoking is associated with both higher coffee consumption and higher heart disease risk, making it hard to know if coffee itself is the real cause.
+
+:::
+::: {.fragment}
+
+
+How do they do this?
+
+- Statistically, this is done using models that include other variables that might **influence** the outcome.
+
+- The model estimates the association between each variable and the outcome **while holding the others constant**.  
+
+:::
+
+---
+
+## What Does “Controlling for” Mean? {.smaller2}
+
+Research Question: **Does coffee increase heart disease?**
+
+We already know smoking and age increases heart disease.
+
+::: {.fragment}
+
+
+In our **prospective cohort study**, we collect data for coffee intake, smoking, age, and heart disease.
+
+:::
+::: {.fragment}
+
+
+Model: 
+
+> `Heart Disease = Coffee + Smoking + Age + noise`  
+
+
+We want to know: Does coffee increase heart disease, **without the influence of smoking and age**?
+
+:::
+::: {.fragment}
+
+
+Including smoking and age in the model allows us to answer this question.
+
+:::
+
+---
+
+## What Does “Controlling for” Mean? {.smaller2}
+
+
+**If we don't control for smoking**:
+
+
+Model:
+
+> `Heart Disease = Coffee + Age + noise`  
+
+
+Smoking influences both coffee intake *and* heart disease.
+
+
+Leaving it out means the model might wrongly blame **coffee** for effects actually due to **smoking**.
+
+::: {.fragment}
+
+
+This is called **confounding**: a third variable confuses the apparent relationship between two variables.
+
+:::
+
+---
+
+## What Does “Controlling for” Mean? {.smaller2}
+
+
+$$
+Y = \alpha + \beta_1 X_1 + \beta_2 X_2 + \beta_3 X_3 + \varepsilon
+$$
+<div style="font-size:85%; line-height:1.2; margin-top:0.5em;">
+
+- $Y$: outcome (e.g., heart disease)  
+- $\alpha$: intercept (expected $Y$ when all $X$ = 0)  
+- $X_1$: coffee intake  $X_2$: smoking  $X_3$: age  
+- Each $\beta$: effect of its variable, **controlling for others**  
+- $\varepsilon$: leftover unexplained variation (“noise”)
+
+</div>
+
+::: {.fragment}
+
+More math? Here is a [good resource](https://online.stat.psu.edu/stat462/node/131/).
+
+:::
+
+::: {.fragment}
+
+Controlling is a way to **statistically adjust for confounders**.  
+It only works for variables that are **measured and included**. Unmeasured confounding can still bias results.  
+
+:::
+
+::: {.fragment}
+
+>**Randomized trials** help by balancing both known and unknown confounders across groups.
+
+:::
+
+---
+
+## What Does “Controlling for” Mean? {.smaller2}
+
+### Questions to Ask
+
+- Did the study adjust for major known confounders (like smoking, age, BMI)?
+
+- Are there important factors they might have missed or not measured?
+
+- Is the adjustment described clearly, or does it seem vague or incomplete?
+
+- Was the study randomized? (If yes, that helps handle unknown confounders too.)
+
+---
+
+## Studies Can Mislead and So Do the Influencers {.smaller2}
+
+Even well-designed studies can mislead.
+
+**Small Sample Exaggeration**  
+- Small studies tend to report bigger effects by chance. Replication usually shrinks them.
+
+**Placebo Problems**  
+- "Control" oils or shakes often have biological effects too.
+
+**Complex Models & Subgroups**  
+- Overfitted or convoluted analyses can obscure weak findings.
+
+**Funding & Pet Theories**  
+- Author or funder bias can influence framing or subtly tilt conclusions. Doesn't invalidate, but deserves scrutiny.
+
+---
+
+## Studies Can Mislead and So Do the Influencers {.smaller2}
+
+
+The way studies are interpreted or marketed can be misleading.
+
+**One Study ≠ Truth**  
+- Individual studies are rarely definitive. Replication matters. 
+
+**Clickbait Abstracts**  
+- Even scientific studies fall prey to the clickbait sickness. The summary may overstate the actual results.
+
+**Publication Bias**  
+- Null results often go unpublished. If they were, perhaps you'd take fewer supplements.
+
+**Exaggerated Claims from Cell-based Studies**
+- Many dramatic claims come from petri dishes, not people. Good for the grift, bad for integrity. 
+
+
+**Diet ≠ Morality**  
+- Health claims often mask ideological or identity-based motivations.
+
+**Association ≠ Causation**   
+- Just because two things are linked doesn’t mean one causes the other. Sometimes it’s reasonable to be cautious, but it can also lead to unnecessary fear or behavior change without solid evidence.
+
+---
+
+## Core Questions to Ask
+
+<div style="font-size: 90%; line-height: 1.4;">
+
+- Is the study’s main question clear, and is it the one you actually care about?
+
+- What kind of study is it, and can it speak to cause and effect?
+
+- Who or what was studied, and are the findings relevant to you?
+
+- What does the chosen metric show, and what might it miss?
+
+- How strong, precise, and practically meaningful are the results?
+
+- Are there signs of statistical shenanigans or too-good-to-be-true claims?
+
+</div>
+
+---
+
+## 3 Things to Remember
+
+<div style="font-size: 90%; line-height: 1.4;">
+
+<br>
+
+### **1**. Only RCTs can test causality. Meta-analyses of RCTs are even stronger.
+
+### **2**. Cell and animal studies rarely apply to people.
+
+### **3**. Stats and metrics matter. You need to understand them to judge a study.
+
+<br>
+
+</div>
+
+<div style="font-size: 85%; color: #aaa;">
+It takes more than 30 seconds and a TikTok to know if a study holds up.
+</div>
