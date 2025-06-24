@@ -300,7 +300,7 @@ I’ll mention that these designs exist but won’t unpack them here; listeners 
 
 #### Sample Size & Power
 
-- **Power (1 − β)** = chance to find the effect you’re hunting  
+- **Power (1 − β)**: the probability of finding an effect if it really exists     
   *Usual target: 80 %*
 
 - Grows with **bigger N, larger effect, lower noise**
@@ -318,7 +318,7 @@ I’ll mention that these designs exist but won’t unpack them here; listeners 
 ::: {.notes}
 
 ### 1  What power really is  
-* β = Probability of not rejecting the null **if** the pre-specified effect size is true.  
+* β = Probability of not rejecting the null **if** the alternative hypothesis true.  
 * 80 % is convention (β = 0.20) because it balances feasibility and false-negative risk. 90 % is used in large cardiovascular mega-trials.
 
 ### 2  How it’s calculated
