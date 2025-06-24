@@ -1,7 +1,7 @@
 ---
 title: "Decoding the Hype"
 subtitle: "How to spot real evidence in health & nutrition studies"
-author: "John for The John & Calvin Podcast"
+author: "John (The John & Calvin Podcast)"
 format:
   revealjs:
     self-contained: true
@@ -22,7 +22,8 @@ format:
 :::
 ::: {.fragment}
 
-* **The toolkit:** study design • stats basics • common pitfalls  
+* **The toolkit:**    
+study design • basics stats • common pitfalls  
 
 
 :::
