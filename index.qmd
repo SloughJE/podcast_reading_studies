@@ -327,7 +327,7 @@ Depends on four inputs:
 ➜ change any one and power shifts.
 
 ### 3  Pitfalls of being under- or over-powered  
-* **Under-powered** → high type-II error; anything found that *is* significant often over-estimates the true effect (Ioannidis 2005).  
+* **Under-powered** → high type-II error (false negative); and anything found that *is* significant often over-estimates the true effect (Ioannidis 2005).  
 * **Over-powered** → detect 2 mm Hg or 0.15 kg and call it “significant.” Clinical relevance?
 
 ### 4  Which designs quote power?  
@@ -450,7 +450,7 @@ A null secondary is only convincing when its CI is tight enough to rule out any 
 - **Percent / Proportion** – share of the population
 :::
 ::: {.fragment}
-- **Rates** – cases per person-time
+- **Rates** – cases per person / time
 :::
 ::: {.fragment}
 - **Standardised rates** – adjusted for age / other factors
@@ -736,6 +736,10 @@ $$
 | $\beta_{1,2,3}$   | Effect of each variable **holding the others constant** |
 | $\varepsilon$     | Random noise / unexplained variation                    |
 
+<br>
+<small>More math? See the linked [PSU resource](https://online.stat.psu.edu/stat462/node/131/)</small>
+
+
 ::: {.notes}
 “The Greek letters just stand in for ‘effect of each predictor.’”
 :::
@@ -751,12 +755,14 @@ $$
 * Unmeasured confounding can still bias results.  
 * **Randomized trials** help by balancing both known and unknown confounders.
 
-<small>More math? See the linked [PSU resource](https://online.stat.psu.edu/stat462/node/131/)</small>
 
 ::: {.notes}
-“Adjustment is powerful but never perfect. Always ask what might be missing.”
-RCTs already balance groups. Don’t plug in variables that changed after randomization (like calories eaten); you’d be chopping away part of the diet’s real effect.
-If you really want to know the effect minus weight-loss/calorie change, plan a special mediation analysis in advance; otherwise report the plain intention-to-treat result.
+Adjustment is powerful but never perfect; residual confounding is always possible.
+
+We try to include enough key variables that any remaining bias is unlikely to change the practical conclusion.
+
+In RCTs, randomisation already balances groups.
+Don’t adjust for variables that emerge after randomisation (e.g., calories actually eaten); that turns the analysis into mediation or can even introduce new bias.
 
 :::
 
@@ -800,9 +806,9 @@ JAMA study:
 **Small samples inflate effects** – Big swings occur by chance; replication shrinks them.  
 **Placebo isn’t inert** – “Control” oils, shakes, or pills often have biological activity.  
 **Over-fitted/fragmented models** – Too many variables or subgroup dives can turn noise into a ‘finding.’  
-**Funding / pet theories** – Sponsor or author bias can frame questions or spin conclusions; doesn’t invalidate, but requires scrutiny.
+**Funding / pet theories** – Sponsor or author bias can frame questions or spin conclusions; doesn’t invalidate, but requires scrutiny.     
 **Multiple comparisons / p-hacking** – Testing dozens of outcomes raises the odds of a “significant” result by luck; preregistration helps curb this.  
-**Self-reported or recall data** – Diet, exercise, or symptoms often logged from memory; measurement error can blur real associations.
+**Self-reported or recall data** – Diet, exercise, or symptoms often logged from memory; measurement error can blur real associations.       
 **Lack of blinding** – Open-label nutrition trials invite behaviour or reporting bias (“I’m on the ‘healthy diet,’ so I drop the afternoon soda”).  
 **Surrogate ≠ clinical outcome** – LDL, insulin, DNA-methylation are useful markers, but they aren’t heart-attack counts or lifespan. A surrogate can move while the hard outcome stays flat (ACCELERATE trial, 2016).
 
@@ -825,14 +831,14 @@ JAMA study:
 
 
 ::: {.notes}
-**One study ≠ truth** – Single papers are rarely definitive; replication matters.  
+**One study ≠ truth** – Single papers are rarely definitive; replication matters.    
 **Click-bait abstracts** – Summaries often overstate findings versus the body text.  
-**Publication bias** – Null results stay in file drawers; positive ones get published. 
-Perhaps you'd take fewer supplements if all the no-effect studies were published.
-**Petri-dish hype** – Cell/animal results touted as human breakthroughs.  
+**Publication bias** – Null results stay in file drawers; positive ones get published.     
+Perhaps you'd take fewer supplements if all the no-effect studies were published.     
+**Petri-dish hype** – Cell/animal results touted as human breakthroughs.      
 **Diet ≠ morality** – Health claims sometimes smuggle in ideology or identity.  
-**Relative risk without absolutes** – “50 % higher risk!” might be 2 cases → 3 cases per 10 000; influencers omit the baseline.
-**Cherry-picked subgroups** – Headline highlights “80 % risk drop in women between 30 and 40” but ignores that 10 other subgroups showed nothing; classic media spin.
+**Relative risk without absolutes** – “50 % higher risk!” might be 2 cases → 3 cases per 10 000; influencers omit the baseline.           
+**Cherry-picked subgroups** – Headline highlights “80 % risk drop in women between 30 and 40” but ignores that 10 other subgroups showed nothing; classic media spin.            
 **Association ≠ causation** – Correlation alone can prompt fear or fads without causal proof. ie associations aren't the same level of evidence as causations. 
 :::
 

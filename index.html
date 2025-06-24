@@ -1316,7 +1316,7 @@ display:block!important;
 ➜ change any one and power shifts.</p>
 <h3 id="pitfalls-of-being-under--or-over-powered">3 Pitfalls of being under- or over-powered</h3>
 <ul>
-<li><strong>Under-powered</strong> → high type-II error; anything found that <em>is</em> significant often over-estimates the true effect (Ioannidis 2005).<br>
+<li><strong>Under-powered</strong> → high type-II error (false negative); and anything found that <em>is</em> significant often over-estimates the true effect (Ioannidis 2005).<br>
 </li>
 <li><strong>Over-powered</strong> → detect 2 mm Hg or 0.15 kg and call it “significant.” Clinical relevance?</li>
 </ul>
@@ -1477,7 +1477,7 @@ display:block!important;
 </div>
 <div class="fragment">
 <ul>
-<li><strong>Rates</strong> – cases per person-time</li>
+<li><strong>Rates</strong> – cases per person / time</li>
 </ul>
 </div>
 <div class="fragment">
@@ -1866,6 +1866,7 @@ Y = \alpha \;+\; \beta_1 X_{coffee} \;+\; \beta_2 X_{smoke} \;+\; \beta_3 X_{age
 </tr>
 </tbody>
 </table>
+<p><br> <small>More math? See the linked <a href="https://online.stat.psu.edu/stat462/node/131/">PSU resource</a></small></p>
 <aside class="notes">
 <p>“The Greek letters just stand in for ‘effect of each predictor.’”</p>
 <style type="text/css">
@@ -1890,9 +1891,10 @@ display:block!important;
 </li>
 <li><strong>Randomized trials</strong> help by balancing both known and unknown confounders.</li>
 </ul>
-<p><small>More math? See the linked <a href="https://online.stat.psu.edu/stat462/node/131/">PSU resource</a></small></p>
 <aside class="notes">
-<p>“Adjustment is powerful but never perfect. Always ask what might be missing.” RCTs already balance groups. Don’t plug in variables that changed after randomization (like calories eaten); you’d be chopping away part of the diet’s real effect. If you really want to know the effect minus weight-loss/calorie change, plan a special mediation analysis in advance; otherwise report the plain intention-to-treat result.</p>
+<p>Adjustment is powerful but never perfect; residual confounding is always possible.</p>
+<p>We try to include enough key variables that any remaining bias is unlikely to change the practical conclusion.</p>
+<p>In RCTs, randomisation already balances groups. Don’t adjust for variables that emerge after randomisation (e.g., calories actually eaten); that turns the analysis into mediation or can even introduce new bias.</p>
 <style type="text/css">
 span.MJX_Assistive_MathML {
 position:absolute!important;
@@ -1951,8 +1953,10 @@ display:block!important;
 <p><strong>Small samples inflate effects</strong> – Big swings occur by chance; replication shrinks them.<br>
 <strong>Placebo isn’t inert</strong> – “Control” oils, shakes, or pills often have biological activity.<br>
 <strong>Over-fitted/fragmented models</strong> – Too many variables or subgroup dives can turn noise into a ‘finding.’<br>
-<strong>Funding / pet theories</strong> – Sponsor or author bias can frame questions or spin conclusions; doesn’t invalidate, but requires scrutiny. <strong>Multiple comparisons / p-hacking</strong> – Testing dozens of outcomes raises the odds of a “significant” result by luck; preregistration helps curb this.<br>
-<strong>Self-reported or recall data</strong> – Diet, exercise, or symptoms often logged from memory; measurement error can blur real associations. <strong>Lack of blinding</strong> – Open-label nutrition trials invite behaviour or reporting bias (“I’m on the ‘healthy diet,’ so I drop the afternoon soda”).<br>
+<strong>Funding / pet theories</strong> – Sponsor or author bias can frame questions or spin conclusions; doesn’t invalidate, but requires scrutiny.<br>
+<strong>Multiple comparisons / p-hacking</strong> – Testing dozens of outcomes raises the odds of a “significant” result by luck; preregistration helps curb this.<br>
+<strong>Self-reported or recall data</strong> – Diet, exercise, or symptoms often logged from memory; measurement error can blur real associations.<br>
+<strong>Lack of blinding</strong> – Open-label nutrition trials invite behaviour or reporting bias (“I’m on the ‘healthy diet,’ so I drop the afternoon soda”).<br>
 <strong>Surrogate ≠ clinical outcome</strong> – LDL, insulin, DNA-methylation are useful markers, but they aren’t heart-attack counts or lifespan. A surrogate can move while the hard outcome stays flat (ACCELERATE trial, 2016).</p>
 <style type="text/css">
 span.MJX_Assistive_MathML {
@@ -1987,9 +1991,13 @@ display:block!important;
 <aside class="notes">
 <p><strong>One study ≠ truth</strong> – Single papers are rarely definitive; replication matters.<br>
 <strong>Click-bait abstracts</strong> – Summaries often overstate findings versus the body text.<br>
-<strong>Publication bias</strong> – Null results stay in file drawers; positive ones get published. Perhaps you’d take fewer supplements if all the no-effect studies were published. <strong>Petri-dish hype</strong> – Cell/animal results touted as human breakthroughs.<br>
+<strong>Publication bias</strong> – Null results stay in file drawers; positive ones get published.<br>
+Perhaps you’d take fewer supplements if all the no-effect studies were published.<br>
+<strong>Petri-dish hype</strong> – Cell/animal results touted as human breakthroughs.<br>
 <strong>Diet ≠ morality</strong> – Health claims sometimes smuggle in ideology or identity.<br>
-<strong>Relative risk without absolutes</strong> – “50 % higher risk!” might be 2 cases → 3 cases per 10 000; influencers omit the baseline. <strong>Cherry-picked subgroups</strong> – Headline highlights “80 % risk drop in women between 30 and 40” but ignores that 10 other subgroups showed nothing; classic media spin. <strong>Association ≠ causation</strong> – Correlation alone can prompt fear or fads without causal proof. ie associations aren’t the same level of evidence as causations.</p>
+<strong>Relative risk without absolutes</strong> – “50 % higher risk!” might be 2 cases → 3 cases per 10 000; influencers omit the baseline.<br>
+<strong>Cherry-picked subgroups</strong> – Headline highlights “80 % risk drop in women between 30 and 40” but ignores that 10 other subgroups showed nothing; classic media spin.<br>
+<strong>Association ≠ causation</strong> – Correlation alone can prompt fear or fads without causal proof. ie associations aren’t the same level of evidence as causations.</p>
 <style type="text/css">
 span.MJX_Assistive_MathML {
 position:absolute!important;
