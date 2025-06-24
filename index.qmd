@@ -1,7 +1,7 @@
 ---
-title: "Understanding Health & Nutrition Studies"
-subtitle: "A Practical Framework for Understanding Scientific Studies"
-author: "John Slough"
+title: "Decoding the Hype"
+subtitle: "How to spot real evidence in health & nutrition studies"
+author: "John for The John & Calvin Podcast"
 format:
   revealjs:
     self-contained: true
@@ -15,11 +15,15 @@ format:
 
 ::: {.fragment}
 
-* Even the best studies have limits  
+* No study is flawless. Even the best have limits.
 
-* Headlines and influencers amplify confusion  
+* Headlines & influencers turn nuance into **noise and hot-takes**.  
 
-* Understanding study design, basic stats, and common traps cuts through the noise
+:::
+::: {.fragment}
+
+* **The toolkit:** study design • stats basics • common pitfalls  
+
 
 :::
 
@@ -38,8 +42,8 @@ format:
 
 
 1. **The Research Question**  
-2. **Study Design**  
-3. **Study Population**  
+2. **Study Population**  
+3. **Study Design**  
 4. **Paper Structure**  
 5. **Reporting Metrics**
 6. **Interpreting Results**  
@@ -47,9 +51,9 @@ format:
 8. **Misleading Studies & Headlines**
 
 ::: {.notes}
-* **1 The Research Question** – What is the study trying to answer?  
-* **2 Study Design** – How was the evidence gathered and analysed?  
-* **3 Study Population** – Who or what was studied?  
+* **1 The Research Question** – What is the study trying to answer? 
+* **2 Study Population** – Who or what was studied?  
+* **3 Study Design** – How was the evidence gathered and analysed?  
 * **4 Paper Structure** – Where to find key information.  
 * **5 Reporting Metrics** – Common measures in studies.  
 * **6 Interpreting Results** – P-values, confidence intervals, statistical significance.  
@@ -65,15 +69,18 @@ format:
 
 **Main goal of the study?**
 
-- Drives design, statistics, sample size  
+- Drives study design, statistics, sample size  
 - Clarify *primary* vs. *secondary* outcomes
 
 <br>
 
+::: {.fragment}
+
 **Example (published RCT)**  
-"We tested the hypothesis that long-term supplementation with n-3 fatty acids would reduce cardiovascular events in this population."  
+"We tested the hypothesis that long-term supplementation with omega-3 fatty acids would reduce cardiovascular events in this population."  
 — [NEJM, 2012](https://www.nejm.org/doi/10.1056/NEJMoa1203859)
 
+:::
 :::
 
 ::: {.notes}
@@ -97,15 +104,67 @@ Important: An exploratory study can be valuable, but don’t confuse it with a t
 
 ### Questions to Ask
 
-- What specific question is the study trying to answer?
-
-- Is the primary outcome clearly stated and appropriate?
-
-- Are the secondary outcomes treated as exploratory, or being oversold?
-
-- Does the goal match what you care about?
+- What single question is the study trying to answer?  
+- Is the **primary outcome** clearly stated—and the right one for that question?  
+- Are **secondary outcomes** labelled as exploratory, or being oversold?  
+- Does this question matter to **you / your patients**?
 
 :::
+
+---
+
+## Who or What Is Being Studied?
+
+**Population matters for relevance**  
+_Not all studies are done on humans, and not all humans are like you._
+
+::: {.fragment}
+
+- **Cells (in vitro)**
+- **Animals (in vivo)**
+- **Humans (in vivo)**
+
+:::
+
+::: {.notes}
+**Key idea**  
+
+**The subjects of the study affect how applicable the results are.**  
+
+The subjects tell you how far the findings can travel—cells → animals → humans is a “mechanistic → translational → applied” ladder.
+
+**Cells (in vitro)**  
+• Isolated cells in dishes or test tubes.  
+• Great for uncovering biological mechanisms, drug targets, or toxicity pathways.  
+• Cannot predict whole-body effects on their own.
+
+**Animals (in vivo)**  
+• Usually mice or rats; sometimes larger mammals.  
+• Provide whole-organism context and dosing clues.  
+• Differences in metabolism and lifespan still limit direct translation to people.
+
+**Humans (in vivo)**  
+• Ultimately most relevant, but generalisability varies by:  
+  – Age, sex, health status  
+  – Baseline diet, lifestyle, genetics  
+• Always ask: “How close is this cohort to me or my patients?”
+
+**Illustrative mismatch**  
+A high-protein diet trial on *elderly Japanese women with osteoporosis undergoing survival training* probably says little about a 35-year-old office worker in Madrid.
+
+**Take-home line**  
+Before judging a result, check *who* or *what* was studied and whether that population resembles the one you care about.
+:::
+
+---
+
+## Who or What Is Being Studied? 
+
+### Questions to Ask
+
+- **Who or what** was actually studied?  
+- Why did the researchers pick that population or model?  
+- How similar are these subjects to **you or the group you care about**?
 
 ---
 
@@ -234,6 +293,94 @@ This is a quick reference list.
 I’ll mention that these designs exist but won’t unpack them here; listeners can pause the replay or check the show notes if they’d like more detail.
 :::
 
+---
+
+## Study Design
+
+#### Sample Size & Power
+
+- **Power (1 − β)** = chance to find the effect you’re hunting  
+  *Usual target: 80 %*
+
+- Grows with **bigger N, larger effect, lower noise**
+
+::: {.fragment}
+
+- Calculated *before* the trial to size it properly
+
+:::
+::: {.fragment}
+
+- Set from the **minimum clinically important difference (MCID)** (ideally)
+
+:::
+::: {.notes}
+
+### 1  What power really is  
+* β = Probability of not rejecting the null **if** the pre-specified effect size is true.  
+* 80 % is convention (β = 0.20) because it balances feasibility and false-negative risk. 90 % is used in large cardiovascular mega-trials.
+
+### 2  How it’s calculated
+Depends on four inputs:  
+1) expected effect size 2) outcome variability 3) α (usually 0.05) 4) **N**.  
+➜ change any one and power shifts.
+
+### 3  Pitfalls of being under- or over-powered  
+* **Under-powered** → high type-II error; anything found that *is* significant often over-estimates the true effect (Ioannidis 2005).  
+* **Over-powered** → detect 2 mm Hg or 0.15 kg and call it “significant.” Clinical relevance?
+
+### 4  Which designs quote power?  
+* **RCTs** — CONSORT requires a sample-size/power statement in Methods.  
+* **Large cohort studies** often justify N for rare-event precision.  
+* Cross-sectional & case-control papers rarely show a power calc; they discuss post-hoc detectable effect instead.
+Cohorts usually enroll as many people as practical and then analyse whatever number of events occur; they report detectable effect sizes afterward rather than prospectively ‘powering’ the study like an RCT.
+
+
+:::
+
+
+## Study Design
+
+#### Sample Size & Power
+
+- Too small → wide CIs, missed effects  
+- Too large → trivial but 'significant' findings
+
+::: {.fragment}
+
+- **Rule-of-thumb study sizes**   
+  • < 50 per arm = pilot / feasibility  
+  • 50 – 300 per arm = typical nutrition RCT  
+  • > 300 per arm = large, clinically robust
+
+:::
+::: {.fragment}
+
+- Power targets the **primary** outcome; secondaries often under-powered
+
+:::
+::: {.notes}
+### 5 Primary vs secondary outcomes  
+* Power calc is done **for the primary endpoint only**.  
+* Secondary outcomes are usually under-powered; a significant result there is hypothesis-generating unless pre-specified with multiplicity correction. The secondary outcomes could be adequately powered
+A null secondary is only convincing when its CI is tight enough to rule out any benefit we’d care about; otherwise it’s just under-powered—and we should label it inconclusive, not negative.
+
+### 6 Case-study hook (twin vegan RCT)  
+* Only 22 twin pairs → designed as a pilot.  
+* Authors admit they lacked power for insulin resistance, yet headlines still hyped a –30 % insulin claim.
+
+> “When you hear ‘the study was under-powered,’ translate that to ‘big uncertainty and effect sizes that might shrink or vanish at scale.’”
+
+> RCTs should at least justify the number of subjects in the trial. 
+
+**Rule-of-thumb footnote**  
+✦ Chow & Liu, *Design & Analysis of Clinical Trials*, Ch 3 – rough ranges, always adjust for variance.
+
+:::
+
+
+---
+
 ## Study Design 
 
 ::: {.smaller2}
@@ -242,70 +389,16 @@ I’ll mention that these designs exist but won’t unpack them here; listeners 
 
 - What type of study is this — observational, interventional, or a synthesis?
 
-- Can this design prove causality, or only suggest associations?
+- Can this design support a **causal claim**, or only association?  
+- Is the control / comparison group appropriate?  
+- For meta-analyses, are the pooled studies similar enough?  
+- Was the sample size justified, and did they report a power calculation for the primary endpoint?
 
-- Is the comparison group (if any) appropriate and meaningful?
-
-- For meta-analyses: Were the included studies similar enough to combine?
 
 :::
 
 ---
 
-## Who or What Is Being Studied?
-
-**Population matters for relevance**  
-_Not all studies are done on humans, and not all humans are like you._
-
-
-- **Cells (in vitro)**
-- **Animals (in vivo)**
-- **Humans (in vivo)**
-
-
-::: {.notes}
-**Key idea**  
-
-**The subjects of the study affect how applicable the results are.**  
-
-The subjects tell you how far the findings can travel—cells → animals → humans is a “mechanistic → translational → applied” ladder.
-
-**Cells (in vitro)**  
-• Isolated cells in dishes or test tubes.  
-• Great for uncovering biological mechanisms, drug targets, or toxicity pathways.  
-• Cannot predict whole-body effects on their own.
-
-**Animals (in vivo)**  
-• Usually mice or rats; sometimes larger mammals.  
-• Provide whole-organism context and dosing clues.  
-• Differences in metabolism and lifespan still limit direct translation to people.
-
-**Humans (in vivo)**  
-• Ultimately most relevant, but generalisability varies by:  
-  – Age, sex, health status  
-  – Baseline diet, lifestyle, genetics  
-• Always ask: “How close is this cohort to me or my patients?”
-
-**Illustrative mismatch**  
-A high-protein diet trial on *elderly Japanese women with osteoporosis undergoing survival training* probably says little about a 35-year-old office worker in Madrid.
-
-**Take-home line**  
-Before judging a result, check *who* or *what* was studied and whether that population resembles the one you care about.
-:::
-
----
-
-## Who or What Is Being Studied? 
-
-### Questions to Ask
-
-- What type of subjects were studied?  
-
-- Why were they chosen?
-
-- How relevant are they to you?
-
----
 
 ## Structure of a Scientific Paper 
 
@@ -337,14 +430,11 @@ Before judging a result, check *who* or *what* was studied and whether that popu
 
 ### Questions to Ask
 
-- Does the Abstract summarize what is actually in the study?
-
-- Does the Methods section clearly explain how the study was done?
-
-- Is the data and statistics in the Results presented clearly?
-
-- Does the Discussion align with the actual findings?
-
+- Does the **Abstract** match what’s really in the paper?  
+- Are the **Methods** detailed enough to judge rigor?  
+- Are **Results** shown with raw numbers, effect sizes and confidence intervals?
+- Are any **Results** missing or highlighted more than reasonably?  
+- Do the **Discussion/Conclusion** stay within the data’s limits?
 
 ---
 
@@ -444,15 +534,10 @@ Before judging a result, check *who* or *what* was studied and whether that popu
 
 ### Questions to Ask
 
-- What type of metric is reported (count, effect difference, risk, rate, etc.)?
-
-- Is that the right choice for this type of data, or could it be misleading because of population growth, time, or other factors?
-
-- Does this metric directly answer the study’s main question?
-
-- Could the way the result is presented exaggerate or downplay the real impact?
-
-- What does the chosen metric reveal, and what might it obscure?
+- Which metric is used—count, rate, risk ratio, mean difference, etc.?  
+- Is that metric appropriate, or could it mislead (e.g., relative vs. absolute)?  
+- Does it answer the **main research question**?  
+- Could the presentation exaggerate or downplay the finding?
 
 :::
 
@@ -561,13 +646,10 @@ ___
 
 ### Questions to Ask
 
-- Is the result statistically significant, and how close is the p-value to the 0.05 threshold?
-
-- What does the confidence interval tell me about the size and precision of the effect?
-
-- If the result is statistically significant, is the result practically important?
-
-- If the result is close to significant, could it be due to chance, small sample size, selective reporting, or fishing through lots of outcomes?
+- Is the result statistically significant—and by **how much**?  
+- What does the **confidence interval** say about size and precision?  
+- Is the effect big enough to matter in real life?  
+- If it’s borderline, could chance, small N, selective data processing or multiple testing explain it?
 
 :::
 
@@ -577,16 +659,24 @@ ___
 
 **Goal:** isolate the effect of one variable while accounting for others.
 
+::: {.fragment}
+
 > Coffee & Heart Disease  
 > Control for **smoking** so coffee isn’t blamed for smokers’ risk.
 
+:::
+
+::: {.fragment}
+
 How?  
 
-**Include the other influences in the statistical model.**
+**Include the other factors in the statistical model.**
 
+:::
 ::: {.notes}
 “When you read ‘we controlled for education, BMI, and smoking,’ it means those factors **were included as variables in the model** so we can ask:  
 *If two people were identical on those factors, does coffee still matter?*”
+!RCTs already balance groups. You generally do not 'control for' things in RCTs. 
 :::
 
 ---
@@ -603,9 +693,13 @@ We record coffee cups/day, smoking, age, and heart-disease outcome.
 
 <br> 
 
+::: {.fragment}
+
 **Model with controls**  
 `Heart disease = Coffee + Smoking + Age + error`  
 → Estimates the coffee effect *independent of* smoking & age
+:::
+::: {.fragment}
 
 &nbsp;
 
@@ -613,6 +707,7 @@ We record coffee cups/day, smoking, age, and heart-disease outcome.
 `Heart disease = Coffee + Age + error`  
 → Smoking still influences both coffee & disease → **confounding**
 
+:::
 :::
 
 ::: {.notes}
@@ -659,6 +754,9 @@ $$
 
 ::: {.notes}
 “Adjustment is powerful but never perfect. Always ask what might be missing.”
+RCTs already balance groups. Don’t plug in variables that changed after randomization (like calories eaten); you’d be chopping away part of the diet’s real effect.
+If you really want to know the effect minus weight-loss/calorie change, plan a special mediation analysis in advance; otherwise report the plain intention-to-treat result.
+
 :::
 
 
@@ -670,13 +768,16 @@ $$
 
 ### Questions to Ask
 
-- Did the study adjust for major known confounders (like smoking, age, BMI)?
+- Did the study adjust for the **key known confounders**?  
+- What important factors might be missing or unmeasured?  
+- Is the adjustment method explained and sensible?  
 
-- Are there important factors they might have missed or not measured?
 
-- Is the adjustment described clearly, or does it seem vague or incomplete?
+:::
 
-- Was the study randomized? (If yes, that helps handle unknown confounders too.)
+::: {.notes}
+JAMA study:
+“Because it’s an RCT, the groups were comparable at baseline. The ~200-calorie deficit happened after allocation, so it’s part of how the vegan diet worked, not a bias that needs adjustment. If you tried to ‘control’ for those calories, you’d be stripping out some of the very effect you want to measure.”
 
 :::
 
@@ -691,6 +792,8 @@ $$
 - **Funding or pet theories**
 - **Multiple comparisons (p-hacking)**  
 - **Self-reported or recall data**
+- **Lack of blinding**
+- **Surrogate ≠ clinical outcome** 
 
 ::: {.notes}
 **Small samples inflate effects** – Big swings occur by chance; replication shrinks them.  
@@ -699,6 +802,9 @@ $$
 **Funding / pet theories** – Sponsor or author bias can frame questions or spin conclusions; doesn’t invalidate, but requires scrutiny.
 **Multiple comparisons / p-hacking** – Testing dozens of outcomes raises the odds of a “significant” result by luck; preregistration helps curb this.  
 **Self-reported or recall data** – Diet, exercise, or symptoms often logged from memory; measurement error can blur real associations.
+**Lack of blinding** – Open-label nutrition trials invite behaviour or reporting bias (“I’m on the ‘healthy diet,’ so I drop the afternoon soda”).  
+**Surrogate ≠ clinical outcome** – LDL, insulin, DNA-methylation are useful markers, but they aren’t heart-attack counts or lifespan. A surrogate can move while the hard outcome stays flat (ACCELERATE trial, 2016).
+
 
 :::
 
@@ -713,7 +819,9 @@ $$
 - **Petri-dish hype**  
 - **Diet ≠ morality**  
 - **Relative risk without absolute numbers**  
+- **Cherry-picked subgroups** 
 - **Association ≠ causation**
+
 
 ::: {.notes}
 **One study ≠ truth** – Single papers are rarely definitive; replication matters.  
@@ -723,6 +831,7 @@ Perhaps you'd take fewer supplements if all the no-effect studies were published
 **Petri-dish hype** – Cell/animal results touted as human breakthroughs.  
 **Diet ≠ morality** – Health claims sometimes smuggle in ideology or identity.  
 **Relative risk without absolutes** – “50 % higher risk!” might be 2 cases → 3 cases per 10 000; influencers omit the baseline.
+**Cherry-picked subgroups** – Headline highlights “80 % risk drop in women between 30 and 40” but ignores that 10 other subgroups showed nothing; classic media spin.
 **Association ≠ causation** – Correlation alone can prompt fear or fads without causal proof. ie associations aren't the same level of evidence as causations. 
 :::
 
@@ -746,12 +855,14 @@ Perhaps you'd take fewer supplements if all the no-effect studies were published
 :::
 
 ::: {.notes}
+
 1. Question clarity drives everything; if the paper drifts, stop.  
 2. RCT or Mendelian randomization can test cause; cohort mainly spots links.  
 3. Species, age, sex, health status—don’t apply mouse data to humans or elite-athlete data to office workers.  
 4. Relative vs. absolute risks, mean vs. median—each tells a different story.  
 5. Look at effect size *and* CI; a “significant” 0.15 kg loss isn’t life-changing.  
 6. Tiny n, p-hacking, funding bias, or glitzy headlines demand extra caution.
+[Hyped headlines](https://www.allinahealth.org/allina-news/2023/11/new-research-says-vegan-diets-are-good-for-the-heart)
 :::
 
 ---
@@ -784,5 +895,36 @@ Point 1 – “Gold-standard” avoids the absolute “only”; causal hints can
 Point 2 – Petri-dish breakthroughs rarely translate 1:1 to people.  
 Point 3 - headlines rarely mention the model, adjustments, or error checks, yet those determine whether a finding will hold up.
 
+
 :::
+
+# Follow-up on Vegan Twin Study
+
+::: {.notes}
+**Follow-up work the Stanford team did after the 8-week twin RCT**
+
+• **Nutrient-cost analysis** – Using the same delivered-meal menus, they priced all ingredients at U.S. retail averages.  
+  – Vegan meals cost ≈ $1.50 less per person per day (about 14 % cheaper) than the omnivore menus.  
+  – Published as a short “Research Letter” in *JAMA Network Open* (Feb 2024).
+
+• **Epigenetic-age sub-study** – They thawed the twins’ stored blood and ran three DNA-methylation clocks (Horvath, PhenoAge, GrimAge).  
+  – Vegan arm showed a –1.9-year change in PhenoAge vs –0.3 years in omnivore (Δ ≈ –1.6 y, *p*≈0.04).  
+  – Reported in *BMC Medicine* (2024); authors called it “exploratory.”
+
+**How the media mashed it up**
+
+• *New York Post* 29 Jul 2024 headline:  
+  **“2 months of eating this diet knocks years off your biological age.”**  
+  – Copy lifts the –1.9-year figure from the *BMC Medicine* paper.  
+  – Mentions the identical-twin setup but ignores the small sample, short duration, and that the meals were chef-prepared.  
+  – No reference to LDL-C, weight loss, or the true cost difference.
+
+• [*New York Post* 22 Nov 2024 headline](https://nypost.com/2024/11/22/lifestyle/vegan-diet-can-make-you-wealthy-in-addition-to-healthy-study-finds/):  
+  **“Vegan diet can make you wealthy, in addition to healthy, study finds.”**  
+  – Pulls the grocery-cost analysis ($1.50/day cheaper) and frames it as a wealth booster, again skipping sample size and duration caveats.
+
+Take-away you’ll voice:  
+“Secondary analyses can be interesting, but headlines often elevate them above the primary outcomes—and leave out all the limitations.”
+:::
+
 
