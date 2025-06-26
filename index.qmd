@@ -66,22 +66,26 @@ study design • basics stats • common pitfalls
 
 ## The Research Question
 
-::: {.smaller2}
-
-**Main goal of the study?**
+**Main goal of the study**
 
 - Drives study design, statistics, sample size  
-- Clarify *primary* vs. *secondary* outcomes
-
-<br>
+- Includes **measured metric** (e.g., BP change, risk)
 
 ::: {.fragment}
+- States the **primary outcome** (vs. exploratory or secondary)
 
+:::
+
+::: {.fragment .smaller2}
+
+Best practice (especially in RCTs): pre-register outcomes and analysis plan
+
+:::
+
+::: {.fragment .smaller2}
 **Example (published RCT)**  
 "We tested the hypothesis that long-term supplementation with omega-3 fatty acids would reduce cardiovascular events in this population."  
 — [NEJM, 2012](https://www.nejm.org/doi/10.1056/NEJMoa1203859)
-
-:::
 :::
 
 ::: {.notes}
@@ -108,7 +112,7 @@ Important: An exploratory study can be valuable, but don’t confuse it with a t
 - What single question is the study trying to answer?  
 - Is the **primary outcome** clearly stated—and the right one for that question?  
 - Are **secondary outcomes** labelled as exploratory, or being oversold?  
-- Does this question matter to **you / your patients**?
+- Does this question matter to you?
 
 :::
 
@@ -320,6 +324,7 @@ I’ll mention that these designs exist but won’t unpack them here; listeners 
 ### 1  What power really is  
 * β = Probability of not rejecting the null **if** the alternative hypothesis true.  
 * 80 % is convention (β = 0.20) because it balances feasibility and false-negative risk. 90 % is used in large cardiovascular mega-trials.
+80%? If there really is an effect, there's an 80% chance your study will detect it (i.e. produce a statistically significant result)
 
 ### 2  How it’s calculated
 Depends on four inputs:  
@@ -809,7 +814,7 @@ JAMA study:
 **Funding / pet theories** – Sponsor or author bias can frame questions or spin conclusions; doesn’t invalidate, but requires scrutiny.     
 **Multiple comparisons / p-hacking** – Testing dozens of outcomes raises the odds of a “significant” result by luck; preregistration helps curb this.  
 **Self-reported or recall data** – Diet, exercise, or symptoms often logged from memory; measurement error can blur real associations.       
-**Lack of blinding** – Open-label nutrition trials invite behaviour or reporting bias (“I’m on the ‘healthy diet,’ so I drop the afternoon soda”).  
+**Lack of blinding** – Open-label nutrition trials invite behavior or reporting bias (“I’m on the ‘healthy diet,’ so I drop the afternoon soda”).  
 **Surrogate ≠ clinical outcome** – LDL, insulin, DNA-methylation are useful markers, but they aren’t heart-attack counts or lifespan. A surrogate can move while the hard outcome stays flat (ACCELERATE trial, 2016).
 
 
@@ -855,7 +860,7 @@ Perhaps you'd take fewer supplements if all the no-effect studies were published
 3. **Who / what was studied—and how close is that to you?**  
 4. **Metric chosen:** what does it reveal and what does it hide?  
 5. **Result strength:** big, precise, and practically useful?  
-6. **Red flags:** stats tricks, sensational claims, or conflicts?  
+6. **Red flags:** stats 'tricks', sensational claims, or conflicts?  
 
 </div>
 
@@ -863,12 +868,13 @@ Perhaps you'd take fewer supplements if all the no-effect studies were published
 
 ::: {.notes}
 
-1. Question clarity drives everything; if the paper drifts, stop.  
+1. Question clarity drives everything; if the paper drifts, it's exploratory.  
 2. RCT or Mendelian randomization can test cause; cohort mainly spots links.  
 3. Species, age, sex, health status—don’t apply mouse data to humans or elite-athlete data to office workers.  
 4. Relative vs. absolute risks, mean vs. median—each tells a different story.  
 5. Look at effect size *and* CI; a “significant” 0.15 kg loss isn’t life-changing.  
 6. Tiny n, p-hacking, funding bias, or glitzy headlines demand extra caution.
+[p-hacking results](https://pubmed.ncbi.nlm.nih.gov/22853650/)
 [Hyped headlines](https://www.allinahealth.org/allina-news/2023/11/new-research-says-vegan-diets-are-good-for-the-heart)
 :::
 
@@ -878,24 +884,29 @@ Perhaps you'd take fewer supplements if all the no-effect studies were published
 
 <div style="font-size: 127%; line-height: 1;">
 
+
 1. **RCTs are the gold-standard for causality**  
    _Meta-analyses of well-run RCTs are even stronger._
 
 <br>
 
+::: {.fragment}
+
 2. **Cell & animal work is a first step, not a human verdict**
    _Petri-dish breakthroughs rarely translate 1:1 to people._
-   
+
+:::   
 <br>
 
-3. **Peek under the statistical hood**  
+::: {.fragment}
+
+3. **Don't skip the statistics**  
    _A result is only as strong as the methods and statistics behind it._
 
+:::
+
 </div>
 
-<div style="font-size:85%; color:#aaa; margin-top:0.8em;">
-Good science takes longer than a 30-second TikTok.
-</div>
 
 ::: {.notes}
 Point 1 – “Gold-standard” avoids the absolute “only”; causal hints can come from natural experiments but need stronger assumptions.  
