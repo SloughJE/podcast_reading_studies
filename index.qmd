@@ -305,7 +305,7 @@ I’ll mention that these designs exist but won’t unpack them here; listeners 
 #### Sample Size & Power
 
 - **Power (1 − β)**: the probability of finding an effect if it really exists     
-  *Usual target: 80 %*
+  *Usual target: 80%*
 
 - Grows with **bigger N, larger effect, lower noise**
 
