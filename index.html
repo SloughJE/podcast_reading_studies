@@ -1060,7 +1060,7 @@ display:block!important;
 <li><strong>How Results Are Reported</strong></li>
 <li><strong>Interpreting Results</strong><br>
 </li>
-<li><strong>Controlling For</strong><br>
+<li><strong>Controlling for Other Factors</strong><br>
 </li>
 <li><strong>Misleading Studies &amp; Influencers</strong></li>
 </ol>
@@ -1077,7 +1077,7 @@ display:block!important;
 </li>
 <li><strong>6 Interpreting Results</strong> – P-values, confidence intervals, statistical significance.<br>
 </li>
-<li><strong>7 Controlling For</strong> – Adjustment, confounding and a little math.<br>
+<li><strong>7 Controlling for Other Factors</strong> – Adjustment, confounding and a little math.<br>
 </li>
 <li><strong>8 Misleading Studies &amp; Influencers</strong> – Typical pitfalls you’ll spot in the wild.</li>
 </ul>
@@ -1207,7 +1207,7 @@ display:block!important;
 <section id="study-design" class="slide level2">
 <h2>Study Design</h2>
 <div class="smaller2">
-<p>What a study can claim depends on its design.</p>
+<h3 id="what-a-study-can-claim-depends-on-its-design.">What a study can claim depends on its design.</h3>
 <p><br></p>
 <div class="columns">
 <div class="column fragment" style="width:33%; font-size:85%;              background:#1e1e1e; border:1px solid #444;              border-radius:12px; padding:0.4em;              margin-right:0.5em; line-height:1.2;">
@@ -1504,7 +1504,7 @@ display:block!important;
 <strong>Percent / Proportion</strong> – share of the population, e.g. 5 % prevalence.<br>
 <strong>Rates</strong> – events per person-time, e.g. 10 per 1 000 person-years.<br>
 <strong>Standardised rates</strong> – adjusted for age or other demographics to compare populations fairly.<br>
-<strong>Incidence vs. prevalence</strong> – new cases in a period vs. total existing cases.</p>
+Incidence = new cases during a specific time period Prevalence = total existing cases at a given point (or over a period)</p>
 <style type="text/css">
 span.MJX_Assistive_MathML {
 position:absolute!important;
@@ -1602,7 +1602,7 @@ display:block!important;
 </li>
 <li>Does it answer the <strong>main research question</strong>?<br>
 </li>
-<li>Could the presentation exaggerate or downplay the finding?</li>
+<li>Could the metric exaggerate or downplay the finding?</li>
 </ul>
 </section>
 </section>
@@ -1612,6 +1612,7 @@ display:block!important;
 <div class="smaller2">
 <p><br></p>
 <p><strong>Is this effect real? How exact is it?</strong></p>
+<div class="fragment">
 <p><br></p>
 <table class="caption-top">
 <colgroup>
@@ -1639,6 +1640,7 @@ display:block!important;
 </tr>
 </tbody>
 </table>
+</div>
 </div>
 <aside class="notes">
 <h3 id="why-we-need-these-measures">Why we need these measures</h3>
@@ -1713,6 +1715,7 @@ display:block!important;
 <h2>Interpreting Results</h2>
 <h4 id="statistical-vs.-practical-significance">Statistical vs. Practical Significance</h4>
 <div class="smaller2">
+<div class="fragment">
 <p><br></p>
 <table class="caption-top">
 <colgroup>
@@ -1741,6 +1744,7 @@ display:block!important;
 </tbody>
 </table>
 <p><br></p>
+</div>
 </div>
 <aside class="notes">
 <ul>
@@ -1779,8 +1783,8 @@ display:block!important;
 </ul>
 </section>
 </section>
-<section id="controlling-for" class="slide level2">
-<h2>“Controlling for”?</h2>
+<section id="controlling-for-other-factors" class="slide level2">
+<h2>Controlling for Other Factors</h2>
 <p><strong>Goal:</strong> isolate the effect of one variable while accounting for others.</p>
 <div class="fragment">
 <blockquote>
@@ -1807,8 +1811,8 @@ overflow: hidden!important;
 display:block!important;
 }</style></aside>
 </section>
-<section id="controlling-for-1" class="slide level2">
-<h2>“Controlling for”?</h2>
+<section id="controlling-for-other-factors-1" class="slide level2">
+<h2>Controlling for Other Factors</h2>
 <section id="example-cohort-study" class="smaller2">
 <h4>Example Cohort Study</h4>
 <p><strong>Question:</strong> Does coffee raise heart-disease risk?</p>
@@ -1840,8 +1844,8 @@ overflow: hidden!important;
 display:block!important;
 }</style></aside>
 </section>
-<section id="controlling-for-2" class="slide level2">
-<h2>“Controlling for”?</h2>
+<section id="controlling-for-other-factors-2" class="slide level2">
+<h2>Controlling for Other Factors</h2>
 <section id="under-the-hood" class="smaller2">
 <h3>Under the Hood</h3>
 <p><br></p>
@@ -1894,8 +1898,8 @@ display:block!important;
 }</style></aside>
 </section>
 </section>
-<section id="controlling-for-3" class="slide level2">
-<h2>“Controlling for”?</h2>
+<section id="controlling-for-other-factors-3" class="slide level2">
+<h2>Controlling for Other Factors</h2>
 <ul>
 <li>Works <strong>only</strong> for variables we measured and included.<br>
 </li>
@@ -1919,8 +1923,8 @@ overflow: hidden!important;
 display:block!important;
 }</style></aside>
 </section>
-<section id="controlling-for-4" class="slide level2">
-<h2>“Controlling for”?</h2>
+<section id="controlling-for-other-factors-4" class="slide level2">
+<h2>Controlling for Other Factors</h2>
 <section id="questions-to-ask-6" class="smaller2">
 <h3>Questions to Ask</h3>
 <ul>
@@ -1947,26 +1951,61 @@ display:block!important;
 </section>
 <section id="studies-can-mislead" class="slide level2">
 <h2>Studies Can Mislead</h2>
+<div class="smaller">
 <ul>
-<li><strong>Small samples inflate effects</strong><br>
-</li>
+<li><strong>Small samples inflate effects</strong></li>
+</ul>
+<div class="fragment">
+<ul>
 <li><strong>Placebo isn’t inert</strong><br>
 </li>
-<li><strong>Complex Models &amp; Subgroups Analyses</strong><br>
-</li>
-<li><strong>Funding or pet theories</strong></li>
-<li><strong>Multiple comparisons (p-hacking)</strong><br>
-</li>
-<li><strong>Self-reported or recall data</strong></li>
-<li><strong>Lack of blinding</strong></li>
-<li><strong>Surrogate ≠ clinical outcome</strong></li>
 </ul>
+</div>
+<div class="fragment">
+<ul>
+<li><strong>Publication bias</strong><br>
+</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><strong>Funding or pet theories</strong><br>
+</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><strong>Multiple comparisons (p-hacking), cherry-picking subgroups</strong><br>
+</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><strong>Self-reported or recall data</strong><br>
+</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><strong>Lack of blinding</strong><br>
+</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><strong>Surrogate ≠ clinical outcome</strong><br>
+</li>
+</ul>
+</div>
+</div>
 <aside class="notes">
 <p><strong>Small samples inflate effects</strong> – Big swings occur by chance; replication shrinks them.<br>
 <strong>Placebo isn’t inert</strong> – “Control” oils, shakes, or pills often have biological activity.<br>
-<strong>Over-fitted/fragmented models</strong> – Too many variables or subgroup dives can turn noise into a ‘finding.’<br>
+<strong>Publication bias</strong> – Null results stay in file drawers; positive ones get published.<br>
+Perhaps you’d take fewer supplements if all the no-effect studies were published.<br>
 <strong>Funding / pet theories</strong> – Sponsor or author bias can frame questions or spin conclusions; doesn’t invalidate, but requires scrutiny.<br>
 <strong>Multiple comparisons / p-hacking</strong> – Testing dozens of outcomes raises the odds of a “significant” result by luck; preregistration helps curb this.<br>
+<strong>Cherry-picked subgroups</strong> – Headline highlights “80 % risk drop in women between 30 and 40” but ignores that 10 other subgroups showed nothing; classic media spin.<br>
 <strong>Self-reported or recall data</strong> – Diet, exercise, or symptoms often logged from memory; measurement error can blur real associations.<br>
 <strong>Lack of blinding</strong> – Open-label nutrition trials invite behavior or reporting bias (“I’m on the ‘healthy diet,’ so I drop the afternoon soda”).<br>
 <strong>Surrogate ≠ clinical outcome</strong> – LDL, insulin, DNA-methylation are useful markers, but they aren’t heart-attack counts or lifespan. A surrogate can move while the hard outcome stays flat (ACCELERATE trial, 2016).</p>
@@ -1984,32 +2023,55 @@ display:block!important;
 </section>
 <section id="influencers-do-mislead" class="slide level2">
 <h2>Influencers Do Mislead</h2>
+<div class="smaller">
 <ul>
-<li><strong>One study ≠ truth</strong><br>
+<li><strong>One study ≠ truth</strong></li>
+</ul>
+<div class="fragment">
+<ul>
+<li><strong>Petri-dish (mechanism) hype</strong><br>
 </li>
-<li><strong>Click-bait abstracts</strong><br>
-</li>
-<li><strong>Publication bias</strong><br>
-</li>
-<li><strong>Petri-dish hype</strong><br>
-</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
 <li><strong>Diet ≠ morality</strong><br>
 </li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
 <li><strong>Relative risk without absolute numbers</strong><br>
 </li>
-<li><strong>Cherry-picked subgroups</strong></li>
-<li><strong>Association ≠ causation</strong></li>
 </ul>
+</div>
+<div class="fragment">
+<ul>
+<li><strong>Association ≠ causation</strong><br>
+</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><strong>Anecdotes ≠ evidence</strong><br>
+</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><strong>Claim comes from headline, not published study</strong><br>
+</li>
+</ul>
+</div>
+</div>
 <aside class="notes">
 <p><strong>One study ≠ truth</strong> – Single papers are rarely definitive; replication matters.<br>
-<strong>Click-bait abstracts</strong> – Summaries often overstate findings versus the body text.<br>
-<strong>Publication bias</strong> – Null results stay in file drawers; positive ones get published.<br>
-Perhaps you’d take fewer supplements if all the no-effect studies were published.<br>
 <strong>Petri-dish hype</strong> – Cell/animal results touted as human breakthroughs.<br>
 <strong>Diet ≠ morality</strong> – Health claims sometimes smuggle in ideology or identity.<br>
-<strong>Relative risk without absolutes</strong> – “50 % higher risk!” might be 2 cases → 3 cases per 10 000; influencers omit the baseline.<br>
-<strong>Cherry-picked subgroups</strong> – Headline highlights “80 % risk drop in women between 30 and 40” but ignores that 10 other subgroups showed nothing; classic media spin.<br>
-<strong>Association ≠ causation</strong> – Correlation alone can prompt fear or fads without causal proof. ie associations aren’t the same level of evidence as causations.</p>
+<strong>Relative risk without absolutes</strong> – “50 % higher risk!” might be 2 cases → 3 cases per 10 000; influencers omit the baseline.</p>
+<p><strong>Association ≠ causation</strong> – Correlation alone can prompt fear or fads without causal proof. ie associations aren’t the same level of evidence as causations.</p>
+<p><strong>Anecdotes</strong> - Why: Influencers often swap in anecdotes where data should go. It’s persuasive, but misleading.</p>
+<p><strong>Claims from Headlines</strong> - many influencers build entire posts around a press release, news write-up, or even just a tweet, not the actual science.</p>
 <style type="text/css">
 span.MJX_Assistive_MathML {
 position:absolute!important;
