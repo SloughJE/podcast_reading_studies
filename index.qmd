@@ -1,6 +1,6 @@
 ---
 title: "Decoding the Hype"
-subtitle: "How to spot real evidence in health & nutrition studies"
+subtitle: "Spotting real evidence in health & nutrition studies"
 author: "John (The John & Calvin Podcast)"
 format:
   revealjs:
@@ -15,9 +15,9 @@ format:
 
 ::: {.fragment}
 
-* No study is flawless. Even the best have limits.
+* No study is flawless. Every design has limits.
 
-* Headlines & influencers turn nuance into **noise and hot-takes**.  
+* Headlines & influencers turn nuance into **noise**.  
 
 :::
 ::: {.fragment}
@@ -44,11 +44,11 @@ study design • basics stats • common pitfalls
 
 1. **The Research Question**  
 2. **Study Population**  
-3. **Study Design**  
+3. **Study Design (Power)**  
 4. **Paper Structure**  
 5. **Reporting Metrics**
 6. **Interpreting Results**  
-7. **Controlling Confounders**  
+7. **Controlling For**  
 8. **Misleading Studies & Headlines**
 
 ::: {.notes}
@@ -58,7 +58,7 @@ study design • basics stats • common pitfalls
 * **4 Paper Structure** – Where to find key information.  
 * **5 Reporting Metrics** – Common measures in studies.  
 * **6 Interpreting Results** – P-values, confidence intervals, statistical significance.  
-* **7 Controlling Confounders** – Adjustment, confounding and a little math.  
+* **7 Controlling For** – Adjustment, confounding and a little math.  
 * **8 Misleading Studies & Headlines** – Typical pitfalls you’ll spot in the wild.
 :::
 
@@ -325,6 +325,8 @@ I’ll mention that these designs exist but won’t unpack them here; listeners 
 * β = Probability of not rejecting the null **if** the alternative hypothesis true.  
 * 80 % is convention (β = 0.20) because it balances feasibility and false-negative risk. 90 % is used in large cardiovascular mega-trials.
 80%? If there really is an effect, there's an 80% chance your study will detect it (i.e. produce a statistically significant result)
+β is the chance you miss the effect (a false negative).
+So 1 − β is the chance you catch it (a true positive).
 
 ### 2  How it’s calculated
 Depends on four inputs:  
@@ -941,7 +943,6 @@ Point 3 - headlines rarely mention the model, adjustments, or error checks, yet 
   **“Vegan diet can make you wealthy, in addition to healthy, study finds.”**  
   – Pulls the grocery-cost analysis ($1.50/day cheaper) and frames it as a wealth booster, again skipping sample size and duration caveats.
 
-Take-away you’ll voice:  
 “Secondary analyses can be interesting, but headlines often elevate them above the primary outcomes—and leave out all the limitations.”
 :::
 
