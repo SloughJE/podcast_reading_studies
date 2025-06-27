@@ -17,7 +17,10 @@ format:
 
 * No study is flawless. Every design has limits.
 
-* Headlines & influencers turn nuance into **noise**.  
+:::
+::: {.fragment}
+
+* Headlines & influencers turn nuance into **clickbait**.  
 
 :::
 ::: {.fragment}
@@ -45,21 +48,21 @@ study design • basics stats • common pitfalls
 1. **The Research Question**  
 2. **Study Population**  
 3. **Study Design (Power)**  
-4. **Paper Structure**  
-5. **Reporting Metrics**
+4. **Study Structure**  
+5. **How Results Are Reported**
 6. **Interpreting Results**  
 7. **Controlling For**  
-8. **Misleading Studies & Headlines**
+8. **Misleading Studies & Influencers**
 
 ::: {.notes}
 * **1 The Research Question** – What is the study trying to answer? 
 * **2 Study Population** – Who or what was studied?  
 * **3 Study Design** – How was the evidence gathered and analysed?  
-* **4 Paper Structure** – Where to find key information.  
-* **5 Reporting Metrics** – Common measures in studies.  
+* **4 Study Structure** – Where to find key information.  
+* **5 How Results Are Reported** – Common measures in studies.  
 * **6 Interpreting Results** – P-values, confidence intervals, statistical significance.  
 * **7 Controlling For** – Adjustment, confounding and a little math.  
-* **8 Misleading Studies & Headlines** – Typical pitfalls you’ll spot in the wild.
+* **8 Misleading Studies & Influencers** – Typical pitfalls you’ll spot in the wild.
 :::
 
 ---
@@ -118,7 +121,7 @@ Important: An exploratory study can be valuable, but don’t confuse it with a t
 
 ---
 
-## Who or What Is Being Studied?
+## Study Population
 
 **Population matters for relevance**  
 _Not all studies are done on humans, and not all humans are like you._
@@ -163,7 +166,7 @@ Before judging a result, check *who* or *what* was studied and whether that popu
 
 ---
 
-## Who or What Is Being Studied? 
+## Study Population
 
 ### Questions to Ask
 
@@ -408,7 +411,7 @@ A null secondary is only convincing when its CI is tight enough to rule out any 
 ---
 
 
-## Structure of a Scientific Paper 
+## Study Structure
 
 
 1. **Abstract**  
@@ -428,13 +431,13 @@ A null secondary is only convincing when its CI is tight enough to rule out any 
 **Conclusion** – Concise answer to the research question; sometimes folded into Discussion.  
 **Supplementary** – Extra data, detailed protocols, code, or extended figures that wouldn’t fit in the main text.
 
-*Talking cue:* Emphasise that Methods and Results are where the “meat” lives; if those sections are thin, proceed with caution.
+*Talking cue:* Emphasize that Methods and Results are where the “meat” lives; if those sections are thin, proceed with caution.
 :::
 
 
 ---
 
-## Structure of a Scientific Paper 
+## Study Structure
 
 ### Questions to Ask
 
@@ -551,7 +554,9 @@ A null secondary is only convincing when its CI is tight enough to rule out any 
 
 ---
 
-## P-values & Confidence Intervals
+## Interpreting Results
+
+#### P-values & Confidence Intervals
 
 ::: {.smaller2}
 
@@ -593,7 +598,9 @@ If we had data from the full population, we wouldn’t need p-values or confiden
 
 ---
 
-## Interpreting the p-value 
+## Interpreting Results
+
+#### The p-value 
 
 - **Threshold test** → typically **p < 0.05**  
 - Smaller p → stronger evidence **against** chance  
@@ -623,7 +630,9 @@ If we had data from the full population, we wouldn’t need p-values or confiden
 
 ___
 
-## Statistical vs. Practical Significance
+## Interpreting Results
+
+#### Statistical vs. Practical Significance
 
 ::: {.smaller2}
 
@@ -648,7 +657,7 @@ ___
 
 ---
 
-## How to Interpret Results 
+## Interpreting Results
 
 ::: {.smaller2}
 
