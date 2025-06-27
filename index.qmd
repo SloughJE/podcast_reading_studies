@@ -813,6 +813,37 @@ JAMA study:
 
 ---
 
+## Core Questions to Ask 
+
+::: {.smaller2}
+
+<div style="font-size: 125%; line-height: 1.4;">
+
+1. **Is the main question clear—and is it the one you care about?**  
+2. **Study type:** can it speak to cause, or only association?  
+3. **Who / what (and how many!) was studied, and how relevant is that to you?**  
+4. **Metric chosen:** what does it reveal and what does it hide?  
+5. **Result strength:** big, precise, and practically useful?  
+6. **Red flags:** stats 'tricks', sensational claims, or conflicts?  
+
+</div>
+
+:::
+
+::: {.notes}
+
+1. Question clarity drives everything; if the paper drifts, it's exploratory.  
+2. RCT or Mendelian randomization can test cause; cohort mainly spots links.  
+3. Species, age, sex, health status—don’t apply mouse data to humans or elite-athlete data to office workers. A study of 10 people is low evidence compared to hundreds of people. 
+4. Relative vs. absolute risks, mean vs. median—each tells a different story.  
+5. Look at effect size *and* CI; a “significant” 0.15 kg loss isn’t life-changing.  
+6. Tiny n, p-hacking, funding bias, or glitzy headlines demand extra caution.
+[p-hacking results](https://pubmed.ncbi.nlm.nih.gov/22853650/)
+[Hyped headlines](https://www.allinahealth.org/allina-news/2023/11/new-research-says-vegan-diets-are-good-for-the-heart)
+:::
+
+---
+
 ## Studies Can Mislead
 
 ::: {.smaller}
@@ -913,51 +944,20 @@ Perhaps you'd take fewer supplements if all the no-effect studies were published
 
 ---
 
-## Core Questions to Ask 
-
-::: {.smaller2}
-
-<div style="font-size: 125%; line-height: 1.4;">
-
-1. **Is the main question clear—and is it the one you care about?**  
-2. **Study type:** can it speak to cause, or only association?  
-3. **Who / what was studied—and how close is that to you?**  
-4. **Metric chosen:** what does it reveal and what does it hide?  
-5. **Result strength:** big, precise, and practically useful?  
-6. **Red flags:** stats 'tricks', sensational claims, or conflicts?  
-
-</div>
-
-:::
-
-::: {.notes}
-
-1. Question clarity drives everything; if the paper drifts, it's exploratory.  
-2. RCT or Mendelian randomization can test cause; cohort mainly spots links.  
-3. Species, age, sex, health status—don’t apply mouse data to humans or elite-athlete data to office workers.  
-4. Relative vs. absolute risks, mean vs. median—each tells a different story.  
-5. Look at effect size *and* CI; a “significant” 0.15 kg loss isn’t life-changing.  
-6. Tiny n, p-hacking, funding bias, or glitzy headlines demand extra caution.
-[p-hacking results](https://pubmed.ncbi.nlm.nih.gov/22853650/)
-[Hyped headlines](https://www.allinahealth.org/allina-news/2023/11/new-research-says-vegan-diets-are-good-for-the-heart)
-:::
-
----
-
 ## Three Things to Remember {.smaller}
 
 <div style="font-size: 127%; line-height: 1;">
 
 
-1. **RCTs are the gold-standard for causality**  
-   _Meta-analyses of well-run RCTs are even stronger._
+1. **Start with the study's main question**  
+   _Know the real question, the headline / influencer might not._
 
 <br>
 
 ::: {.fragment}
 
-2. **Cell & animal work is a first step, not a human verdict**
-   _Petri-dish breakthroughs rarely translate 1:1 to people._
+2. **Know what kind of study you're looking at**   
+   _Association ≠ causation. RCTs are strongest, but every type has limits._
 
 :::   
 <br>
@@ -973,13 +973,24 @@ Perhaps you'd take fewer supplements if all the no-effect studies were published
 
 
 ::: {.notes}
-Point 1 – “Gold-standard” avoids the absolute “only”; causal hints can come from natural experiments but need stronger assumptions.  
-Point 2 – Petri-dish breakthroughs rarely translate 1:1 to people.  
-Point 3 - headlines rarely mention the model, adjustments, or error checks, yet those determine whether a finding will hold up.
 
+**Point 1 – Start with the study's main question**  
+If you don't understand what the study was actually trying to answer, you can't judge whether the results are meaningful.  
+Influencers and headlines often jump to bold conclusions that don’t match the research question or primary outcome — especially when the study has multiple endpoints or exploratory results.  
+This is why the *real* question — not just what was reported — matters most.
+
+**Point 2 – Know what kind of study you're looking at**  
+Different study types can answer different kinds of questions.  
+An RCT can test cause-and-effect, while an observational study can only suggest associations — no matter how dramatic the result sounds.  
+And even RCTs have limitations: they can be underpowered, biased, or irrelevant to your population.  
+Understanding the design sets the boundaries for what you can believe.
+
+**Point 3 – Don't skip the statistics**  
+The numbers behind the result — sample size, effect size, p-values, confidence intervals — tell you whether a claim is solid or just noise.  
+Headlines rarely mention the uncertainty, the adjustments, or whether the result was actually powered to detect a difference.  
+If the stats are shaky, the finding probably is too — even if it sounds exciting.
 
 :::
-
 # Follow-up on Vegan Twin Study
 
 ::: {.notes}
