@@ -25,7 +25,7 @@ format:
 :::
 ::: {.fragment}
 
-* **The toolkit:**    
+* **The Fix:**    
 study design • basics stats • common pitfalls  
 
 
@@ -766,6 +766,12 @@ $$
 
 ::: {.notes}
 “The Greek letters just stand in for ‘effect of each predictor.’”
+
+Mathematically, this comes from the partial derivative of the regression function with respect to one variable.
+
+This tells you that for a 1-unit increase in `X_coffee`, the expected change in `Y` is `β₁`, assuming `X_smoke` and `X_age` stay the same.
+
+
 :::
 
 :::
@@ -819,12 +825,36 @@ JAMA study:
 
 <div style="font-size: 125%; line-height: 1.4;">
 
-1. **Is the main question clear—and is it the one you care about?**  
-2. **Study type:** can it speak to cause, or only association?  
+::: {.fragment}
+
+1. **Is the main question clear, and is it the one you care about?**  
+
+:::
+::: {.fragment}
+
+2. **Study type:** does it address causation, or only association?  
+
+:::
+::: {.fragment}
+
 3. **Who / what (and how many!) was studied, and how relevant is that to you?**  
+
+:::
+::: {.fragment}
+
 4. **Metric chosen:** what does it reveal and what does it hide?  
-5. **Result strength:** big, precise, and practically useful?  
-6. **Red flags:** stats 'tricks', sensational claims, or conflicts?  
+
+:::
+::: {.fragment}
+
+5. **Result strength:** significant? How large, precise, and practically useful?  
+
+:::
+::: {.fragment}
+
+6. **Red flags:** stats 'tricks', sensational claims, or conflicts? 
+
+:::
 
 </div>
 

@@ -1027,7 +1027,7 @@ John (The John &amp; Calvin Podcast)
 </div>
 <div class="fragment">
 <ul>
-<li><strong>The toolkit:</strong><br>
+<li><strong>The Fix:</strong><br>
 study design • basics stats • common pitfalls</li>
 </ul>
 </div>
@@ -1885,6 +1885,8 @@ Y = \alpha \;+\; \beta_1 X_{coffee} \;+\; \beta_2 X_{smoke} \;+\; \beta_3 X_{age
 <p><br> <small>More math? See the linked <a href="https://online.stat.psu.edu/stat462/node/131/">PSU resource</a></small></p>
 <aside class="notes">
 <p>“The Greek letters just stand in for ‘effect of each predictor.’”</p>
+<p>Mathematically, this comes from the partial derivative of the regression function with respect to one variable.</p>
+<p>This tells you that for a 1-unit increase in <code>X_coffee</code>, the expected change in <code>Y</code> is <code>β₁</code>, assuming <code>X_smoke</code> and <code>X_age</code> stay the same.</p>
 <style type="text/css">
 span.MJX_Assistive_MathML {
 position:absolute!important;
@@ -1953,19 +1955,36 @@ display:block!important;
 <h2>Core Questions to Ask</h2>
 <div class="smaller2">
 <div style="font-size: 125%; line-height: 1.4;">
+<div class="fragment">
 <ol type="1">
-<li><strong>Is the main question clear—and is it the one you care about?</strong><br>
-</li>
-<li><strong>Study type:</strong> can it speak to cause, or only association?<br>
-</li>
-<li><strong>Who / what (and how many!) was studied, and how relevant is that to you?</strong><br>
-</li>
-<li><strong>Metric chosen:</strong> what does it reveal and what does it hide?<br>
-</li>
-<li><strong>Result strength:</strong> big, precise, and practically useful?<br>
-</li>
+<li><strong>Is the main question clear, and is it the one you care about?</strong></li>
+</ol>
+</div>
+<div class="fragment">
+<ol start="2" type="1">
+<li><strong>Study type:</strong> does it address causation, or only association?</li>
+</ol>
+</div>
+<div class="fragment">
+<ol start="3" type="1">
+<li><strong>Who / what (and how many!) was studied, and how relevant is that to you?</strong></li>
+</ol>
+</div>
+<div class="fragment">
+<ol start="4" type="1">
+<li><strong>Metric chosen:</strong> what does it reveal and what does it hide?</li>
+</ol>
+</div>
+<div class="fragment">
+<ol start="5" type="1">
+<li><strong>Result strength:</strong> significant? How large, precise, and practically useful?</li>
+</ol>
+</div>
+<div class="fragment">
+<ol start="6" type="1">
 <li><strong>Red flags:</strong> stats ‘tricks’, sensational claims, or conflicts?</li>
 </ol>
+</div>
 </div>
 </div>
 <aside class="notes">
