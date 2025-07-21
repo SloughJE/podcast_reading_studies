@@ -1,6 +1,6 @@
 ---
 title: "Decoding the Hype"
-subtitle: "Spotting real evidence in health & nutrition studies"
+subtitle: "Identifying real evidence in health & nutrition studies"
 author: "John (The John & Calvin Podcast)"
 format:
   revealjs:
@@ -398,7 +398,7 @@ A null secondary is only convincing when its CI is tight enough to rule out any 
 
 ### Questions to Ask
 
-- What type of study is this — observational, interventional, or a synthesis?
+- What type of study is this: observational, interventional, or a synthesis?
 
 - Can this design support a **causal claim**, or only association?  
 - Is the control / comparison group appropriate?  
@@ -474,7 +474,7 @@ A null secondary is only convincing when its CI is tight enough to rule out any 
 **Counts** – e.g. 500 heart-disease cases.  
 **Percent / Proportion** – share of the population, e.g. 5 % prevalence.  
 **Rates** – events per person-time, e.g. 10 per 1 000 person-years.  
-**Standardised rates** – adjusted for age or other demographics to compare populations fairly.  
+**Standardized rates** – adjusted for age or other demographics to compare populations fairly.  
 Incidence = new cases during a specific time period
 Prevalence = total existing cases at a given point (or over a period)
 
@@ -547,7 +547,7 @@ Prevalence = total existing cases at a given point (or over a period)
 
 ### Questions to Ask
 
-- Which metric is used—count, rate, risk ratio, mean difference, etc.?  
+- Which metric is used: count, rate, risk ratio, mean difference, etc.?  
 - Is that metric appropriate, or could it mislead (e.g., relative vs. absolute)?  
 - Does it answer the **main research question**?  
 - Could the metric exaggerate or downplay the finding?
@@ -648,7 +648,7 @@ ___
 | Finding (effect)             | p-value | Interpretation                                |
 |------------------------------|:---------:|-----------------------------------------------|
 | −0.15 kg (12 wk)             | 0.001  | **Statistically significant**; clinically trivial |
-| −4.5 mm Hg systolic BP       | 0.09   | **Not statistically significant**; could matter if real |
+| −8.5 mm Hg systolic BP       | 0.09   | **Not statistically significant**; could matter if real |
 
 <br>
 
@@ -671,10 +671,10 @@ ___
 
 ### Questions to Ask
 
-- Is the result statistically significant—and by **how much**?  
+- Is the result statistically significant and by **how much**?  
 - What does the **confidence interval** say about size and precision?  
 - Is the effect big enough to matter in real life?  
-- If it’s borderline, could chance, small N, selective data processing or multiple testing explain it?
+- If it's borderline, could high variation, small N, selective data processing or multiple testing explain it?
 
 :::
 
@@ -950,7 +950,7 @@ Perhaps you'd take fewer supplements if all the no-effect studies were published
 :::
 
 ::: {.fragment}
-- **Anecdotes ≠ evidence**  
+- **Anecdotes ≠ strong evidence**  
 :::
 
 ::: {.fragment}
