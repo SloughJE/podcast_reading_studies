@@ -676,6 +676,16 @@ ___
 - Is the effect big enough to matter in real life?  
 - If it's borderline, could high variation, small N, selective data processing or multiple testing explain it?
 
+
+::: {.notes}
+P-value: but does "**how much**" really matter? Maybe, maybe not.
+
+Look at Result and Table 2 in vegan study, where is p-value? 
+
+Some journals actually moving away from just reporting p-values, and focus on CI, to show magnitude, and not just 'sig/non-sig'.
+
+
+:::
 :::
 
 ---
@@ -868,7 +878,7 @@ JAMA study:
 4. Relative vs. absolute risks, mean vs. median—each tells a different story.  
 5. Look at effect size *and* CI; a “significant” 0.15 kg loss isn’t life-changing.  
 6. Tiny n, p-hacking, funding bias, or glitzy headlines demand extra caution.
-[p-hacking results](https://pubmed.ncbi.nlm.nih.gov/22853650/)
+P-hacking: [A peculiar prevalence of p values just below .05](https://pubmed.ncbi.nlm.nih.gov/22853650/)
 [Hyped headlines](https://www.allinahealth.org/allina-news/2023/11/new-research-says-vegan-diets-are-good-for-the-heart)
 :::
 
