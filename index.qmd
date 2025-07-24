@@ -113,7 +113,7 @@ Important: An exploratory study can be valuable, but don’t confuse it with a t
 ### Questions to Ask
 
 - What single question is the study trying to answer?  
-- Is the **primary outcome** clearly stated—and the right one for that question?  
+- Is the **primary outcome** clearly stated and the right one for that question?  
 - Are **secondary outcomes** labelled as exploratory, or being oversold?  
 - Does this question matter to you?
 
