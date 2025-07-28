@@ -816,36 +816,36 @@ Some journals actually moving away from just reporting p-values, and focus on CI
 
 ::: {.smaller2}
 
-<div style="font-size: 125%; line-height: 1.4;">
+<div style="font-size: 115%; line-height: 1.4;">
 
 ::: {.fragment}
 
-1. **Is the main question clear, and is it the one you care about?**  
+1. **What is the main question?** Is it the one you care about?  
 
 :::
 ::: {.fragment}
 
-2. **Study type:** does it address causation, or only association?  
+2. **Who / what (and how many!) was studied?** How relevant is that to you?  
 
 :::
 ::: {.fragment}
 
-3. **Who / what (and how many!) was studied, and how relevant is that to you?**  
+3. **What kind of study is it and how strong is the design?** Does it suggest an association, test causation, or synthesize  evidence?
 
 :::
 ::: {.fragment}
 
-4. **Metric chosen:** what does it reveal and what does it hide?  
+4. **What metric was used?** What does it reveal and what might it miss?  
 
 :::
 ::: {.fragment}
 
-5. **Result strength:** significant? How large, precise, and practically useful?  
+5. **How strong are the results?** Are they statistically significant, precise, and practically meaningful?  
 
 :::
 ::: {.fragment}
 
-6. **Red flags:** statistical 'tricks', sensational claims, or conflicts? 
+6. **Are there any red flags?** Statistical 'tricks', sensational claims, or conflicts of interest? 
 
 :::
 
