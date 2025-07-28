@@ -976,18 +976,22 @@ Perhaps you'd take fewer supplements if all the no-effect studies were published
 
 ## Three Things to Remember {.smaller}
 
-<div style="font-size: 127%; line-height: 1;">
+<div style="font-size: 105%; line-height: 1;">
 
 
-1. **Start with the study's main question**  
-   _Know the real question. The headline / influencer might not._
+1. **Know the study’s main question**  
+   _It’s the foundation for understanding everything that follows._
+   
+   _Don’t rely on the headline / influencer._
 
 <br>
 
 ::: {.fragment}
 
-2. **Know what kind of study you're looking at**   
-   _Study design defines what it can show. Take into account the full body of evidence._
+2. **Understand the study design**   
+   _It defines what the results can tell you and how they should be interpreted._ 
+   
+   _Take into account the full body of evidence._
 
 :::   
 <br>
@@ -995,7 +999,9 @@ Perhaps you'd take fewer supplements if all the no-effect studies were published
 ::: {.fragment}
 
 3. **Don't skip the statistics**  
-   _Results are only as strong as the methods and statistical analysis behind it._
+   _Results are only as strong as the methods and statistical analysis behind them._
+   
+   _Understanding the basics goes a long way._
 
 :::
 
