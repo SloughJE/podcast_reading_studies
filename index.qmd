@@ -685,7 +685,7 @@ SMD – used when studies report the same outcome using different units (e.g. de
 
 <br>
 
-**Is this effect real? How exact is it?**
+**Is this effect real? How precise is it?**
 
 ::: {.fragment}
 
@@ -728,12 +728,12 @@ If we had data from the full population, we wouldn’t need p-values or confiden
 
 #### The p-value 
 
-- **Threshold test** → typically **p < 0.05**  
-- Smaller p → stronger evidence **against** chance  
+- **Threshold test**: typically **p < 0.05**  
+- Smaller p means stronger evidence **against** chance  
 
 ::: {.fragment}
 
-- A *p*-value means little unless you also know the **effect size**
+- A *p*-value means little unless you also know the effect size
 
 :::
 ::: {.fragment}
@@ -845,7 +845,7 @@ Some journals actually moving away from just reporting p-values, and focus on CI
 :::
 ::: {.fragment}
 
-6. **Red flags:** stats 'tricks', sensational claims, or conflicts? 
+6. **Red flags:** statistical 'tricks', sensational claims, or conflicts? 
 
 :::
 
@@ -871,7 +871,11 @@ P-hacking: [A peculiar prevalence of p values just below .05](https://pubmed.ncb
 
 ::: {.smaller}
 
+::: {.fragment}
+
 - **Small samples inflate effects**  
+
+:::
 
 ::: {.fragment}
 - **Placebo isn’t inert**  
@@ -904,7 +908,7 @@ P-hacking: [A peculiar prevalence of p values just below .05](https://pubmed.ncb
 :::
 
 ::: {.notes}
-**Small samples inflate effects** – Big swings occur by chance; replication shrinks them.  
+**Small samples inflate effects** – Big swings occur by chance; replication shrinks them. One or two unusual outcomes can shift the average dramatically. outlier??  
 **Placebo isn’t inert** – “Control” oils, shakes, or pills often have biological activity.  
 **Publication bias** – Null results stay in file drawers; positive ones get published.     
 Perhaps you'd take fewer supplements if all the no-effect studies were published.  
@@ -924,14 +928,17 @@ Perhaps you'd take fewer supplements if all the no-effect studies were published
 
 ::: {.smaller}
 
+::: {.fragment}
+
 - **One study ≠ truth**  
 
+:::
 ::: {.fragment}
 - **Petri-dish (mechanism) hype**  
 :::
 
 ::: {.fragment}
-- **Diet ≠ morality**  
+- **Healthy Diet ≠ morality**  
 :::
 
 ::: {.fragment}
@@ -973,14 +980,14 @@ Perhaps you'd take fewer supplements if all the no-effect studies were published
 
 
 1. **Start with the study's main question**  
-   _Know the real question, the headline / influencer might not._
+   _Know the real question. The headline / influencer might not._
 
 <br>
 
 ::: {.fragment}
 
 2. **Know what kind of study you're looking at**   
-   _Association ≠ causation. RCTs are strongest, but every type has limits._
+   _Design defines what a study can show. Look at the full body of evidence._
 
 :::   
 <br>
@@ -988,7 +995,7 @@ Perhaps you'd take fewer supplements if all the no-effect studies were published
 ::: {.fragment}
 
 3. **Don't skip the statistics**  
-   _A result is only as strong as the methods and statistics behind it._
+   _Results are only as strong as the methods and statistical analysis behind it._
 
 :::
 
@@ -1027,7 +1034,7 @@ If the stats are shaky, the finding probably is too — even if it sounds exciti
   – Vegan arm showed a –1.9-year change in PhenoAge vs –0.3 years in omnivore (Δ ≈ –1.6 y, *p*≈0.04).  
   – Reported in *BMC Medicine* (2024); authors called it “exploratory.”
 
-**How the media mashed it up**
+**How the media reported it**
 
 • *New York Post* 29 Jul 2024 headline:  
   **“2 months of eating this diet knocks years off your biological age.”**  
