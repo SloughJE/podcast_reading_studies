@@ -588,8 +588,29 @@ NNT – helpfulness of treatment: lower NNT = more effective
 - **Hazard ratio (HR)** – event rate over time (e.g. HR 0.75 = 25% lower risk)
 :::
 
+::: {.columns}
+
+::: {.column width="57%"}
 ::: {.fragment}
-- **Survival curves** – probability of staying event-free over time (e.g. Kaplan–Meier plot)
+- **Survival curves**        
+  probability of staying event-free over time  
+  (e.g. Kaplan–Meier plot)
+  
+:::
+::: {.fragment}
+
+  Kaplan–Meier analysis on the association of obesity 
+  and malnutrition with the risk of all-cause death in
+  hypertension patients. 
+:::
+:::
+
+::: {.column width="43%"}
+::: {.fragment}
+[![](assets/survival_curve.png){width=100%}](https://pubmed.ncbi.nlm.nih.gov/36937935/)
+:::
+:::
+
 :::
 
 :::
@@ -598,6 +619,8 @@ NNT – helpfulness of treatment: lower NNT = more effective
 Incidence rate – accounts for different follow-up time (e.g. 5 per 1,000 py)  
 Hazard ratio – how quickly events occur over time (HR 0.75 = slower rate)  
 Survival curves – visualize probability of avoiding event (e.g. death, relapse)
+plot from **Obesity, malnutrition, and the prevalence and outcome of hypertension**
+
 :::
 
 ---
@@ -609,12 +632,13 @@ Survival curves – visualize probability of avoiding event (e.g. death, relapse
 ::: {.smaller2}
 
 ::: {.fragment}
-- **Forest plot** – visual summary of study results and overall effect
+- **Standardized Mean Difference (SMD)** – compares effects when scales differ
 :::
 
 ::: {.fragment}
-- **Standardized Mean Difference (SMD)** – compares effects when scales differ
+- **Forest plot** – visual summary of study results and overall effect
 :::
+
 
 ::: {.fragment}
 
