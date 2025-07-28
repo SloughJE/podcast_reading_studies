@@ -987,7 +987,7 @@ Perhaps you'd take fewer supplements if all the no-effect studies were published
 ::: {.fragment}
 
 2. **Know what kind of study you're looking at**   
-   _Design defines what a study can show. Look at the full body of evidence._
+   _Study design defines what it can show. Take into account the full body of evidence._
 
 :::   
 <br>
