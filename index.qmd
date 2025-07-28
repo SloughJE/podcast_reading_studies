@@ -1027,7 +1027,12 @@ Headlines rarely mention the uncertainty, the adjustments, or whether the result
 If the stats are shaky, the finding probably is too — even if it sounds exciting.
 
 :::
-# Follow-up on Vegan Twin Study
+
+
+
+# <span style="font-size:90%">Follow-up on Omnivorous vs Vegan Twin Study</span>
+
+
 
 ::: {.notes}
 **Follow-up work the Stanford team did after the 8-week twin RCT**
