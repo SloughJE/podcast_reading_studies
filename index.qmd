@@ -655,8 +655,13 @@ No statistically significant reduction was noted.
 :::
 
 ::: {.notes}
-Forest plot – shows each study’s result and pooled estimate (the “diamond”)  
 SMD – used when studies report the same outcome using different units (e.g. depression scales)
+
+Forest plot – shows each study’s result and pooled estimate (the “diamond”)  
+
+Saturated Fat Restriction for Cardiovascular Disease Prevention: A
+Systematic Review and Meta-analysis of Randomized Controlled Trials
+
 :::
 
 ---
