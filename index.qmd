@@ -51,7 +51,7 @@ study design • basics stats • common pitfalls
 4. **Study Structure**  
 5. **How Results Are Reported**
 6. **Interpreting Results**  
-7. **Controlling for Other Factors**  
+7. **~~Controlling for Other Factors~~**  
 8. **Misleading Studies & Influencers**
 
 ::: {.notes}
@@ -451,92 +451,188 @@ A null secondary is only convincing when its CI is tight enough to rule out any 
 
 ## How Results Are Reported
 
-#### Population Metrics
+#### Describing the Population
+
+::: {.smaller2}
 
 ::: {.fragment}
-- **Counts** – raw tally
-:::
-::: {.fragment}
-- **Percent / Proportion** – share of the population
-:::
-::: {.fragment}
-- **Rates** – cases per person / time
-:::
-::: {.fragment}
-- **Standardised rates** – adjusted for age / other factors
-:::
-::: {.fragment}
-- **Incidence vs prevalence** – new vs total cases
+- **Counts** – raw number (e.g. 500 cases)
 :::
 
+::: {.fragment}
+- **Percent / Proportion** – share of population (e.g. 5%)
+:::
+
+::: {.fragment}
+- **Incidence** – new cases in a time period (e.g. 100 new this year)
+:::
+
+::: {.fragment}
+- **Prevalence** – all existing cases at a point in time (e.g. 5% of adults)
+:::
+
+::: {.fragment}
+- **Rates** – events per person-time (e.g. 10 per 1,000 person-years)
+:::
+
+::: {.fragment}
+- **Standardized rates** – adjusted for age or other factors to compare groups
+:::
+
+:::
 
 ::: {.notes}
-**Counts** – e.g. 500 heart-disease cases.  
-**Percent / Proportion** – share of the population, e.g. 5 % prevalence.  
-**Rates** – events per person-time, e.g. 10 per 1 000 person-years.  
-**Standardized rates** – adjusted for age or other demographics to compare populations fairly.  
-Incidence = new cases during a specific time period
-Prevalence = total existing cases at a given point (or over a period)
+These metrics describe how common a condition or event is in the study group.
 
+We're calling them “population” metrics here, but in most studies, they’re calculated from a **sample**
+
+Counts – e.g. 500 heart-disease cases  
+Percent / Proportion – e.g. 5% with high blood pressure  
+Incidence – new cases over time, e.g. 100 new cases this year  
+Prevalence – all existing cases, e.g. 5% of adults have condition  
+Rates – person-time approach, e.g. 10 cases per 1,000 person-years  
+Standardized rates – adjusted for fair comparisons (e.g. by age)
 :::
 
 ---
 
 ## How Results Are Reported 
 
-**Group difference**
+#### Measuring Differences in Outcomes
 
-- Percent change  
-- Mean difference  
+::: {.smaller2}
 
 ::: {.fragment}
+- **Mean difference** – raw difference (e.g. −5 mm Hg in blood pressure)
+:::
 
-**Risk comparison**
+::: {.fragment}
+- **Median difference** – comparison of middle values (less sensitive to outliers)
+:::
 
-- Absolute risk (AR)  
-- Relative risk (RR)  
-- Odds ratio (OR)  
-- Number Needed to Treat (NNT)  
+
+::: {.fragment}
+- **Percent change** – relative difference from baseline or control         
+  (e.g. treatment group: 180, control group: 200 → 10% lower in treatment)
 
 :::
-::: {.notes}
-*Percent change* – relative shift from baseline (10% drop).  
-*Mean difference* – raw unit gap (−5 mm Hg).  
 
-*Absolute risk* – direct percentage-point change (2% → 1%).  
-*Relative risk* – ratio of probabilities (RR 1.5 = 50% higher).  
-*Odds ratio* – ratio of odds; close to RR when outcome is rare.  
-*NNT* – number of people who must receive the treatment for one to benefit (100 means large trials needed).
+:::
+
+::: {.notes}
+Mean difference – absolute gap in outcomes (e.g. −5 mm Hg)  
+Percent change – relative change compared to baseline or control (e.g. 10% lower)
 :::
 
 ---
 
-## How Results Are Reported 
+## How Results Are Reported
 
-### Time-to-Event Metrics
+### Understanding and Comparing Risk
 
-- **Incidence rate**  
-- **Hazard ratio (HR)**  
-- **Survival curves** 
+::: {.smaller2}
+
+#### Describing Risk in One Group
+
+::: {.fragment}
+- **Absolute risk** – chance of outcome in one group (e.g. 1%)
+:::
+
+::: {.fragment}
+- **Odds** – ratio of events to non-events (e.g. 1:9 odds = 10% chance)
+:::
+
+#### Comparing Risk Between Groups
+
+::: {.fragment}
+- **Absolute Risk Reduction (ARR)** – difference in risk (e.g. 2% → 1% = 1% ARR)
+:::
+
+::: {.fragment}
+- **Relative Risk (RR)** – ratio of risk (e.g. 1% ÷ 2% = RR 0.5 = 50% lower risk)
+:::
+
+::: {.fragment}
+- **Odds Ratio (OR)** – ratio of odds (e.g. OR 2 = twice the odds)
+:::
+
+::: {.fragment}
+- **Number Needed to Treat (NNT)** – how many need treatment for one to benefit (e.g. NNT = 100)
+:::
+
+:::
+
+::: {.notes}
+Absolute risk – how likely is the outcome in one group  
+Odds – event / non-event (less intuitive than risk)  
+ARR – direct subtraction of risks (2% → 1%)  
+RR – proportionate risk (50% less likely)  
+OR – compares odds; close to RR when events are rare  
+NNT – helpfulness of treatment: lower NNT = more effective
+:::
+
+
+---
+
+## How Results Are Reported
+
+### Tracking Outcomes Over Time
+
+::: {.smaller2}
+
+::: {.fragment}
+- **Incidence rate** – new cases per person-time (e.g. 5 per 1,000 person-years)
+:::
+
+::: {.fragment}
+- **Hazard ratio (HR)** – event rate over time (e.g. HR 0.75 = 25% lower risk)
+:::
+
+::: {.fragment}
+- **Survival curves** – probability of staying event-free over time (e.g. Kaplan–Meier plot)
+:::
+
+:::
+
+::: {.notes}
+Incidence rate – accounts for different follow-up time (e.g. 5 per 1,000 py)  
+Hazard ratio – how quickly events occur over time (HR 0.75 = slower rate)  
+Survival curves – visualize probability of avoiding event (e.g. death, relapse)
+:::
+
+---
+
+## How Results Are Reported
+
+### Summarizing Multiple Studies
+
+::: {.smaller2}
+
+::: {.fragment}
+- **Forest plot** – visual summary of study results and overall effect
+:::
+
+::: {.fragment}
+- **Standardized Mean Difference (SMD)** – compares effects when scales differ
+:::
 
 ::: {.fragment}
 
 
-### Metrics in Meta-analyses
+[![](assets/Forest_plot.png){width=65%}](https://www.jstage.jst.go.jp/article/jmaj/8/2/8_395/_article/-char/ja/)
 
-- Forest plot
-- Standardized Mean Difference
+Forest plots of saturated fatty acid reduction trials on myocardial infarction.
+
+No statistically significant reduction was noted.
+
+:::
 
 
 :::
 
 ::: {.notes}
-*Incidence rate* – new cases per person-time (5 per 1 000 py).  
-*Hazard ratio* – relative event rate over time (HR 0.75 = 25 % lower).  
-*Survival curves* – Kaplan–Meier plot of event-free probability.  
-
-*Meta-analysis* – combines studies; forest plot shows each effect and pooled “diamond.”  
-*SMD* – standardised mean difference; useful when studies use different units.
+Forest plot – shows each study’s result and pooled estimate (the “diamond”)  
+SMD – used when studies report the same outcome using different units (e.g. depression scales)
 :::
 
 ---
@@ -555,6 +651,7 @@ Prevalence = total existing cases at a given point (or over a period)
 :::
 
 ---
+
 
 ## Interpreting Results
 
@@ -688,144 +785,6 @@ Some journals actually moving away from just reporting p-values, and focus on CI
 :::
 :::
 
----
-
-## Controlling for Other Factors
-
-**Goal:** isolate the effect of one variable while accounting for others.
-
-::: {.fragment}
-
-> Coffee & Heart Disease  
-> Control for **smoking** so coffee isn’t blamed for smokers’ risk.
-
-:::
-
-::: {.fragment}
-
-How?  
-
-**Include the other factors in the statistical model.**
-
-:::
-::: {.notes}
-“When you read ‘we controlled for education, BMI, and smoking,’ it means those factors **were included as variables in the model** so we can ask:  
-*If two people were identical on those factors, does coffee still matter?*”
-!RCTs already balance groups. You generally do not 'control for' things in RCTs. 
-:::
-
----
-
-## Controlling for Other Factors
-
-::: {.smaller2}
-
-#### Example Cohort Study
-
-**Question:** Does coffee raise heart-disease risk?
-
-We record coffee cups/day, smoking, age, and heart-disease outcome.
-
-<br> 
-
-::: {.fragment}
-
-**Model with controls**  
-`Heart disease = Coffee + Smoking + Age + error`  
-→ Estimates the coffee effect *independent of* smoking & age
-:::
-::: {.fragment}
-
-&nbsp;
-
-**Model without smoking**  
-`Heart disease = Coffee + Age + error`  
-→ Smoking still influences both coffee & disease → **confounding**
-
-:::
-:::
-
-::: {.notes}
-Leaving a major confounder out biases the coffee coefficient toward the smoking effect.
-:::
-
----
-
-## Controlling for Other Factors
-
-::: {.smaller2}
-
-### Under the Hood 
-
-<br>
-
-$$
-Y = \alpha \;+\; \beta_1 X_{coffee} \;+\; \beta_2 X_{smoke} \;+\; \beta_3 X_{age} \;+\; \varepsilon
-$$
-
-| Symbol            | Plain English                                           |
-|-------------------|---------------------------------------------------------|
-| $Y$               | Outcome (heart disease)                                 |
-| $\alpha$          | Baseline when all X = 0                                 |
-| $\beta_{1,2,3}$   | Effect of each variable **holding the others constant** |
-| $\varepsilon$     | Random noise / unexplained variation                    |
-
-<br>
-<small>More math? See the linked [PSU resource](https://online.stat.psu.edu/stat462/node/131/)</small>
-
-
-::: {.notes}
-“The Greek letters just stand in for ‘effect of each predictor.’”
-
-Mathematically, this comes from the partial derivative of the regression function with respect to one variable.
-
-This tells you that for a 1-unit increase in `X_coffee`, the expected change in `Y` is `β₁`, assuming `X_smoke` and `X_age` stay the same.
-
-
-:::
-
-:::
-
----
-
-## Controlling for Other Factors
-
-* Works **only** for variables we measured and included.  
-* Unmeasured confounding can still bias results.  
-* **Randomized trials** help by balancing both known and unknown confounders.
-
-
-::: {.notes}
-Adjustment is powerful but never perfect; residual confounding is always possible.
-
-We try to include enough key variables that any remaining bias is unlikely to change the practical conclusion.
-
-In RCTs, randomisation already balances groups.
-Don’t adjust for variables that emerge after randomisation (e.g., calories actually eaten); that turns the analysis into mediation or can even introduce new bias.
-
-:::
-
-
----
-
-## Controlling for Other Factors
-
-::: {.smaller2}
-
-### Questions to Ask
-
-- Did the study adjust for the **key known confounders**?  
-- What important factors might be missing or unmeasured?  
-- Is the adjustment method explained and sensible?  
-
-
-:::
-
-::: {.notes}
-JAMA study:
-“Because it’s an RCT, the groups were comparable at baseline. The ~200-calorie deficit happened after allocation, so it’s part of how the vegan diet worked, not a bias that needs adjustment. If you tried to ‘control’ for those calories, you’d be stripping out some of the very effect you want to measure.”
-
-:::
 
 ---
 
