@@ -585,12 +585,12 @@ NNT – helpfulness of treatment: lower NNT = more effective
 :::
 
 ::: {.fragment}
-- **Hazard ratio (HR)** – event rate over time (e.g. HR 0.75 = 25% lower risk)
+- **Hazard ratio (HR)** – compares risk of event between two groups over time (e.g. HR 0.75 = 25% lower risk)
 :::
 
 ::: {.columns}
 
-::: {.column width="57%"}
+::: {.column width="59%"}
 ::: {.fragment}
 - **Survival curves**        
   probability of staying event-free over time  
@@ -605,7 +605,7 @@ NNT – helpfulness of treatment: lower NNT = more effective
 :::
 :::
 
-::: {.column width="43%"}
+::: {.column width="41%"}
 ::: {.fragment}
 [![](assets/survival_curve.png){width=100%}](https://pubmed.ncbi.nlm.nih.gov/36937935/)
 :::
@@ -617,7 +617,7 @@ NNT – helpfulness of treatment: lower NNT = more effective
 
 ::: {.notes}
 Incidence rate – accounts for different follow-up time (e.g. 5 per 1,000 py)  
-Hazard ratio – how quickly events occur over time (HR 0.75 = slower rate)  
+Hazard ratio – instantaneous risk reduction events occur over time (HR 0.75 = slower rate)  
 Survival curves – visualize probability of avoiding event (e.g. death, relapse)
 plot from **Obesity, malnutrition, and the prevalence and outcome of hypertension**
 
